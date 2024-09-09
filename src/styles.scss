@@ -4,17 +4,12 @@
   min-height: 100vh;
   min-height: calc(100 * var(--vh, 1vh));
 
-  * {
-    font-family: 'Inter', sans-serif;
-    font-optical-sizing: auto;
-  }
-
-  --background-main-color: #061830;
-
-  --title-color: #F5F5F5;
   --title-font-weight: 600;
   --title-line-height: 1;
   --title-letter-spacing: -4%;
+  --background-main-color: #061830;
+
+  --title-color: #F5F5F5;
 
   --text-color: #E7F2F8;
   --text-weight: 400;
@@ -45,6 +40,11 @@
     --section-gap: 76px;
     --title-font-size: 50px;
     --text-font-size: 18px;
+  }
+
+  * {
+    font-family: 'Inter', sans-serif;
+    font-optical-sizing: auto;
   }
 }
 
