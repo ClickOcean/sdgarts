@@ -1,0 +1,80 @@
+---
+import * as Data from './Services.md'
+import { Image } from 'astro:assets'
+
+import DemiseImage from './images/demise.jpg'
+import CargoImage from './images/cargo.jpg'
+import MonitoringImage from './images/monitoring.jpg'
+import SafetyImage from './images/safety.jpg'
+import PromotionalImage from './images/promotional.jpg'
+---
+
+<section id="services" class="services">
+  <div class="services__content">
+    <div class="services__image">
+      <div id="demiseImage" class="services-picture">
+        <Image src={DemiseImage} alt="" />
+        <div class="image-caption">{Data.frontmatter.caption_one}</div>
+      </div>
+      <div id="cargoImage" class="services-picture" style="display: none;">
+        <Image src={CargoImage} alt="" />
+        <div class="image-caption">{Data.frontmatter.caption_two}</div>
+      </div>
+      <div id="monitoringImage" class="services-picture" style="display: none;">
+        <Image src={MonitoringImage} alt="" />
+        <div class="image-caption">{Data.frontmatter.caption_three}</div>
+      </div>
+      <div id="safetyImage" class="services-picture" style="display: none;">
+        <Image src={SafetyImage} alt="" />
+        <div class="image-caption">{Data.frontmatter.caption_four}</div>
+      </div>
+      <div id="promotionalImage" class="services-picture" style="display: none;">
+        <Image src={PromotionalImage} alt="" />
+        <div class="image-caption">{Data.frontmatter.caption_five}</div>
+      </div>
+    </div>
+    <div class="services__static">
+      <h2 class="services-title">{Data.frontmatter.title}</h2>
+      <ul class="services__list">
+        <li><button class="services__item active" data-index="0">{Data.frontmatter.link_one}</button></li>
+        <li><button class="services__item" data-index="1">{Data.frontmatter.link_two}</button></li>
+        <li><button class="services__item" data-index="2">{Data.frontmatter.link_three}</button></li>
+        <li><button class="services__item" data-index="3">{Data.frontmatter.link_four}</button></li>
+        <li><button class="services__item" data-index="4">{Data.frontmatter.link_five}</button></li>
+      </ul>
+    </div>
+    <div class="services__description">
+      <p id="demiseDescription" style="display: block;">Demise Charter is a helicopter rental service that allows customers to take full control of the aircraft for a certain period of time. Within this service, the customer gets the right to fly the helicopter themselves or hire a pilot for specific tasks.<br> The special feature of Demise Charter is that the customer takes full possession of helicopter for the rental period. This means that they can use the helicopter for any purpose, including commercial transportation, tourist excursions, medical missions and other activities. The customer only pays the rental cost and additional costs, such as fuel and pilot services (if necessary).<br> Demise Charter is suitable for those who need regular helicopter flights and want to have complete freedom of action without having to buy their own helicopter.<br> It may also be of interest to companies engaged in aerial work, as it allows you to reduce the costs of maintaining your own fleet of aircraft. Our company offers services for hiring professional pilots to fly your helicopters.<br> We guarantee safety and comfort during the flight, as well as a high level of professionalism of our pilots. Our pilots have extensive experience in various conditions and are ready to perform any task you set for them.</p>
+      <p id="cargoDescription" style="display: none;">Our company offers services for the transportation of small cargo and documents using helicopters. We guarantee fast and reliable delivery of your goods or documents to any point on the continent.<br> Our team of professionals is always ready to help you choose the best route and provide advice on any issues related to cargo transportation.</p>
+      <p id="monitoringDescription" style="display: none;">Our company offers monitoring and surveillance services for various objects using helicopters.<br> We specialize in performing tasks in the field of industrial, agricultural, environmental monitoring and other similar needs.<br> We can monitor in real time, which allows us to quickly respond to any changes or threats. We work with various clients, including industrial enterprises, agricultural companies, environmental organizations and government agencies. We are ready to provide an individual approach to each client and develop the best solution for their needs.</p>
+      <p id="safetyDescription" style="display: none;">Our company offers "safety co-pilot" services for aspiring certified private pilots who need practice in general or specific flight conditions.<br> We provide experienced pilot instructors who will help you improve your skills and acquire the necessary flight hours.<br> Our services include both theoretical training and practical lessons on helicopters. We offer an individual approach to each client and develop a flight program that meets their needs and level of training.</p>
+      <p id="promotionalDescription" style="display: none;">Our company offers services for organizing promotional events using helicopters. We can help you attract attention to your brand or product using the unique capabilities of helicopters.<br> We provide helicopters of various types and sizes to fit your needs and budget. You can use a helicopter to transfer guests, conduct photo shoots or even fly at altitude for a better view of the area.<br> Our experienced pilots and event organizers will help you plan and carry out a promotional event at the highest level. We can also offer additional services such as catering, music and decorations. To order the service, simply contact us by phone or through our website. We guarantee high quality service and unforgettable impressions from your advertising event.</p>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const buttons = document.querySelectorAll('.services__item');
+    const images = document.querySelectorAll('.services-picture');
+    const descriptions = document.querySelectorAll('.services__description p');
+
+    buttons.forEach((button, index) => {
+      button.addEventListener('click', () => {
+        buttons.forEach(btn => btn.classList.remove('active'));
+
+        button.classList.add('active');
+
+        images.forEach(image => image.style.display = 'none');
+        images[index].style.display = 'block';
+
+        descriptions.forEach(description => description.style.display = 'none');
+        descriptions[index].style.display = 'block';
+      });
+    });
+  });
+</script>
+
+<style lang="scss">
+  @import './Services.scss';
+</style>

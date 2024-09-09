@@ -1,0 +1,75 @@
+.company {
+  height: 100vh;
+  position: relative;
+  background-image: url('images/helicopter.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    left: 20px;
+    width: 241px;
+    height: 241px;
+    background-image: url('images/big-logo.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 10;
+
+    @media (max-width: 1120px) {
+      width: 176px;
+      height: 176px;
+    }
+  }
+}
+
+.company-container {
+  width: 100%;
+  max-width: 1060px;
+  margin: 0 auto;
+  padding-top: 210px;
+
+  @media (max-width: 1120px) {
+    display: grid;
+    justify-content: center;
+  }
+
+  @media (max-width: 964px) {
+    padding: 210px 20px 0;
+  }
+}
+
+.company-title {
+  color: var(--title-color);
+  font-size: 64px;
+  font-weight: var(--title-font-weight);
+  line-height: var(--title-line-height);
+  letter-spacing: var(--title-letter-spacing);
+  max-width: 690px;
+  margin: 0 0 40px;
+  padding: 0;
+  text-align: left;
+
+  @media (max-width: 575px) {
+    font-size: 36px;
+  }
+}
+
+.company-description {
+  color: var(--text-color);
+  font-size: 24px;
+  font-weight: var(--text-font-weight);
+  line-height: var(--text-line-height);
+  letter-spacing: var(--text-letter-spacing);
+  margin: 0;
+  padding: 0;
+  @media (min-width: 1440px) {
+    max-width: 32%;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 18px;
+  }
+}

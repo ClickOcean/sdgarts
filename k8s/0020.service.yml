@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: maristan-website
+  namespace: web
+spec:
+  type: ClusterIP
+  selector:
+    app: maristan-website
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 80

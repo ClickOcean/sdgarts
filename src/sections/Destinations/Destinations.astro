@@ -1,0 +1,118 @@
+---
+import * as Data from './Destinations.md'
+import { Image } from 'astro:assets'
+
+import DestinationsImage from './images/destinations.jpg'
+import AmalfiImage from './images/amalfi.jpg'
+import BernImage from './images/bern.jpg'
+import SantoriniImage from './images/santorini.jpg'
+import BarcelonaImage from './images/barcelona.jpg'
+import ReykjavikImage from './images/reykjavik.jpg'
+import EtnaImage from './images/etna.jpg'
+import FiordsImage from './images/fiords.jpg'
+import RomeImage from './images/rome.jpg'
+
+const destinationsData = [
+  {
+    title: 'Amalfi',
+    subtitle: 'Italy',
+    image: AmalfiImage,
+    description: 'A helicopter tour over the volcanic island of Ischia in the Gulf of Naples is a unique opportunity to see this beautiful region from a bird\'s eye view. This island was inhabited by people back in the days of the Phoenicians, and even then everyone was amazed by its beauty. During the tour, you will see many of Italy\'s landmarks. You will fly over the rocky island of Capri, over the Amalfi Coast, over modern Naples and ancient Pompeii and Herculaneum - two cities once buried under the ashes of Vesuvius. This route will allow you to enjoy magnificent views of the mountains, volcanoes, coasts and cities. You will be able to see all these beauties from a completely new perspective.'
+  },
+  {
+    title: 'Bern-Belp',
+    subtitle: 'Switzerland',
+    image: BernImage,
+    description: 'Enjoy a helicopter flight from the Swiss capital and combine the trip with a visit to the historic old town of Bern. Or combine your helicopter flight with a visit to the beautifully located city of Thun, which can be reached by car in 20 minutes from the airport.'
+  },
+  {
+    title: 'Santorini',
+    subtitle: 'Greece',
+    image: SantoriniImage,
+    description: 'Santorini is an island in Greece, famous for its whitewashed houses, blue-domed churches and breathtaking landscapes. A helicopter tour over Santorini is a unique way to see this island from a bird\'s eye view. The tour starts from Santorini airport, from where the helicopter takes off towards the center of the island. During the flight, tourists can enjoy magnificent views of the volcanic caldera that surrounds the island, as well as the white houses located on the hillsides. Approaching the center of the island, the helicopter begins to circle around the main attractions, allowing the tour participants to see all their beauty.'
+  },
+  {
+    title: 'Barcelona',
+    subtitle: 'Spain',
+    image: BarcelonaImage,
+    description: 'See Barcelona from every angle in just half a day on this walking, boat, and helicopter tour, perfect for a quick, yet comprehensive overview of the city. Stroll the Gothic Quarter and other must-sees with a guide, cruise along the coastline, and enjoy a short helicopter sightseeing ride, something that\'s usually very expensive when done on your own.'
+  },
+  {
+    title: 'Reykjavik',
+    subtitle: 'Iceland',
+    image: ReykjavikImage,
+    description: 'Reykjavik is the capital of Iceland, located on the Seltjadnarnes Peninsula. The city is known for its geothermal springs and proximity to volcanoes. A helicopter tour over the volcano in Reykjavik is a unique way to see this natural site from a bird\'s eye view. The tour starts from Reykjavik Airport, from where the helicopter takes off towards the volcano. During the flight, tourists can enjoy magnificent views of the city, as well as the surrounding mountains and glaciers.'
+  },
+  {
+    title: 'Etna Volcano',
+    subtitle: 'Italy',
+    image: EtnaImage,
+    description: 'Mount Etna is the highest active volcano in Europe. Its height is 3,329 meters. It is located on the island of Sicily in Italy. A helicopter tour over Mount Etna is a unique opportunity to see this natural object from a bird\'s eye view. The tour starts from Catania Airport, from where the helicopter departs towards the volcano. During the flight, tourists can enjoy magnificent views of the Ionian coast, as well as the cities of Catania and Taormina.'
+  },
+  {
+    title: 'Fiords',
+    subtitle: 'Norway',
+    image: FiordsImage,
+    description: 'The fjords of Norway are one of the most picturesque places on the planet. They are narrow sea bays surrounded by high cliffs. A helicopter tour over the fjords is a unique way to see this beauty from a bird\'s eye view. The tour starts from Bergen or Oslo airport, from where the helicopter takes off towards the fjords.'
+  },
+  {
+    title: 'Rome',
+    subtitle: 'Italy',
+    image: RomeImage,
+    description: 'Rome is one of the most ancient cities in the world, famous for its rich history and cultural heritage. A helicopter tour over Rome is a unique way to see this city from a bird\'s eye view. The tour starts from Rome airport, from where the helicopter takes off towards the city center. During the flight, tourists can enjoy magnificent views of historical monuments such as the Colosseum, the Pantheon and the Vatican.'
+  }
+];
+---
+
+<section id="destinations" class="destinations">
+  <div class="destinations-container">
+    <div class="destinations-header">
+      <h2 class="destinations-title">{Data.frontmatter.title}</h2>
+      <span class="destinations-subtitle">{Data.frontmatter.subtitle}</span>
+      <Image class="destinations-image" src={DestinationsImage} alt="" />
+    </div>
+    <div class="accordion">
+      {destinationsData.map((destination, index) => (
+        <div class="accordion-item" key={index}>
+          <div class="accordion-header">
+            <h3 class="accordion-title">{destination.title}</h3>
+            <span class="accordion-subtitle">{destination.subtitle}</span>
+          </div>
+          <div class="accordion-content">
+            <Image class="accordion-content__image" src={destination.image} alt="" />
+            <p>{destination.description}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script>
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+    accordionHeaders.forEach(header => {
+      header.addEventListener('click', () => {
+        const accordionItem = header.parentElement;
+        const isActive = accordionItem.classList.contains('active');
+
+        document.querySelectorAll('.accordion-item.active').forEach(item => {
+          item.classList.remove('active');
+          item.querySelector('.accordion-content').style.maxHeight = '0';
+        });
+
+        if (!isActive) {
+          accordionItem.classList.add('active');
+          const accordionContent = accordionItem.querySelector('.accordion-content');
+          accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+        }
+      });
+    });
+  });
+</script>
+
+<style lang="scss">
+  @import './Destinations.scss';
+</style>

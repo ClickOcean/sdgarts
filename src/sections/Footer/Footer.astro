@@ -1,0 +1,25 @@
+---
+import { Image } from 'astro:assets'
+import Logo from './images/big-logo.svg'
+---
+
+<footer id="contacts" class="footer">
+  <div class="footer__container">
+    <div class="footer-header">
+      <Image src={Logo} alt="" />
+      <div class="footer-header__contacts">
+        <h2 class="footer-header__title">Contacts</h2>
+        <p class="footer-header__description">We guarantee high quality service and unforgettable impressions</p>
+        <div class="footer-links">
+          <a class="footer-links__item" href="tel:+000 00 000 000">+000 00 000 000</a>
+          <a class="footer-links__item" href="mailto:mail@company.com">mail@company.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__copyright">© Maristan 2024</div>
+</footer>
+
+<style lang="scss">
+  @import './Footer.scss';
+</style>
