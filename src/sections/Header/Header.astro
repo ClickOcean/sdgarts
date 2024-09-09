@@ -34,23 +34,30 @@ import Logo from './images/logo.svg'
       const navigation = document.getElementById('navigation');
       const burger = document.querySelector('.header-container__burger');
 
-      navigation.classList.toggle('active');
-      burger.classList.toggle('active');
+      if (navigation && burger) {
+        navigation.classList.toggle('active');
+        burger.classList.toggle('active');
+      }
     }
 
-    document.querySelector('.header-container__burger').addEventListener('click', toggleMenu);
+    const burgerElement = document.querySelector('.header-container__burger');
+    if (burgerElement) {
+      burgerElement.addEventListener('click', toggleMenu);
+    }
 
     const links = document.querySelectorAll('.header-link');
     links.forEach(link => {
       link.addEventListener('click', function() {
         const navigation = document.getElementById('navigation');
-        if (navigation.classList.contains('active')) {
+
+        if (navigation && navigation.classList.contains('active')) {
           toggleMenu();
         }
       });
     });
   };
 </script>
+
 
 <style lang="scss">
   @import './Header.scss';

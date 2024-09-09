@@ -56,8 +56,8 @@ import PromotionalImage from './images/promotional.jpg'
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     const buttons = document.querySelectorAll('.services__item');
-    const images = document.querySelectorAll('.services-picture');
-    const descriptions = document.querySelectorAll('.services__description p');
+    const images = document.querySelectorAll('.services-picture') as NodeListOf<HTMLElement>;
+    const descriptions = document.querySelectorAll('.services__description p') as NodeListOf<HTMLElement>;
 
     buttons.forEach((button, index) => {
       button.addEventListener('click', () => {
