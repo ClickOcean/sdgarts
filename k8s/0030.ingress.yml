@@ -11,7 +11,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: 'www.maristan.com'
+    - host: 'www.maristanheli.com'
       http:
         paths:
           - path: /
