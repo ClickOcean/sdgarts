@@ -1,15 +1,15 @@
 ---
 title: 'Services'
 
-caption_one: 'Demise charter'
-caption_two: 'Cargo transportation'
-caption_three: 'Monitoring and surveillance'
-caption_four: 'Safety co-pilot'
-caption_five: 'Promotional events'
+caption_one: 'Charter and operational lease'
+caption_two: 'Monitoring and surveillance services'
+caption_three: 'Co-pilot'
+caption_four: 'Organization of promotional events'
+caption_five: 'General aviation consulting'
 
-link_one: '01 Company'
-link_two: '02 CEO'
-link_three: '03 Services'
-link_four: '04 Destinatons'
-link_five: '05 Contacts'
+link_one: '01 Charter and operational lease'
+link_two: '02 Monitoring and surveillance services'
+link_three: '03 Co-pilot'
+link_four: '04 Organization of promotional events'
+link_five: '05 General aviation consulting'
 ---
