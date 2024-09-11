@@ -44,11 +44,31 @@ import PromotionalImage from './images/promotional.jpg'
       </ul>
     </div>
     <div class="services__description">
-      <p id="demiseDescription" style="display: block;">Renting a helicopter for your personal use. You can choose any route and flight time to enjoy the beauty of nature or just spend time in the air.</p>
-      <p id="cargoDescription" style="display: none;">We provide monitoring and surveillance services for various objects using helicopters. This can be useful for monitoring construction, agriculture or environmental protection.</p>
-      <p id="monitoringDescription" style="display: none;">For your comfort during the flight, we also offer the services of a first pilot or second pilot to be on board the aircraft and assist in your needs.</p>
-      <p id="safetyDescription" style="display: none;"> If you want to feel completely safe during the flight, we offer the services of a second pilot who will monitor the safety of the flight.</p>
-      <p id="promotionalDescription" style="display: none;">Our employees have significant experience in aircraft management and operation questions which may be used to solve all your aircraft related issues.</p>
+      <div id="demiseDescription" style="display: block;">
+        <p>When it comes to choosing between charter aircraft and operating leases, it is important to understand the differences and benefits of each option.</p><br>
+        <p>Charters provide the opportunity to rent an aircraft for a specific period of time to perform a specific flight or series of flights. This option is ideal for one-off flights such as corporate events, sporting events, weddings and other private events.</p><br>
+        <p>Operating leases provide the opportunity to rent an aircraft long-term without having to purchase it. This solution is suitable for companies that need regular access to air transport, but do not want to invest heavily in purchasing their own aircraft.</p><br>
+        <p>Each of these options has its own strengths and may be preferable depending on the specific circumstances and needs of your organization. To choose a solution, contact us and we will tailor a service to your needs.</p>
+        <p class="services-note">“All the flight services that are not classified and private activity will be made in cooperation with AOC/Aerial Work/ATO licensed partner company, in that case Maristan Helicopter will only provide an intermediary service.”</p>
+      </div>
+      <div id="cargoDescription" style="display: none;">
+        <p>We offer a wide range of services in the field of General Aviation Consulting, based on the extensive experience of our specialists. We provide assistance in solving a wide range of issues related to aircraft management, from auditing and developing a fleet management strategy to analyzing the technical condition and planning flight safety. In addition, we consult on legal and legal issues and provide financial consulting. By contacting us, you will receive high-quality support and assistance in achieving high results in your activities.</p>
+        <p class="services-note">“All the flight services that are not classified and private activity will be made in cooperation with AOC/Aerial Work/ATO licensed partner company, in that case Maristan Helicopter will only provide an intermediary service.”</p>
+      </div>
+      <div id="monitoringDescription" style="display: none;">
+        <p>Our company offers monitoring and surveillance services for various objects using helicopters in accordance with the law. We specialize in performing tasks in the field of industrial, agricultural, environmental monitoring and other similar needs.</p><br>
+        <p>We can monitor in real time, which allows us to quickly respond to any changes or threats. We work with various clients, including industrial enterprises, agricultural companies, environmental organizations and government agencies. We are ready to provide an individual approach to each client and develop the best solution for their needs.</p>
+        <p class="services-note">“All the flight services that are not classified and private activity will be made in cooperation with AOC/Aerial Work/ATO licensed partner company, in that case Maristan Helicopter will only provide an intermediary service.”</p>
+      </div>
+      <div id="safetyDescription" style="display: none;">
+        <p>Our company offers services for hiring professional pilots to fly your helicopters. We guarantee safety and comfort during the flight, as well as a high level of professionalism of our pilots. Our pilots have extensive experience in various conditions and are ready to perform any task you set for them.</p><br>
+        <p>Our goal is to make your journey on your helicopter as safe and enjoyable as possible. Contact us and we will help you choose the best option for your helicopter journey.</p>
+        <p class="services-note">“All the flight services that are not classified and private activity will be made in cooperation with AOC/Aerial Work/ATO licensed partner company, in that case Maristan Helicopter will only provide an intermediary service.”</p>
+      </div>
+      <div id="promotionalDescription" style="display: none;">
+        <p>Our company offers services for organizing promotional events using helicopters. We can help you attract attention to your brand or product using the unique capabilities of helicopters. We provide helicopters of various types and sizes to fit your needs and budget. As a commercial company, you can use a helicopter to transfer guests, conduct photo shoots. Our experienced pilots and event organizers will help you plan and carry out a promotional event at the highest level.</p>
+        <p class="services-note">“All the flight services that are not classified and private activity will be made in cooperation with AOC/Aerial Work/ATO licensed partner company, in that case Maristan Helicopter will only provide an intermediary service.”</p>
+      </div>
     </div>
   </div>
 </section>
@@ -57,7 +77,7 @@ import PromotionalImage from './images/promotional.jpg'
   document.addEventListener('DOMContentLoaded', () => {
     const buttons = document.querySelectorAll('.services__item');
     const images = document.querySelectorAll('.services-picture') as NodeListOf<HTMLElement>;
-    const descriptions = document.querySelectorAll('.services__description p') as NodeListOf<HTMLElement>;
+    const descriptions = document.querySelectorAll('.services__description div') as NodeListOf<HTMLElement>;
 
     buttons.forEach((button, index) => {
       button.addEventListener('click', () => {

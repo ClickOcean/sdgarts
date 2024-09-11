@@ -75,6 +75,10 @@
     @media (max-width: 992px) {
       font-size: 18px;
     }
+
+    p {
+      text-indent: 30px;
+    }
   }
 
   &__list {
@@ -164,4 +168,10 @@ img {
   @media (min-width: 992px) {
     min-width: 450px;
   }
+}
+
+.services-note {
+  margin-top: 50px;
+  font-size: 14px;
+  line-height: 18px;
 }
