@@ -175,3 +175,19 @@ img {
   font-size: 14px;
   line-height: 18px;
 }
+
+.services-picture,
+.services__description div {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out, height 0.5s;
+}
+
+.services-picture.active,
+.services__description div.active {
+  opacity: 1;
+  visibility: visible;
+  height: auto;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out, height 0.5s;
+}

@@ -16,19 +16,19 @@ import PromotionalImage from './images/promotional.jpg'
         <Image src={DemiseImage} alt="" />
         <div class="image-caption">{Data.frontmatter.caption_one}</div>
       </div>
-      <div id="cargoImage" class="services-picture" style="display: none;">
+      <div id="cargoImage" class="services-picture">
         <Image src={CargoImage} alt="" />
         <div class="image-caption">{Data.frontmatter.caption_two}</div>
       </div>
-      <div id="monitoringImage" class="services-picture" style="display: none;">
+      <div id="monitoringImage" class="services-picture">
         <Image src={MonitoringImage} alt="" />
         <div class="image-caption">{Data.frontmatter.caption_three}</div>
       </div>
-      <div id="safetyImage" class="services-picture" style="display: none;">
+      <div id="safetyImage" class="services-picture">
         <Image src={SafetyImage} alt="" />
         <div class="image-caption">{Data.frontmatter.caption_four}</div>
       </div>
-      <div id="promotionalImage" class="services-picture" style="display: none;">
+      <div id="promotionalImage" class="services-picture">
         <Image src={PromotionalImage} alt="" />
         <div class="image-caption">{Data.frontmatter.caption_five}</div>
       </div>
@@ -51,21 +51,21 @@ import PromotionalImage from './images/promotional.jpg'
         <p>Each of these options has its own strengths and may be preferable depending on the specific circumstances and needs of your organization. To choose a solution, contact us and we will tailor a service to your needs.</p>
         <p class="services-note">“All the flight services that are not classified and private activity will be made in cooperation with AOC/Aerial Work/ATO licensed partner company, in that case Maristan Helicopter will only provide an intermediary service.”</p>
       </div>
-      <div id="cargoDescription" style="display: none;">
+      <div id="cargoDescription">
         <p>We offer a wide range of services in the field of General Aviation Consulting, based on the extensive experience of our specialists. We provide assistance in solving a wide range of issues related to aircraft management, from auditing and developing a fleet management strategy to analyzing the technical condition and planning flight safety. In addition, we consult on legal and legal issues and provide financial consulting. By contacting us, you will receive high-quality support and assistance in achieving high results in your activities.</p>
         <p class="services-note">“All the flight services that are not classified and private activity will be made in cooperation with AOC/Aerial Work/ATO licensed partner company, in that case Maristan Helicopter will only provide an intermediary service.”</p>
       </div>
-      <div id="monitoringDescription" style="display: none;">
+      <div id="monitoringDescription">
         <p>Our company offers monitoring and surveillance services for various objects using helicopters in accordance with the law. We specialize in performing tasks in the field of industrial, agricultural, environmental monitoring and other similar needs.</p><br>
         <p>We can monitor in real time, which allows us to quickly respond to any changes or threats. We work with various clients, including industrial enterprises, agricultural companies, environmental organizations and government agencies. We are ready to provide an individual approach to each client and develop the best solution for their needs.</p>
         <p class="services-note">“All the flight services that are not classified and private activity will be made in cooperation with AOC/Aerial Work/ATO licensed partner company, in that case Maristan Helicopter will only provide an intermediary service.”</p>
       </div>
-      <div id="safetyDescription" style="display: none;">
+      <div id="safetyDescription">
         <p>Our company offers services for hiring professional pilots to fly your helicopters. We guarantee safety and comfort during the flight, as well as a high level of professionalism of our pilots. Our pilots have extensive experience in various conditions and are ready to perform any task you set for them.</p><br>
         <p>Our goal is to make your journey on your helicopter as safe and enjoyable as possible. Contact us and we will help you choose the best option for your helicopter journey.</p>
         <p class="services-note">“All the flight services that are not classified and private activity will be made in cooperation with AOC/Aerial Work/ATO licensed partner company, in that case Maristan Helicopter will only provide an intermediary service.”</p>
       </div>
-      <div id="promotionalDescription" style="display: none;">
+      <div id="promotionalDescription">
         <p>Our company offers services for organizing promotional events using helicopters. We can help you attract attention to your brand or product using the unique capabilities of helicopters. We provide helicopters of various types and sizes to fit your needs and budget. As a commercial company, you can use a helicopter to transfer guests, conduct photo shoots. Our experienced pilots and event organizers will help you plan and carry out a promotional event at the highest level.</p>
         <p class="services-note">“All the flight services that are not classified and private activity will be made in cooperation with AOC/Aerial Work/ATO licensed partner company, in that case Maristan Helicopter will only provide an intermediary service.”</p>
       </div>
@@ -75,24 +75,27 @@ import PromotionalImage from './images/promotional.jpg'
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    const buttons = document.querySelectorAll('.services__item');
-    const images = document.querySelectorAll('.services-picture') as NodeListOf<HTMLElement>;
-    const descriptions = document.querySelectorAll('.services__description div') as NodeListOf<HTMLElement>;
+  const buttons = document.querySelectorAll('.services__item');
+  const images = document.querySelectorAll('.services-picture');
+  const descriptions = document.querySelectorAll('.services__description div');
 
-    buttons.forEach((button, index) => {
-      button.addEventListener('click', () => {
-        buttons.forEach(btn => btn.classList.remove('active'));
+  buttons[0].classList.add('active');
+  images[0].classList.add('active');
+  descriptions[0].classList.add('active');
 
-        button.classList.add('active');
+  buttons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+      buttons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
 
-        images.forEach(image => image.style.display = 'none');
-        images[index].style.display = 'block';
+      images.forEach(image => image.classList.remove('active'));
+      descriptions.forEach(description => description.classList.remove('active'));
 
-        descriptions.forEach(description => description.style.display = 'none');
-        descriptions[index].style.display = 'block';
-      });
+      images[index].classList.add('active');
+      descriptions[index].classList.add('active');
     });
   });
+});
 </script>
 
 <style lang="scss">
