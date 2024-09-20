@@ -75,10 +75,6 @@
     @media (max-width: 992px) {
       font-size: 18px;
     }
-
-    p {
-      text-indent: 30px;
-    }
   }
 
   &__list {
@@ -127,6 +123,7 @@
 
 .services-picture {
   position: relative;
+  display: none;
   min-width: 632px;
   width: 100%;
   height: auto;
@@ -142,6 +139,10 @@
   }
 }
 
+.services-picture.active {
+  display: block;
+}
+
 .image-caption {
   position: absolute;
   bottom: 20px;
@@ -151,6 +152,8 @@
   font-size: 40px;
   line-height: 44px;
   font-weight: 600;
+  transition: opacity 0.5s ease;
+  opacity: 0;
 
   @media (max-width: 992px) {
     left: 20px;
@@ -159,6 +162,10 @@
     color: #FFFFFF;
     max-width: 250px;
   }
+}
+
+.services-picture.active .image-caption {
+  opacity: 1;
 }
 
 img {

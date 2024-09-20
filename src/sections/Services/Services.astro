@@ -66,7 +66,9 @@ import PromotionalImage from './images/promotional.jpg'
         <p class="services-note">“All the flight services that are not classified and private activity will be made in cooperation with AOC/Aerial Work/ATO licensed partner company, in that case Maristan Helicopter will only provide an intermediary service.”</p>
       </div>
       <div id="promotionalDescription">
-        <p>Our company offers services for organizing promotional events using helicopters. We can help you attract attention to your brand or product using the unique capabilities of helicopters. We provide helicopters of various types and sizes to fit your needs and budget. As a commercial company, you can use a helicopter to transfer guests, conduct photo shoots. Our experienced pilots and event organizers will help you plan and carry out a promotional event at the highest level.</p>
+        <p>Our company offers services for organizing promotional events using helicopters. We can help you attract attention to your brand or product using the unique capabilities of helicopters.</p><br>
+        <p>We provide helicopters of various types and sizes to fit your needs and budget. As a commercial company, you can use a helicopter to transfer guests, conduct photo shoots.</p><br>
+        <p>Our experienced pilots and event organizers will help you plan and carry out a promotional event at the highest level.</p>
         <p class="services-note">“All the flight services that are not classified and private activity will be made in cooperation with AOC/Aerial Work/ATO licensed partner company, in that case Maristan Helicopter will only provide an intermediary service.”</p>
       </div>
     </div>
@@ -75,27 +77,27 @@ import PromotionalImage from './images/promotional.jpg'
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-  const buttons = document.querySelectorAll('.services__item');
-  const images = document.querySelectorAll('.services-picture');
-  const descriptions = document.querySelectorAll('.services__description div');
+    const buttons = document.querySelectorAll('.services__item');
+    const images = document.querySelectorAll('.services-picture');
+    const descriptions = document.querySelectorAll('.services__description div');
 
-  buttons[0].classList.add('active');
-  images[0].classList.add('active');
-  descriptions[0].classList.add('active');
+    buttons[0].classList.add('active');
+    images[0].classList.add('active');
+    descriptions[0].classList.add('active');
 
-  buttons.forEach((button, index) => {
-    button.addEventListener('click', () => {
-      buttons.forEach(btn => btn.classList.remove('active'));
-      button.classList.add('active');
+    buttons.forEach((button, index) => {
+      button.addEventListener('click', () => {
+        buttons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
 
-      images.forEach(image => image.classList.remove('active'));
-      descriptions.forEach(description => description.classList.remove('active'));
+        images.forEach(image => image.classList.remove('active'));
+        descriptions.forEach(description => description.classList.remove('active'));
 
-      images[index].classList.add('active');
-      descriptions[index].classList.add('active');
+        images[index].classList.add('active');
+        descriptions[index].classList.add('active');
+      });
     });
   });
-});
 </script>
 
 <style lang="scss">

@@ -57,6 +57,11 @@
     @media (min-width: 1120px) {
       display: none;
     }
+
+    @media (max-width: 375px) {
+      transform: translateY(20%);
+      top: 20%;
+    }
   }
 }
 
