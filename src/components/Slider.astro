@@ -47,7 +47,7 @@ const styleImgSquare = () => {
   >
     <div class="swiper-wrapper">
       {
-        slider.map(({ id, title, descr, img, hash }, index) => {
+        slider.map(({ id, title, descr, img, hash }, index: number) => {
           if (delEl && delEl === id) {
             return null
           }
@@ -659,9 +659,10 @@ const styleImgSquare = () => {
           const popapSliderElements = popap.querySelectorAll('.swiper') // Укажите правильный селектор
 
           popapSliderElements.forEach((el) => {
-            el.swiper.activeIndex = slideIndex
-            el.swiper.update()
-          })
+						const swiperInstance = (el as HTMLElement & { swiper: any }).swiper;
+						swiperInstance.activeIndex = slideIndex;
+						swiperInstance.update();
+					});
 
           popap?.classList.add('active')
         } else if (play) {

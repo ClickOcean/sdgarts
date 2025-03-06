@@ -6,7 +6,6 @@ import Banner from '../components/Banner.astro'
 import Popap from '../components/Popap.astro'
 import WatchVideo from '../components/WatchVideo.astro'
 import Preloader from '../components/Preloader.astro'
-import { object } from 'astro/zod'
 
 interface Props {
   pageSettings: {
@@ -364,10 +363,19 @@ const { pageSettings } = Astro.props
 
   pulseAnim()
 
-  const navigation = (scrollEl, href, main = true) => {
-    !main && (window.location.href = `/?link=${href}`)
-    scrollEl.scrollTo(`#${href}`)
-  }
+	const navigation = (scrollEl: HTMLElement, href: string, main: boolean = true) => {
+		if (!main) {
+			window.location.href = `/?link=${href}`;
+			return;
+		}
+
+		const targetElement = document.getElementById(href);
+
+		if (targetElement) {
+			targetElement.scrollIntoView({ behavior: "smooth" });
+		}
+	};
+
 
   window.addEventListener('load', () => {
     if (!preloader || !nav || !links.length) return

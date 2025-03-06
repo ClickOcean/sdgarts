@@ -5,7 +5,7 @@ const { texts, mod, noReadMore } = Astro.props;
 ---
 
 <div class={`texts${!noReadMore ? ' texts--read-more' : ''}`}>
-	{texts.map((text) => <Descr descr={{ text: text }} mod={mod} />)}
+	{texts.map((text: string) => <Descr descr={{ text: text }} mod={mod} />)}
 	{!noReadMore && <Descr descr={{ text: 'Read More' }} mod={'read-more'} />}
 </div>
 
