@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: maristan-website
+  name: sdgarts
   labels:
-    app: maristan-website
+    app: sdgarts
   namespace: web
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: maristan-website
+      app: sdgarts
   template:
     metadata:
       labels:
-        app: maristan-website
+        app: sdgarts
     spec:
       containers:
-        - name: maristan-website
+        - name: sdgarts
           image: clickocean.io/automation/image
           resources:
             requests:

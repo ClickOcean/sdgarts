@@ -1,0 +1,48 @@
+---
+
+---
+
+<svg class="more-waves more-waves--desktop" width="1920" height="255" viewBox="0 0 1920 255" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M1737.98 170.545L1333.98 254.5L817.941 170.545L514.428 254.5L166.412 170.545L0 241.564V0H1920V192.535L1737.98 170.545Z" fill="var(--white)"
+	></path>
+</svg>
+<svg class="more-waves more-waves--mobile" width="390" height="175" viewBox="0 0 390 175" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M86.5 175L199 152.436L339 175L390 154.9V0H0V148.406L86.5 175Z" fill="var(--white)"></path>
+</svg>
+
+<style lang="scss">
+	.more-waves {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100%;
+		z-index: 5;
+
+		@include des {
+			height: auto;
+			top: d(-1);
+
+			&--mobile {
+				display: none;
+			}
+		}
+
+		@include tab {
+			height: auto;
+			top: t(-1);
+
+			&--mobile {
+				display: none;
+			}
+		}
+
+		@include mob {
+			height: m(175);
+			top: m(-1);
+
+			&--desktop {
+				display: none;
+			}
+		}
+	}
+</style>

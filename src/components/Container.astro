@@ -1,0 +1,28 @@
+---
+const { bgColor } = Astro.props
+---
+
+<div class="container" style={bgColor ? `` : ''}>
+  <slot />
+</div>
+
+<style lang="scss">
+  .container {
+    position: relative;
+    z-index: 9;
+
+    @include des {
+      width: d(1428);
+      margin: 0 auto;
+    }
+
+    @include tab {
+      width: 100%;
+      padding: 0 t(246);
+    }
+
+    @include mob {
+      width: 100%;
+    }
+  }
+</style>

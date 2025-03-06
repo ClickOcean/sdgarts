@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+import NewsPage from '../blocks/NewsPage.astro';
+
+import { articles, more } from '../data/news/item.json';
+
+const pageSettings = {
+	title: 'News',
+	descr: '',
+	bodyColor: 'white',
+	banner: {
+		active: true,
+		bg: true,
+		title: {
+			type: 'h1',
+			text: 'News',
+			anim: {
+				active: true,
+				time: 2500
+			}
+		},
+		bgColor: 'pale-purple'
+	},
+	footerBgColor: 'white'
+};
+---
+
+<Layout pageSettings={pageSettings}>
+	<NewsPage news={articles} />
+</Layout>

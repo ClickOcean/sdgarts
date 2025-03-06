@@ -1,0 +1,72 @@
+{
+	"title": {
+		"type": "h2",
+		"text": "Development of the<br class='mobile'> professional<br class='desktop'> philosophical community",
+		"anim": {
+			"active": true,
+			"time": 3000
+		}
+	},
+	"slider": [
+		{
+			"id": "philosophical-lectures-at-mmoma",
+			"title": {
+				"type": "h3",
+				"text": "Philosophical lectures at MMOMA"
+			},
+			"descr": {
+				"text": "Philosophical lectures as part of the educational program for the exhibition “This Is Not a Book: Collection of Dmitry..."
+			}
+		},
+		{
+			"id": "letnyaya-filosofskaya-shkola",
+			"title": {
+				"type": "h3",
+				"text": "Summer Philosophy School"
+			},
+			"descr": {
+				"text": "The Summer School of Philosophy is an international program offering intensive lectures and seminars with the..."
+			}
+		},
+		{
+			"id": "grenlandskaya-konferentsiya",
+			"title": {
+				"type": "h3",
+				"text": "The Greenland Conference supported by Dmitry Volkov"
+			},
+			"descr": {
+				"text": "In June 2014, Dmitry Volkov initiated a scientific conference, which took form of a regatta. For a week the..."
+			}
+		},
+		{
+			"id": "lektsii-vedushchikh-mirovykh-filosofov",
+			"title": {
+				"type": "h3",
+				"text": "Lectures by the world's leading philosophers"
+			},
+			"descr": {
+				"text": "The Center for Consciousness Research (CCS) organizes regular lectures by leading experts in the field of analytical..."
+			}
+		},
+		{
+			"id": "kollektsiya-redkikh-izdaniy-filosofskikh-knig",
+			"title": {
+				"type": "h3",
+				"text": "Collection of books on philosophy in rare editions"
+			},
+			"descr": {
+				"text": "First edition. Published anonymously, this title is better known as “An Enquiry Concerning Human Understanding” and is..."
+			}
+		},
+		{
+			"id": "fundamentalnoe-znanie-dialog-rossiyskikh-i-buddiyskikh-uchenykh",
+			"title": {
+				"type": "h3",
+				"text": "Fundamental Knowledge: Dialogues between Russian and Buddhist Scholars."
+			},
+			"descr": {
+				"text": "The first meeting of scientists and Dalai Lama on the topic of studying consciousness took place in August 2017 in New..."
+			}
+		}
+	]
+}

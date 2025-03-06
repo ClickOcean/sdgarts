@@ -1,0 +1,421 @@
+---
+import Page from '../components/Page.astro'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+import Banner from '../components/Banner.astro'
+import Popap from '../components/Popap.astro'
+import WatchVideo from '../components/WatchVideo.astro'
+import Preloader from '../components/Preloader.astro'
+import { object } from 'astro/zod'
+
+interface Props {
+  pageSettings: {
+    title: string
+    descr: string
+    modPage?: string
+    bodyColor: string
+    banner?: {
+      active: boolean
+      bg?: boolean
+      title?: object
+      bgColor?: string
+    }
+    popap?: {
+      active: boolean
+      title?: object
+      slider?: object
+      dataImg?: object
+      id?: string
+      noLoop?: boolean
+      arrow?: string
+    }
+    footerBgColor?: string
+  }
+}
+
+const { pageSettings } = Astro.props
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name={pageSettings.descr} content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageSettings.title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body style={`--bg-color: var(--${pageSettings.bodyColor})`}>
+    <Header />
+    <Preloader />
+    <Page
+      mod={pageSettings.modPage}
+      bannerClass={`${pageSettings.banner ? ' page--active-banner' : ''}${pageSettings.banner && pageSettings.banner.bg ? ' page--active-banner-bg' : ''}`}
+    >
+      {
+        pageSettings.banner && pageSettings.banner.active && (
+          <Banner
+            banner={{
+              ...pageSettings.banner
+            }}
+          />
+        )
+      }
+      <slot />
+      <Footer bgColor={pageSettings.footerBgColor} />
+    </Page>
+    <WatchVideo />
+    {
+      pageSettings.popap && pageSettings.popap.active && (
+        <Popap data={pageSettings.popap} />
+      )
+    }
+  </body>
+</html>
+
+<style is:global lang="scss">
+  :root {
+    --black: #000;
+    --white: #fff;
+    --transparent: rgba(0, 0, 0, 0);
+    --turquoise: #13b2b9;
+    --teal: #50a0a3;
+    --light-gray: #f0f0f0;
+    --aqua: #0de1d2;
+    --pale-purple: #bd89ff;
+    --soft-red: #e59594;
+    --dark-gray: #616878;
+
+    --font-default: sans-serif;
+    --font-manrope: 'Manrope', var(--font-default);
+    --font-montserrat: 'Montserrat', var(--font-default);
+  }
+
+  .hide {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html,
+  body {
+    width: 100%;
+    min-height: 100%;
+    font-family: var(--font-manrope);
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 400;
+    color: var(--black);
+    background-color: var(--bg-color);
+    overflow: hidden;
+    user-select: none;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+
+  ul,
+  ol {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+
+  button,
+  [role='button'] {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  button,
+  input,
+  textarea,
+  select,
+  a {
+    font-family: inherit;
+  }
+
+  input,
+  textarea,
+  select,
+  button {
+    line-height: inherit;
+  }
+
+  :focus {
+    outline: none;
+  }
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  button {
+    font-family: inherit;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
+
+  input[type='number']::-webkit-outer-spin-button,
+  input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  br {
+    @include des {
+      &.mobile {
+        display: none;
+      }
+    }
+
+    @include tab {
+      &.mobile {
+        display: none;
+      }
+    }
+
+    @include mob {
+      &.desktop {
+        display: none;
+      }
+    }
+  }
+
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+
+  img {
+    transition: opacity 0.35s ease 0s;
+    object-position: center 33%;
+
+    &[data-img-lazy] {
+      opacity: 0;
+    }
+
+    &:not([data-img-lazy]) {
+      opacity: 1;
+    }
+  }
+
+  /*! locomotive-scroll v4.1.3 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
+  html.has-scroll-smooth {
+    overflow: hidden;
+  }
+
+  html.has-scroll-dragging {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .has-scroll-smooth body {
+    overflow: hidden;
+  }
+
+  .has-scroll-smooth [data-scroll-container] {
+    min-height: 100vh;
+  }
+
+  [data-scroll-direction='horizontal'] [data-scroll-container] {
+    height: 100vh;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  [data-scroll-direction='horizontal'] [data-scroll-section] {
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+    height: 100%;
+  }
+
+  .c-scrollbar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 11px;
+    height: 100%;
+    transform-origin: center right;
+    transition:
+      transform 0.3s,
+      opacity 0.3s;
+    opacity: 0;
+  }
+  .c-scrollbar:hover {
+    transform: scaleX(1.45);
+  }
+  .c-scrollbar:hover,
+  .has-scroll-scrolling .c-scrollbar,
+  .has-scroll-dragging .c-scrollbar {
+    opacity: 1;
+  }
+  [data-scroll-direction='horizontal'] .c-scrollbar {
+    width: 100%;
+    height: 10px;
+    top: auto;
+    bottom: 0;
+    transform: scaleY(1);
+  }
+  [data-scroll-direction='horizontal'] .c-scrollbar:hover {
+    transform: scaleY(1.3);
+  }
+
+  .c-scrollbar_thumb {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.5;
+    width: 7px;
+    border-radius: 10px;
+    margin: 2px;
+    cursor: -webkit-grab;
+    cursor: grab;
+  }
+  .has-scroll-dragging .c-scrollbar_thumb {
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+  }
+  [data-scroll-direction='horizontal'] .c-scrollbar_thumb {
+    right: auto;
+    bottom: 0;
+  }
+</style>
+
+<script>
+  import scroll from '../scripts/scroll'
+  import lazyLoading from '../scripts/lazyLoading'
+  import pulseAnim from '../scripts/pulseAnim'
+
+  const preloader = document.querySelector('[data-preloader]')
+  const nav = document.querySelector('[data-nav]')
+  const links = document.querySelectorAll('a')
+
+  pulseAnim()
+
+  const navigation = (scrollEl, href, main = true) => {
+    !main && (window.location.href = `/?link=${href}`)
+    scrollEl.scrollTo(`#${href}`)
+  }
+
+  window.addEventListener('load', () => {
+    if (!preloader || !nav || !links.length) return
+
+    lazyLoading()
+
+    const scrollEl = scroll()
+
+    setTimeout(() => preloader.classList.add('deactive'), 500)
+
+    links.forEach((link) => {
+      link.addEventListener('click', (evt) => {
+        evt.preventDefault()
+
+        if (link.hasAttribute('data-back')) {
+          preloader.classList.remove('deactive')
+          setTimeout(() => (window.location.href = '/'), 300)
+
+          return
+        }
+
+        if (!link.hasAttribute('data-nav-link')) {
+          preloader.classList.remove('deactive')
+          setTimeout(() => (window.location.href = link.href), 300)
+        } else {
+          const href = link.getAttribute('href')
+          const isNavOpen = nav.classList.contains('open')
+          const isMainPage = window.location.pathname === '/'
+
+          if (isNavOpen) {
+            nav.classList.remove('open')
+          }
+
+          if (!isMainPage) {
+            if (isNavOpen) {
+              setTimeout(() => {
+                preloader.classList.remove('deactive')
+                setTimeout(() => navigation(scrollEl, href, false), 300)
+              }, 400)
+            } else {
+              preloader.classList.remove('deactive')
+              setTimeout(() => navigation(scrollEl, href, false), 300)
+            }
+          } else {
+            navigation(scrollEl, href)
+          }
+        }
+      })
+    })
+  })
+</script>

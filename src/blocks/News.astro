@@ -1,0 +1,60 @@
+---
+import Container from '../components/Container.astro'
+import Title from '../components/Title.astro'
+import Slider from '../components/Slider.astro'
+import Anchor from '../components/Anchor.astro'
+import WNews from '../svg/Waves/WNews.astro'
+import Learn from '../components/Learn.astro'
+
+const { title, slider } = Astro.props.data
+---
+
+<section class="news" data-scroll-section>
+  <Anchor id={'news'} />
+  <Container>
+    <div class="news__content">
+      <Title title={title} mod={'slider'} animScroll={1.5} />
+      <Slider
+        slider={slider}
+        grid={3}
+        transparent
+        page={'news'}
+        dataImg={{
+          path: 'news/main-slider'
+        }}
+        ,
+      />
+      <Learn
+        learn={{
+          text: 'Learn more',
+          link: '/news',
+          mod: 'news'
+        }}
+      />
+    </div>
+  </Container>
+  <WNews />
+</section>
+
+<style lang="scss">
+  .news {
+    position: relative;
+    width: 100%;
+
+    &__content {
+      width: 100%;
+
+      @include des {
+        padding: d(34) 0 d(60);
+      }
+
+      @include tab {
+        padding: t(34) 0 t(60);
+      }
+
+      @include mob {
+        padding: m(20) m(50) m(10);
+      }
+    }
+  }
+</style>

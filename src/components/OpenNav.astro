@@ -1,0 +1,70 @@
+---
+
+---
+
+<button class="open-nav" data-open-nav><span></span></button>
+
+<style lang="scss">
+  .open-nav {
+    @include des {
+      display: none;
+    }
+
+    @include tab {
+      display: none;
+    }
+
+    @include mob {
+      position: relative;
+      width: m(24);
+      height: m(24);
+      z-index: 4;
+
+      & span {
+        display: block;
+        width: m(22);
+        height: m(1.6);
+        background-color: var(--black);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: background-color 0.3s ease 0s;
+
+        &::before,
+        &::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: inherit;
+          transition: all 0.3s ease 0s;
+        }
+
+        &::before {
+          transform: translateY(calc(-100% - m(5)));
+        }
+
+        &::after {
+          transform: translateY(calc(100% + m(5)));
+        }
+      }
+
+      &.open span {
+        background-color: var(--transparent);
+
+        &::before {
+          transform: rotate(45deg);
+          background-color: var(--black);
+        }
+
+        &::after {
+          transform: rotate(-45deg);
+          background-color: var(--black);
+        }
+      }
+    }
+  }
+</style>

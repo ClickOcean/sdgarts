@@ -1,0 +1,51 @@
+---
+
+---
+
+<a href="#" class="back" data-back>Back</a>
+
+<style lang="scss">
+	.back {
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 999;
+		font-weight: 800;
+		text-transform: uppercase;
+
+		@include des {
+			top: d(16);
+			right: d(40);
+			font-size: d(16);
+			letter-spacing: d(1.2);
+		}
+
+		@include tab {
+			top: t(16);
+			right: t(40);
+			font-size: t(16);
+			letter-spacing: t(1.2);
+		}
+
+		@include mob {
+			top: m(-10);
+			right: m(18);
+			font-size: m(12);
+			letter-spacing: m(1.2);
+		}
+
+		@media (hover: hover) {
+			cursor: pointer;
+			transition-duration: 0.2s;
+
+			&:hover {
+				color: var(--teal);
+			}
+		}
+
+		&:active {
+			transform: scale(0.91);
+			color: var(--teal);
+		}
+	}
+</style>

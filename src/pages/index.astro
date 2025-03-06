@@ -1,18 +1,53 @@
 ---
-import DefaultLayout from '../layouts/Default.astro'
-import Company from '../sections/Company/Company.astro'
-import Ceo from '../sections/Ceo/Ceo.astro'
-import Services from '../sections/Services/Services.astro'
-import Footer from '../sections/Footer/Footer.astro'
+import Layout from '../layouts/Layout.astro';
 
-const params = {
-  title: 'Helicopters'
-}
+import Welcome from '../blocks/Welcome.astro';
+import Exploration from '../blocks/Exploration.astro';
+import Networking from '../blocks/Networking.astro';
+import News from '../blocks/News.astro';
+import Collection from '../blocks/Collection.astro';
+import Bibliophile from '../blocks/Bibliophile.astro';
+
+import welcome from '../data/welcome.json';
+import exploration from '../data/exploration.json';
+import networking from '../data/networking.json';
+import news from '../data/news.json';
+import collection from '../data/collection.json';
+import bibliophile from '../data/bibliophile.json';
+
+const pageSettings = {
+	title: 'SDG Arts & Science Foundation',
+	descr: '',
+	bodyColor: 'white',
+	popap: {
+		active: true,
+		initialSlide: 0,
+		id: 'art',
+		noTitle: true,
+		noLoop: true,
+		title: {
+			slider: {
+				active: true,
+				data: collection.slider
+			},
+			subtitle: 'Art Collection'
+		},
+		slider: collection.slider,
+		dataImg: {
+			path: 'collection/popup',
+			objectFit: 'contain',
+			grid: 2.4
+		},
+		arrow: 'center'
+	}
+};
 ---
 
-<DefaultLayout {...params}>
-  <Company />
-  <Ceo />
-  <Services />
-  <Footer />
-</DefaultLayout>
+<Layout pageSettings={pageSettings}>
+	<Welcome data={welcome} />
+	<Exploration data={exploration} />
+	<Networking data={networking} />
+	<News data={news} />
+	<Collection data={collection} />
+	<Bibliophile data={bibliophile} />
+</Layout>

@@ -1,0 +1,12 @@
+{
+	"bodyColor": "white",
+	"title": {
+		"type": "h1",
+		"text": "About the Foundation"
+	},
+	"texts": [
+		"SDG Arts & Science Foundation is a non-profit organization dedicated to creating unique art projects and supporting initiatives by artists, scientists, and leading cultural and scientific institutions. With a strong focus on contemporary art and analytic philosophy, the foundation brings together visionary minds from both fields.",
+		"The organization was established by entrepreneur and philosopher Dmitry Volkov, with the support of SDGroup, the world’s largest social discovery company. Since 2015, we have been developing and implementing projects that bridge the worlds of art and science. Among our key initiatives are the Street Pianos Festivals, pop-up exhibitions showcasing contemporary and technological art by young artists, and immersive art performances at Burning Man. We also organize lectures and roundtables with leading philosophers, run an international philosophy school, and have hosted a groundbreaking scientific conference with the Dalai Lama on the study of consciousness.",
+		"Beyond these initiatives, we are passionate about preserving and promoting art and philosophy through our collection of contemporary art and rare-edition philosophy books, reinforcing our commitment to fostering dialogue and innovation at the intersection of creativity and knowledge."
+	]
+}

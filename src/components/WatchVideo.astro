@@ -1,0 +1,71 @@
+---
+import Close from './Close.astro'
+---
+
+<div class="watch-video" data-watch-video>
+  <div class="watch-video__close" data-watch-video-close>
+    <Close />
+  </div>
+</div>
+
+<style lang="scss">
+  .watch-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99999;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease 0s;
+
+    &.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    &__close {
+      position: absolute;
+
+      @include des {
+        top: d(33);
+        right: d(43);
+      }
+
+      @include tab {
+        top: t(33);
+        right: t(43);
+      }
+
+      @include mob {
+        top: m(13);
+        right: m(11);
+      }
+    }
+
+    @include des {
+      padding: d(100) d(40) d(40);
+    }
+
+    @include tab {
+      padding: t(100) t(40) t(40);
+    }
+
+    @include mob {
+      padding: m(50) m(10);
+    }
+  }
+</style>
+
+<script>
+  import closePopap from '../scripts/closePopap'
+
+  closePopap({
+    name: 'watch-video',
+    clear: true
+  })
+</script>

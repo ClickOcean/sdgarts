@@ -1,0 +1,258 @@
+---
+const { title, mod, animScroll, positionScroll } = Astro.props
+const { type, text, subtitle, anim, slider, hover } = title
+
+const Tag = type || 'p'
+const titleClass = `title${type ? `${mod !== 'popap' ? ` title--${type}` : ''}` : ''}${mod ? ` title--${mod}` : ''}${hover ? ` title--${hover}` : ''}`
+---
+
+<div
+  class="title-wrap"
+  data-scroll={animScroll ? true : null}
+  data-scroll-speed={animScroll ? animScroll : null}
+  data-scroll-position={positionScroll ? 'top' : null}
+>
+  {subtitle && <span class="subtitle">{subtitle}</span>}
+  {
+    slider && slider.active ? (
+      <div class="title-slider swiper" data-title-slider="art">
+        <div class="swiper-wrapper">
+          {slider.data.map(({ title }) => (
+            <div class="title-slider__slide swiper-slide">
+              <h2 class={'title title--popap'} set:html={title.text} />
+            </div>
+          ))}
+        </div>
+      </div>
+    ) : (
+      <>
+        <Tag class={titleClass} set:html={text} />
+        {anim?.active && (
+          <p class={titleClass} set:html={text} data-pulse-anim={anim.time} />
+        )}
+      </>
+    )
+  }
+</div>
+
+<style lang="scss">
+  .title-wrap {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    & p {
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: red($color: #000000);
+      opacity: 0;
+
+      &.anim {
+        opacity: 1;
+        animation: pulseTitles 0.1s ease 0s;
+      }
+    }
+  }
+
+  .subtitle {
+    position: absolute;
+    top: 0;
+    left: 0.1%;
+    font-weight: 800;
+    text-transform: uppercase;
+
+    @include des {
+      font-size: d(16);
+      letter-spacing: d(1.2);
+      transform: translateY(-160%);
+    }
+
+    @include tab {
+      font-size: t(16);
+      letter-spacing: t(1.2);
+      transform: translateY(-160%);
+    }
+
+    @include mob {
+      font-size: m(16);
+      letter-spacing: m(1.2);
+      transform: translateY(-180%);
+    }
+  }
+
+  .title {
+    color: var(--black);
+
+    &--main {
+      font-weight: 500;
+      text-transform: uppercase;
+      line-height: 1.3;
+
+      @include des {
+        font-size: d(60);
+        letter-spacing: d(1);
+        margin-bottom: d(50);
+      }
+
+      @include tab {
+        font-size: t(60);
+        letter-spacing: t(1);
+        margin-bottom: t(50);
+      }
+
+      @include mob {
+        font-weight: 300;
+        font-size: m(25);
+        letter-spacing: m(0.5);
+        margin-bottom: m(14);
+      }
+    }
+
+    &--slider {
+      @include des {
+        margin-bottom: d(42);
+      }
+
+      @include tab {
+        margin-bottom: t(42);
+      }
+
+      @include mob {
+        margin-bottom: m(22);
+      }
+    }
+
+    &--article {
+      font-weight: 800;
+      line-height: 1.3;
+
+      @include des {
+        font-size: d(48);
+        margin-bottom: d(52);
+      }
+
+      @include tab {
+        font-size: t(48);
+        margin-bottom: t(52);
+      }
+
+      @include mob {
+        font-size: m(20);
+        margin-bottom: m(25);
+      }
+    }
+
+    &--banner {
+      font-weight: 800;
+      line-height: 1.46;
+
+      @include des {
+        font-size: d(48);
+      }
+
+      @include tab {
+        font-size: t(48);
+      }
+
+      @include mob {
+        font-weight: 700;
+        font-size: m(23);
+      }
+    }
+
+    &--popap {
+      font-weight: 800;
+      line-height: 1.5;
+
+      @include des {
+        font-size: d(45);
+        letter-spacing: d(1);
+        padding-right: d(70);
+      }
+
+      @include tab {
+        font-size: t(45);
+        letter-spacing: t(1);
+        padding-right: d(70);
+      }
+    }
+
+    &--h2 {
+      line-height: 1.05;
+
+      @include des {
+        font-size: d(45);
+        letter-spacing: d(1);
+      }
+
+      @include tab {
+        font-size: t(45);
+        letter-spacing: t(1);
+      }
+
+      @include mob {
+        font-size: m(20);
+        letter-spacing: m(0.5);
+      }
+    }
+
+    &--h3 {
+      line-height: 1.5;
+      text-transform: uppercase;
+      font-weight: 700;
+
+      @include des {
+        font-size: d(17);
+        letter-spacing: d(1);
+      }
+
+      @include tab {
+        font-size: t(17);
+        letter-spacing: t(1);
+      }
+
+      @include mob {
+        font-size: m(15);
+        letter-spacing: m(0.5);
+      }
+    }
+  }
+
+  .title-slider {
+    width: 100%;
+
+    &__slide {
+      position: relative;
+      background-color: var(--white);
+      z-index: 1;
+      opacity: 0 !important;
+      transition: opacity 0.3s ease 0s;
+      height: auto;
+
+      &.swiper-slide-active {
+        z-index: 9;
+        opacity: 1 !important;
+      }
+    }
+  }
+
+  @keyframes pulseTitles {
+    0% {
+    }
+    25% {
+      transform: translate(-2%, 2%);
+    }
+    50% {
+      transform: translate(4%, -4%);
+    }
+    75% {
+      transform: translate(-2%, 2%);
+    }
+    100% {
+      transform: translate(0%, 0%);
+    }
+  }
+</style>

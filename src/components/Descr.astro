@@ -1,0 +1,94 @@
+---
+const { descr, mod, animScroll, positionScroll } = Astro.props
+const { text, light } = descr
+---
+
+<p
+  class={`descr ${light ? `descr--light` : ''} ${mod ? `descr--${mod}` : `descr--default`}`}
+  data-scroll={animScroll ? true : null}
+  data-scroll-speed={animScroll ? animScroll : null}
+  data-scroll-position={positionScroll ? 'top' : null}
+  set:html={text}
+/>
+
+<style lang="scss">
+  .descr {
+    width: 100%;
+    line-height: 1.4;
+
+    &--light {
+      font-weight: 300;
+    }
+
+    &--default {
+      @include des {
+        font-size: d(20);
+      }
+
+      @include tab {
+        font-size: t(20);
+      }
+
+      @include mob {
+        font-size: m(10);
+      }
+    }
+
+    &--small {
+      @include des {
+        font-size: d(15);
+      }
+
+      @include tab {
+        font-size: t(15);
+      }
+
+      @include mob {
+        font-size: m(13);
+      }
+    }
+
+    &--article,
+    &--year {
+      @include des {
+        font-size: d(23);
+      }
+
+      @include tab {
+        font-size: t(23);
+      }
+
+      @include mob {
+        font-size: m(13);
+      }
+    }
+
+    &--read-more {
+      @include des {
+        display: none;
+      }
+
+      @include tab {
+        display: none;
+      }
+
+      @include mob {
+        color: var(--turquoise);
+        text-transform: uppercase;
+        font-weight: 800;
+        transition: transform 0.1s ease 0s;
+        font-size: m(15);
+        letter-spacing: m(2);
+        width: auto;
+
+        &:active {
+          transform: scale(0.91);
+        }
+      }
+    }
+
+    &--year {
+      color: var(--dark-gray);
+    }
+  }
+</style>

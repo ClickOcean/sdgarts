@@ -1,0 +1,56 @@
+---
+
+---
+
+<svg
+	class="collection-waves collection-waves--desktop"
+	width="1920"
+	height="431"
+	viewBox="0 0 1920 431"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<path d="M136 373.001L549.5 306.09L952 350.531L1373.5 286.616L1845.5 431L1920 339.063V0H0V356.482L136 373.001Z" fill="var(--pale-purple)"></path>
+</svg>
+<svg class="collection-waves collection-waves--mobile" width="390" height="283" viewBox="0 0 390 283" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M75 254.075L178 282.881L310 259.075L390 235.202V1H0V234.055L75 254.075Z" fill="var(--pale-purple)"></path>
+</svg>
+
+<style lang="scss">
+	@import '../../styles/media.scss';
+
+	.collection-waves {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100%;
+		z-index: 5;
+
+		@include des {
+			top: d(-1);
+			height: auto;
+
+			&--mobile {
+				display: none;
+			}
+		}
+
+		@include tab {
+			top: t(-1);
+			height: auto;
+
+			&--mobile {
+				display: none;
+			}
+		}
+
+		@include mob {
+			top: m(-1);
+			height: m(283);
+
+			&--desktop {
+				display: none;
+			}
+		}
+	}
+</style>

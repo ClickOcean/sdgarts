@@ -1,0 +1,49 @@
+---
+
+---
+
+<svg class="welcome-waves welcome-waves--desktop" width="1920" height="146" viewBox="0 0 1920 146" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M667.087 128.315L328 70.4905L0 127.14V146H1920V48.6564L1696 128.315L1292.5 0L1098 43.5L667.087 128.315Z" fill="var(--aqua)"></path>
+</svg>
+<svg class="welcome-waves welcome-waves--mobile" width="390" height="83" viewBox="0 0 390 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M330.5 0L80.4079 44.7884L0 31.0765V82.0942H390V13.4932L330.5 0Z" fill="var(--aqua)"></path>
+</svg>
+
+<style lang="scss">
+	@import '../../styles/media.scss';
+
+	.welcome-waves {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100%;
+		z-index: 5;
+
+		@include des {
+			height: auto;
+			bottom: d(-2);
+
+			&--mobile {
+				display: none;
+			}
+		}
+
+		@include tab {
+			height: auto;
+			bottom: t(-2);
+
+			&--mobile {
+				display: none;
+			}
+		}
+
+		@include mob {
+			height: m(83);
+			bottom: m(-2);
+
+			&--desktop {
+				display: none;
+			}
+		}
+	}
+</style>

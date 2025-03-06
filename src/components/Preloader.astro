@@ -1,0 +1,34 @@
+---
+
+---
+
+<div class="preloader" data-preloader>
+	<!-- <div class="preloader__img" data-pulse-anim="700">
+		<img src="/images/welcome/1.png" alt="" />
+		<img src="/images/welcome/2.png" alt="" />
+		<img src="/images/welcome/3.png" alt="" />
+	</div> -->
+</div>
+
+<style lang="scss">
+	.preloader {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 100vw;
+		z-index: 9999999999;
+		background-color: var(--white);
+		opacity: 1;
+		pointer-events: auto;
+		transition-property: opacity;
+		transition-duration: 0.4s;
+		transition-timing-function: ease;
+
+		&.deactive {
+			opacity: 0;
+			pointer-events: none;
+		}
+	}
+</style>

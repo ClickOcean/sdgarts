@@ -1,0 +1,51 @@
+---
+
+---
+
+<svg class="networki-waves networki-waves--desktop" width="1920" height="81" viewBox="0 0 1920 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M1180 81H1441.5L1694.99 0H909.342L1180 81Z" fill="var(--aqua)"></path>
+	<path d="M669 0H266H0V81H1180L909.342 0H669Z" fill="var(--light-gray)"></path>
+	<path d="M1920 0H1694.99L1441.5 81H1920V0Z" fill="var(--light-gray)"></path>
+</svg>
+<svg class="networki-waves networki-waves--mobile" width="390" height="105" viewBox="0 0 390 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M101 100.025L204 73.1579L336 105L390 88.9653V0H0V73.1976L101 100.025Z" fill="#0DE1D2"></path>
+</svg>
+
+<style lang="scss">
+	@import '../../styles/media.scss';
+
+	.networki-waves {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100%;
+		z-index: 5;
+
+		@include des {
+			top: 0;
+			height: auto;
+
+			&--mobile {
+				display: none;
+			}
+		}
+
+		@include tab {
+			top: 0;
+			height: auto;
+
+			&--mobile {
+				display: none;
+			}
+		}
+
+		@include mob {
+			top: m(-1);
+			height: m(105);
+
+			&--desktop {
+				display: none;
+			}
+		}
+	}
+</style>

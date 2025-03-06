@@ -1,0 +1,57 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Article from '../../blocks/Article.astro';
+
+import { articles, more } from '../../data/news/item.json';
+
+export const getStaticPaths = async () =>
+	articles.map((article) => ({
+		params: { id: article.id },
+		props: { article }
+	}));
+
+const { article } = Astro.props;
+
+const dataImg = {
+	path: 'news',
+	id: article.id,
+	src: true
+};
+
+const pageSettings = {
+	title: article.title.text,
+	descr: '',
+	modPage: 'news',
+	bodyColor: article.bodyColor ? article.bodyColor : 'white',
+	banner: {
+		active: article.banner ? true : false,
+		bg: true,
+		title: article.title,
+		bgColor: 'pale-purple'
+	},
+	popap: {
+		active: article.slider ? true : false,
+		initialSlide: 0,
+		noLoop: true,
+		title: {
+			type: 'h2',
+			text: article.title.text,
+			subtitle: article.title.subtitle
+		},
+		slider: article.slider,
+		dataImg: {
+			...dataImg
+		},
+		arrow: 'center-big'
+	}
+};
+---
+
+<Layout pageSettings={pageSettings}>
+	<Article data={article} more={more} dataImg={dataImg} noTitle />
+</Layout>
+
+<script>
+	// const titleWrap = document.querySelectorAll('.title-wrap');
+	// titleWrap.length && titleWrap[0].classList.add('title-wrap--transform');
+</script>

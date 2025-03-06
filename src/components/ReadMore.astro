@@ -1,0 +1,75 @@
+---
+const { link } = Astro.props;
+---
+
+<a href={link} target="_blank" class="read-more">Read more</a>
+
+<style lang="scss">
+	.read-more {
+		position: relative;
+		display: inline-flex;
+		width: auto;
+		font-weight: 300;
+		line-height: 1.4;
+		transition:
+			color 0.1s ease 0s,
+			transform 0.1s ease 0s;
+
+		&::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			width: 100%;
+			background-color: var(--black);
+			transition: background-color 0.1s ease 0s;
+
+			@include des {
+				height: d(1);
+				bottom: d(2);
+			}
+
+			@include tab {
+				height: t(1);
+				bottom: t(2);
+			}
+
+			@include mob {
+				height: m(0.6);
+				bottom: m(1);
+			}
+		}
+
+		@include des {
+			font-size: d(20);
+		}
+
+		@include tab {
+			font-size: t(20);
+		}
+
+		@include mob {
+			font-size: m(13);
+		}
+
+		@media (hover: hover) {
+			cursor: pointer;
+			transition-duration: 0.2s;
+
+			&::after {
+				transition-duration: inherit;
+			}
+
+			&:hover {
+				color: var(--teal);
+
+				&::after {
+					background-color: var(--teal);
+				}
+			}
+		}
+
+		&:active {
+			transform: scale(0.91);
+		}
+	}
+</style>

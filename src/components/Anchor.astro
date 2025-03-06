@@ -1,0 +1,41 @@
+---
+const { id } = Astro.props
+---
+
+<div class={`anchor anchor--${id}`} id={id}></div>
+
+<style lang="scss">
+  .anchor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 99;
+    background-color: var(--transparent);
+    pointer-events: none;
+
+    @include des {
+      height: d(100);
+      transform: translateY(-100%);
+    }
+
+    @include tab {
+      height: t(100);
+      transform: translateY(-100%);
+    }
+
+    @include mob {
+      height: m(100);
+      transform: translateY(-100%);
+
+      &--philosophy {
+        transform: translateY(80%);
+      }
+
+      &--art-collecrion,
+      &--book-collecrion {
+        transform: translateY(-50%);
+      }
+    }
+  }
+</style>

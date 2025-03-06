@@ -7,5 +7,14 @@ export default defineConfig({
   },
   image: {
     service: passthroughImageService()
-  }
+  },
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: `@import "src/styles/global.scss";`,
+        },
+      },
+    },
+  },
 })

@@ -1,0 +1,152 @@
+---
+import Container from '../components/Container.astro';
+import Title from '../components/Title.astro';
+import Descr from '../components/Descr.astro';
+import WArticle from '../svg/Waves/WArticle.astro';
+
+const { news } = Astro.props;
+---
+
+<section class="news-page" style={'background-color: var(--white)'} data-scroll-section>
+	<WArticle />
+	<Container>
+		<div class="news-page__content">
+			{
+				news.map(({ id, title, texts }, ind) => (
+					<div class="item">
+						<a href={`/news/${id}`} class="item__link" />
+						<Title
+							title={{
+								type: 'h3',
+								text: title.text
+							}}
+							animScroll={0.5}
+						/>
+						<div class="item__img" data-scroll data-scroll-speed={1}>
+							<img data-img-lazy src="/images/lazy.png" data-src={`/images/news/main-slider/${ind + 1}.jpg`} alt="" data-img />
+						</div>
+						<Descr
+							descr={{
+								text: texts[0]
+							}}
+							mod={'small'}
+							animScroll={1.5}
+						/>
+					</div>
+				))
+			}
+		</div>
+	</Container>
+</section>
+
+<style lang="scss">
+	.news-page {
+		position: relative;
+		width: 100%;
+
+		@include des {
+			min-height: calc(100vh - d(610));
+			padding-bottom: d(30);
+		}
+
+		@include tab {
+			min-height: calc(100vh - t(610));
+			padding-bottom: t(30);
+		}
+
+		@include mob {
+			min-height: calc(100vh - m(440));
+			padding-bottom: m(18);
+		}
+
+		&__content {
+			position: relative;
+			width: 100%;
+			display: grid;
+
+			@include des {
+				padding: d(100);
+				grid-template-columns: 1fr 1fr 1fr;
+				gap: d(60) d(50);
+			}
+
+			@include tab {
+				padding: t(100);
+				grid-template-columns: 1fr 1fr 1fr;
+				gap: t(60) t(50);
+			}
+
+			@include mob {
+				padding: m(40) m(50) m(58);
+				grid-template-columns: 1fr;
+				gap: m(60);
+			}
+		}
+
+		& .item {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			break-inside: avoid;
+
+			@include des {
+				grid-gap: d(30);
+			}
+
+			@include tab {
+				grid-gap: t(30);
+				margin-bottom: t(50);
+			}
+
+			@include mob {
+				grid-gap: m(17);
+			}
+
+			&__link {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				z-index: 9999;
+			}
+
+			&__img {
+				position: relative;
+				width: 100%;
+
+				@include des {
+					height: d(240);
+				}
+
+				@include tab {
+					height: t(240);
+				}
+
+				@include mob {
+					height: m(200);
+				}
+
+				& img {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+
+			@media (hover: hover) {
+				cursor: pointer;
+
+				&:hover {
+					:global(.title) {
+						color: var(--turquoise);
+						animation: pulseTitles 0.1s ease 0s;
+					}
+				}
+			}
+		}
+	}
+</style>

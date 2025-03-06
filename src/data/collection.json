@@ -1,0 +1,132 @@
+{
+	"title": {
+		"type": "h2",
+		"text": "Art Collection",
+		"anim": {
+			"active": true,
+			"time": 2500
+		}
+	},
+	"slider": [
+		{
+			"title": {
+				"type": "h3",
+				"text": "X0-N<b class='hide'>X0-N</b>"
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Young, Wild, and Free"
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Tinder"
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Erlking-3"
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Heads"
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Portraits of Composers"
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "The Girl with an Ore"
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Tatlin and Bandura"
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "A Photo From The “Shift” Series"
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Without Words #4"
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Philosophical dog"
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Core #4"
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Philosopher and artist"
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "What Where When"
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Eidos with a drop of blood"
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Winter From The Series ‘Seasons of The Year’"
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Armed and Dangerous"
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "The girl with watermelon from series \"Fears of a white man\""
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Book. Work from the Persian Miniatures series"
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Bit-Coin Silk"
+			}
+		}
+	]
+}

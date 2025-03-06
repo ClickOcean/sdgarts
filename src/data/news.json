@@ -1,0 +1,74 @@
+{
+	"title": {
+		"type": "h2",
+		"text": "News"
+	},
+	"slider": [
+		{
+			"id": "metaphysics-of-uploading-ccs-summer-school-in-palermo",
+			"title": {
+				"type": "h3",
+				"text": "Metaphysics of Uploading. CCS Summer School in Palermo",
+				"hover": "news"
+			},
+			"descr": {
+				"text": "World-known philosophers and thinkers gathered in Palermo to debate the possibility of uploading the human mind to a computer system."
+			}
+		},
+		{
+			"id": "metaphysics-of-possible-worlds-results-of-consciousness-research-center-summer-school",
+			"title": {
+				"type": "h3",
+				"text": "Metaphysics of Possible Worlds. Results of Consciousness Research Center Summer School",
+				"hover": "news"
+			},
+			"descr": {
+				"text": "Metaphysics of Possible Worlds. Results of Consciousness Research Center Summer School."
+			}
+		},
+		{
+			"id": "mccs-held-a-summer-school-of-philosophy-online",
+			"title": {
+				"type": "h3",
+				"text": "CCS held a summer school of philosophy online",
+				"hover": "news"
+			},
+			"descr": {
+				"text": "For the first time, the Moscow Center for Consciousness Studies at Moscow State University held an international summer philosophical school in an online format."
+			}
+		},
+		{
+			"id": "virtual-tour-of-the-exhibition-this-is-not-a-book",
+			"title": {
+				"type": "h3",
+				"text": "This is Not a Book",
+				"hover": "news"
+			},
+			"descr": {
+				"text": "The first exhibition of the private collection of businessman and philosopher Dmitry Volkov became available for viewing online."
+			}
+		},
+		{
+			"id": "why-is-there-no-museum-of-philosophy",
+			"title": {
+				"type": "h3",
+				"text": "Why is there no museum of philosophy?",
+				"hover": "news"
+			},
+			"descr": {
+				"text": "Collector and philosopher Dmitry Volkov, together with the artist and theorist of contemporary art Pavel Pepperstein, discussed why the Museum of Philosophy does not exist, the prospects of its creation, as well as exhibits that they would place in it."
+			}
+		},
+		{
+			"id": "from-philosophy-to-art-collection-of-dmitry-volkov-and-mccs",
+			"title": {
+				"type": "h3",
+				"text": "From philosophy to art. Collection of Dmitry Volkov and CCS",
+				"hover": "news"
+			},
+			"descr": {
+				"text": "Exhibition “This Is Not a Book: Collection of Dmitry Volkov."
+			}
+		}
+	]
+}

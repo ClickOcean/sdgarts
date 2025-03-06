@@ -1,0 +1,31 @@
+---
+import LogoIcon from '../svg/LogoIcon.astro'
+
+const { typeLogo } = Astro.props
+---
+
+<a href="/" class={`logo logo--${typeLogo}`}>
+  <LogoIcon typeLogo={typeLogo} />
+</a>
+
+<style lang="scss">
+  .logo {
+    display: block;
+    position: relative;
+
+    @include des {
+      width: d(213);
+      height: d(70);
+    }
+
+    @include tab {
+      width: t(213);
+      height: t(70);
+    }
+
+    @include mob {
+      width: m(145);
+      height: m(48);
+    }
+  }
+</style>

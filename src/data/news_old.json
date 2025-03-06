@@ -1,0 +1,602 @@
+{
+	"title": {
+		"type": "h2",
+		"text": "News"
+	},
+	"slider": [
+		{
+			"title": {
+				"type": "h3",
+				"text": "Metaphysics of Uploading. CCS Summer School in Palermo"
+			},
+			"descr": {
+				"text": "World-known philosophers and thinkers gathered in Palermo to debate the possibility of uploading the human mind to a computer system."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Metaphysics of Possible Worlds. Results of Consciousness Research"
+			},
+			"descr": {
+				"text": "Metaphysics of Possible Worlds. Results of Consciousness Research Center Summer School"
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "CCS held a summer school of philosophy online"
+			},
+			"descr": {
+				"text": "For the first time, the Moscow Center for Consciousness Studies at Moscow State University held an international summer philosophical school in an online format."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "This is Not a Book"
+			},
+			"descr": {
+				"text": "The first exhibition of the private collection of businessman and philosopher Dmitry Volkov, held at the MOMMA, became available for viewing online. “This Is Not a Book: Dmitry Volkov's collection. A story about a man, his art and library” is an experimental project. The idea of the exhibition was an invitation to the collector's mind, where philosophy and art are firmly connected."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Why is there no museum of philosophy?"
+			},
+			"descr": {
+				"text": "The philosopher Dmitry Volkov and the artist Pavel Pepperstein asked themselves this question and tried to answer them on Public talk at the MMOMA educational center."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "From philosophy to art. Collection of Dmitry Volkov and CCS"
+			},
+			"descr": {
+				"text": "Exhibition “This Is Not a Book: Collection of Dmitry Volkov. The story of a man, his art and library\" sent viewers on a quest on the collector's mind."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Where and how can you meet your digital twin"
+			},
+			"descr": {
+				"text": "In May 2019 Dmitry Volkov with media artists presented multimedia pop up project Faced2Faced within a special program of the 58th Venice Biennale."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Performance called People against the book under the title Freedom of will. An illusion or a possibility"
+			},
+			"descr": {
+				"text": "Dmitry Volkov’s book entitled Freedom of will. An illusion or a possibility was presented in the format of an art-performance."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Dmitry Volkov: Exactly the same like we are. Why are people afraid of humanoids?"
+			},
+			"descr": {
+				"text": "According to Japanese scientist Masahiro Mori’s hypothesis “the Uncanny Valley Effect”, at first people have a liking for humanoids and then they start being afraid of them. Philosopher Dmitry Volkov is speculating on the reasons for such fear."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "An Artist, a Philosopher and Time"
+			},
+			"descr": {
+				"text": "Swiss experts in watch manufacturing Jaquet Droz have created a model with reproduction of “The Philosopher and Artist” painting for brand ambassador Dmitry Volkov."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "“Dmitry Volkov and Artists” performance in The Small Button series"
+			},
+			"descr": {
+				"text": "In November 2018 during the “Night of Arts” at the State Gallery there was a performance in the Small Button series in a form of dialogue between Dmitry Volkov, a collector and philosopher, and modern artists."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Grigory Maslennikov's exhibition at the Schusev State Museum of Architecture"
+			},
+			"descr": {
+				"text": "“Architectural construction. Chipperfield to Gehry” is an attempt to imagine architects being modern art artists."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Why Science art?"
+			},
+			"descr": {
+				"text": "\"As far as I'm concerned, science art is one of the best ways to express the spirit and the heart of the age\", Dmitry Volkov talks about his understanding of technology art, which is getting more and more popular."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "The Greenland Conference \"Problems of Consciousness and Freedom of Will in Analytic Philosophy\""
+			},
+			"descr": {
+				"text": "June, 2014. The Greenland Conference was organized in a new format of a scientific discussion. During the week its participants were on a philosophical expedition to the shores of Greenland on board of s/v Rembrandt van Rijn."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Dmitry Volkov: Should we give philosophy its soul back"
+			},
+			"descr": {
+				"text": "Philosopher and businessman Dmitry Volkov on how science looks for eternity in a person."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Dalai-Lama doesn't believe in the \"pill of compassion\" and in artificial intelligence"
+			},
+			"descr": {
+				"text": "The Foundation acts as a partner in the annual conference between Dalai-Lama and Russian scientists on the topic of studying consciousness."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "DMITRY VOLKOV ON ARTIFICIAL INTELLIGENCE"
+			},
+			"descr": {
+				"text": "Dmitry Volkov and Tatiana Chernigovskaya gave a lecture on interaction of environment, human intelligence and artificial intelligence."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "On the Wall: businessman Dmitry Volkov and a painting by Viktor Pivovarov"
+			},
+			"descr": {
+				"text": "Dmitry Volkov showed OilyOil his latest valuable purchase and said a few things about it."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Burning Man 2017: what's really going on in the desert"
+			},
+			"descr": {
+				"text": "\"A unique situation is created on a playa: everything here is different physically and psychologically due to radical self-expression and really hard conditions in the desert\", Dmitry Volkov shared his impressions of Burning Man in an RBC report from the festival."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "\"Burning Man— an exercise for your imagination\""
+			},
+			"descr": {
+				"text": "\"Modern art is like venture business: you look at the artists' works and try to guess their future\", Dmitry Volkov in his interview to RusBase on the Burning Man festival."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Collector's revelations about the COSMOSCOW International Modern Art Fair"
+			},
+			"descr": {
+				"text": "\"Collectors are always sceptical about technology in art and my mission is to change their mind\", Dmitry Volkov said in his interview to 1 Art Channel."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Art patron Dmitry Volkov became the head of the Board of Trustees of the Volga Region Cultural Capital Foundation"
+			},
+			"descr": {
+				"text": "Dmitry Volkov's SDG Arts & Science Foundation is a strategic partner of the Volga-Vyatka branch of the National Centre for Contemporary Arts, Volga Region Cultural Capital Foundation."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "\"Vinogradov and Dubosarsky\" book published with SDG Arts & Science Foundation' participation won the X Kandinsky Award"
+			},
+			"descr": {
+				"text": "On the 14 of December the results of the X Kandinsky Award were announced. \"Vinogradov and Dubosarsky\" book by Viktor Miziano published by Pierre Brochet's \"Avangard\" Publishing House with the SDG Arts & Science Foundation's support became the winner in the \"Scientific work. A history and theory of modern art\" nomination. Winners in this nomination are awarded with a publication in english and in russian within the BREUS Publishing program."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "The names of the SDG Arts & Science Foundation and the Garage Museum of Contemporary Art grantholders were announced"
+			},
+			"descr": {
+				"text": "The Garage Museum of Contemporary Art Expert Board together with the SDG Arts & Science Foundation decided the winners in the \"Art and technologies\" nomination of the 2016-2017 Museum grant program."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Total Socialist art"
+			},
+			"descr": {
+				"text": "Leonid Sokov's exhibition \"Unforgettable meetings\" is still taking place in the Tretyakov Gallery. SDG Arts & Science Foundation supported the release of the artists' works album specially for the opening."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "The names of the Garage Museum of Contemporary Art grantholders were announced"
+			},
+			"descr": {
+				"text": "The results of the competition for the \"Art and Technology\" grant, established by the SDG Arts & Science Foundation in the frameworks of the young artist support programme at the Garage Museum of Contemporary Art, were announced."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Leonid Sokov's exhibition is opening at the Tretyakov Gallery"
+			},
+			"descr": {
+				"text": "With the support of SDG Arts & Science Foundation an album with Leonid Sokov's works was issued. Leonid Sokov's exhibition \"Unforgettable meetings\" was opened at the Tretyakov Gallery."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "At the opening of Leonid Sokov's exhibition at the Tretyakov Gallery an album with artist's works was released with the SDG Arts & Science Foundation's support"
+			},
+			"descr": {
+				"text": "14 October 2016 up to 29 January 2019, the Tretyakov Gallery holds the \"Unforgettable meetings\" exhibition by Leonid Sokov. An album with artist's works was released with the SDG Arts & Science Foundation's support at the opening of the exhibition."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Culture code: why does Dmitry Volkov invest in art?"
+			},
+			"descr": {
+				"text": "\"When we began to invest in art, we became more interesting to our own employees and more connected with our partners\", Dmitry Volkov explains in his interview to \"The Firm's Secret\" online magazine how supporting art helps his business."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Transcendental Piano Festival"
+			},
+			"descr": {
+				"text": "\"Everyone who ever went to music school can remember the things he/she learned in three days and share his/her talent with other people\", Dmitry Volkov in his interview to 1artchannel.com. on the Transcendental Piano Festival in the MUZEON Art Park."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Modern musicians shift conception of a classical music instrument"
+			},
+			"descr": {
+				"text": "Afisha Daily: \"This Festival is clearly the case when it's better not to read a lot of feedback trying to understand beforehand what is going to happen, but to just come and see everything yourself\"."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Dmitry Volkov became a grantor of the \"Collection. Modern Art in the USSR and Russia, 1950–2000\" exhibition"
+			},
+			"descr": {
+				"text": "The SDG Arts & Science Foundation supported the initiative by Olga Sviblova and the Potanin's foundation and joined leading collectors and art patrons in order to create a unique collection of works of the Russian nonconformity, social art, conceptual art, avantgarde and other art trends in the \"Collection. Modern Art in the USSR and Russia, 1950-2000\" project. Dmitry Volkov gifted a work by Sergey Bugayev-Africa to the Pompidou Center."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Participating in the roundtable titled \"A museum experiment or an experiment in a museum. To what extent has science art changed the cultural institutions?\""
+			},
+			"descr": {
+				"text": "During the discussion the roundtable participants together with the experts from the Polytechnical Museum and LABORATORIA Art & Science brought up an issue regarding the role the science art can play in the classical model of the art history in the short and longer term."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Transcendental Pianos in the MUZEON Art Park"
+			},
+			"descr": {
+				"text": "Last weekend the SDG Arts & Science Foundation together with the MUZEON Art Park, LABORATORIA Art & Science Igor Butman's Orchestra turned the MUZEON Art Park in the center of musical experiments. Famous Russian musicians, artists and scientists collaborations showed the citizens amazing technological art objects namely transcendental pianos."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "\"Restart\" at the Tretyakov gallery"
+			},
+			"descr": {
+				"text": "\"There are works by artists who refused to stick to the official line and proposed an alternative\", Dmitry Volkov on the opening of a re-display of moder art at the Tretyakov Gallery on the Krymsky Val street."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Main events of the season you shouldn’t miss"
+			},
+			"descr": {
+				"text": "SDG Arts & Science Foundation, Laboratoria Art&Science Space and Igor Butman Music Art Support and Development Foundation will turn MUZEON into an interaction platform for art and technology for three days."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "The Garage Museum launched a new grant programme \"Art and Technology\""
+			},
+			"descr": {
+				"text": "Cooperating with the SDG Arts&Science Foundation «Garage» adds a new nomination to their grant programme — «Art and Technology»."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "\"Garage\" will support IT artists by awarding grants"
+			},
+			"descr": {
+				"text": "\"This is one of the most curious phenomenon in today's creative search. I'm happy that together with the Garage Museum we can support young artists and the development of high technology art in Russia\", says Dmitry Volkov, SDG Arts & Science Foundation co-founder."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "SDG Arts & Science Foundation became the title partner of the the Garage Museum of Modern Art 2016/2017 grant program"
+			},
+			"descr": {
+				"text": "The Garage Museum added a new direction to its grant program titled \"Art and Technologies\" established by the SDG Arts & Science Foundation and Dmitry Volkov's initiative. The nomination intends to support personal and joint projects in IT, engineering and science art."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Contemporary Art: 1960-2000. Restart"
+			},
+			"descr": {
+				"text": "\"One of the goals of the \"Philosophy after art\" discussion club is to give the audience an opportunity to understand modern art better\", said Dmitry Volkov in his interview to 1artchannel.com."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Dmitry Volkov: \"Philosophy makes this world cozier\""
+			},
+			"descr": {
+				"text": "In his interview to GQ magazine Dmitry Volkov talked about philosophy, Mikhail Vrubel, Henry Ford and the \"Contemporary Art:1960-2000. Restart\" exhibition opened at the Tretyakov Gallery."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "As far as I'm concerned, science art is one of the best ways to express the spirit and the heart of the age"
+			},
+			"descr": {
+				"text": "Dmitry Volkov's column on technology art."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "An exhibition of the newest trends titled \"Modern Art: 1960 – 2000\" is opening at the Tretyakov Gallery on the Krymsky Val street with the support of Dmitry Volkov and the SDG Arts & Science Foundation"
+			},
+			"descr": {
+				"text": "A genuine project and the only scrim of the modern art history portraying all key trends and genres. It can help to understand the historical borders of the modernity, overcome the stereotype that it's difficult to accept modern art and get rid of suspicion regarding modern art."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Why \"restart\" the Tretyakov Gallery?"
+			},
+			"descr": {
+				"text": "\"The modern art exhibition enriches the image of the Tretyakov Gallery as a museum that lives together with us\", Dmitry Volkov in his interview to the \"Dozhd\" TV Channel."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "The Tretyakov Gallery on the Krymsky Val street updated the exposition of the newest trends"
+			},
+			"descr": {
+				"text": "Together with the opening of a renewed exposition a new educational project is being launched. The idea of this project belongs to Dmitry Volkov."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Dialogues about art with Dmitry Volkov"
+			},
+			"descr": {
+				"text": "\"Collecting modern art is like a venture investment. Today technology art is quite affordable but you never know how much it is going to cost in 10 or 15 years\", Dmitry Volkov in his interview to 1artchannel.com."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Aidan Salakhova's \"Revelations\" exhibition opened with SDG Arts & Science Foundation's support."
+			},
+			"descr": {
+				"text": "The SDG Arts & Science Foundation supported the opening of Aidan Salakhova's \"Revelations\" exhibition, her first solo project in Great Britain at the Saatchi Gallery in London on January 12, 2015."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Pop-up technology art exhibition SUPERCONDUCTION: challenge of art & technology in the SDGroup office in Riga"
+			},
+			"descr": {
+				"text": "On the 6 and 7 November the SDGroup International Internet-Holding organizes a pop-up technology art exhibition SUPERCONDUCTION in its new office space in Riga."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Modern technology art exhibition SUPERCONDUCTION in Riga"
+			},
+			"descr": {
+				"text": "On the 6 and 7 of November a pop-up modern technology art exhibition SUPERCONDUCTION will take place in Riga in the new office of an international holding company SDGroup."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Godzilla the oracle and talking to plants. How does Dmitry Volkov connect art and technology?"
+			},
+			"descr": {
+				"text": "\"I think that when art starts broadcasting what's good and what's bad, it stops being art and turns into propaganda or into instructions\", Dmitry Volkov's interview to the Delfi portal."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Why do we need science art?"
+			},
+			"descr": {
+				"text": "To see the unseen, to hear the unheard, to poeticize the unpoetic, to think about the meaningless and the useless. This is where art helps people and science helps art» Dmitry Volkov to Trendspace on the Superconduction exhibition in Riga."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "\"Superconduction\" here and now"
+			},
+			"descr": {
+				"text": "In the very center of Old Riga opposite of the Riga Cathedral a pop-up exhibition of modern technology art SUPERCONDUCTION was opened."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Even true men break down in a desert"
+			},
+			"descr": {
+				"text": "\"I like the idea of creating objects that combine art and technology, movement and reaction experiments. It's something between actionism and sculpture. That is what I want to develop\", Dmitry Volkov says in his interview to Interview Russia at the Burning Man Festival."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "How to survive at the Burning Man Festival and build communism in the desert"
+			},
+			"descr": {
+				"text": "\"Burning man is a social experiment showing whether a society built on other values can exist\", Dmitry Volkov shares his feelings about the Burning Man Festival with the editor of \"Afisha Gorod\"."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "The SUPERCONDUCTION exhibition takes down communication barriers and unites people"
+			},
+			"descr": {
+				"text": "SDGroup got together the leading technology artists from 8 countries in a temporary exhibition place in the holding's new office building on Dome Square."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Superconduction. Modern technology art exhibition"
+			},
+			"descr": {
+				"text": "The exhibition of works by famous artists will turn one of the SDGroup International Internat-Holding office floors in a full-scale display space of the contemporary art."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Mirage-city on a fruitless clay plain"
+			},
+			"descr": {
+				"text": "\"The very idea to bring people working together in the office to a desert for almost ten days where in the daytime the temperature hits 40 degrees and the nights are extremely cold may seem adventurous. But that is not all. We have a mission at the Burning Man\", Dmitry Volkov writes in his author's column on Snob.ru."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Dmitry Volkov and Oleg Kulik brought to the extremely popular Burning Man Festival the OraculeTang monkey-prophet"
+			},
+			"descr": {
+				"text": "Dmitry Volkov and the SDGroup International Internet-Holding team participated in the Burning Man Festival of modern art and music in the U.S. Specially for the event an OraculeTang interactive art object was created together with an artist Oleg Kulik. For the whole week the OraculeTang became the main symbol of the SDGroup camp in the Mirage-City in the Blue Rock desert."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "International Music Festival comes to Russia"
+			},
+			"descr": {
+				"text": "For the first time the Street Piano Festival will take place in Russia upon Dmitry Volkov's initiative, and straight away in two cities, Moscow and Sochi."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "OraculeTang's journey to the desert"
+			},
+			"descr": {
+				"text": "Buro 24/7 reporting on how Dmitry Volkov and Oleg Kulik created an art object for the Burning Man Festival."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Vitaly Gavruk and Ada Gorbunova's duo at the Street Piano Festival"
+			},
+			"descr": {
+				"text": "During the first Street Piano Festival organized by the SDGroup International Internet Holding Company and Igor Butman's Production Center Vitaly Gavruk and Ada Gorbunova’s duo will perform in Stoleshnikov lane."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Vinogradov, Dubosarsky, Tsereteli, Kulik: who do modern artists create for"
+			},
+			"descr": {
+				"text": "\"Every great idea had its originator and artists either agreed to the idea or wanted to make money\", Nikolay Uskov, chief editor of the Snob project, starts the discussion «Art to order» at the Moscow Museum of Modern Art."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Guests of the \"Art to order\" discussion at the Moscow Museum of Modern Art"
+			},
+			"descr": {
+				"text": "The \"Art to order\" discussion organized with the participation of the SDGroup International Internet Holding Company took place in the Moscow Museum of Modern Art located on Petrovka street."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "What were the themes of the \"Art to Order\" discussion at the Moscow Musem of Modern Art"
+			},
+			"descr": {
+				"text": "\"Purchasing modern art is like a high-risk venture investment, but as it's known these things quite often make the most profit\", Dmitry Volkov said at the \"Art to order\" discussion at the Moscow Museum of Modern Art."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Oleg Kulik and Dmitry Volkov proved the existence of the external world"
+			},
+			"descr": {
+				"text": "\"If you have proved that at the very moment two dogs exist, you will ipso facto have proved that at the very moment there are at least two things to be met with in space», the quote from G.E.Moore's \"Proof of an External World\" became the leading idea for Dmitry Volkov's and Oleg Kulik's performance."
+			}
+		},
+		{
+			"title": {
+				"type": "h3",
+				"text": "Books, contemporary art and Kulik: \"Our own people\" performance at the \"Leningrad Center\""
+			},
+			"descr": {
+				"text": "Oleg Kulik and Dmitry Volkov created a performance which is active and at the same time mediative, it’s philosophical but has an ironically playful nature."
+			}
+		}
+	]
+}

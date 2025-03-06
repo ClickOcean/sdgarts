@@ -1,0 +1,175 @@
+{
+	"title": {
+		"type": "h2",
+		"text": "Dmitry Volkov's Philosophical<br> Books Collection",
+		"anim": {
+			"active": true,
+			"time": 3500
+		}
+	},
+	"slider": [
+		{
+			"id": "kollektsiya-redkikh-izdaniy-filosofskikh-knig",
+			"hash": 0,
+			"title": {
+				"type": "h3",
+				"text": "Francis Bacon, \"Instauratio Magna\" (Novum Organum)<br> 1621"
+			},
+			"texts": [
+				"Bacon’s “New Organon” is an attempt to renovate contemporary science.",
+				"In the “New Organon” Bacon compares the achievements in natural sciences of his time with the Great Geographical Discoveries: just as the ancient voyages can be called \"suburban journeys\" compared with the expeditions of the great discoverers of the New Age, so the field of nature explored by the ancients is incomparably small relatively to the discoveries of Bacon's modern science. “Novum Organum” is famous for its illustrious title page. The columns that frame the title page on the left and right are the Pillars of Hercules, which in ancient times stood for the extremity of the world, the edge of the world, guarding the entrance to holy places and unknown realms and marking the entrance to the unknown world. The image of the Pillars of Hercules was a reminder of the limits of human knowledge of the world around us. The ship travelling through the Pillars of Hercules symbolises the advantages in contemporary science.",
+				"In the lower left corner of the title page is an engraved signature, \"Sim: Pass: sculp:\" by Simon van de Passe (c. 1595-1647), a member of the famous Dutch family of publishers and engravers, indicating that he made the engraving from a drawing by another author. Researchers speculate that this drawing, or perhaps a verbal description, was provided by Francis Bacon himself.",
+				"At the bottom of the engraving is a quotation from the Book of Daniel, \"Multi pertransibunt et augebitur scientia\" (Daniel,12:4), meaning \"Many will pass and knowledge will be multiplied.\"",
+				"The book contains bookmarks identifying the book's owners: Lady Jane Davy (1780-1855), Edward Hilton Young (1879-1960), and the signature of Bernard Quaritch (1819-1899). Quaritch was a famous nineteenth-century collector. Hilton was a writer and politician, Britain's minister of health from 1931-1935."
+			]
+		},
+		{
+			"id": "kollektsiya-redkikh-izdaniy-filosofskikh-knig",
+			"hash": 1,
+			"title": {
+				"type": "h3",
+				"text": "John Locke, \"Essay on Human Understanding\"<br> 1694 "
+			},
+			"texts": [
+				"The first edition of the “Essay” was published anonymously in 1690. But this work was such a great success that Locke printed the second edition under his own name and with the portrait of the author. However, the acknowledgment of authorship forced Locke to enter into an uncomfortable public controversy with the Bishop of Worcestershire, Edward Stillingfleet, who saw in the \"Experience\" signs of atheism. Locke published most of his major works anonymously, acknowledging their authorship only shortly before his death. The engraved portrait of the philosopher is created by Pieter van der Bank, after the portrait by Sylvester Braunover.",
+				"The book is one of the most important works on Enlightenment philosophy. The author of the essay relies on a method of introspection that distinguishes him from seventeenth-century rationalists such as Descartes and Spinoza. Locke criticizes nativism, provides an empirical explanation of the origin of our knowledge, and explores new philosophical fields such as personality and consciousness. Locke's work laid the foundation for associativity in psychology. The engraved portrait of the philosopher is by Peter van der Bank, based on a portrait by Sylvester Braunover."
+			]
+		},
+		{
+			"id": "kollektsiya-redkikh-izdaniy-filosofskikh-knig",
+			"hash": 2,
+			"title": {
+				"type": "h3",
+				"text": "George Berkeley, \"A Treatise Concerning the Principle of Human Knowledge\"<br> 1711"
+			},
+			"texts": [
+				"The “Treatise” is considered Berkeley's major work on immaterialism. The thesis of the non-existence of matter was formulated by Berkeley in early manuscripts, but was not fully developed until the works of 1710-13. Berkeley had high hopes for his Treatise, hoping that the work would be the definitive refutation of atheism and materialism. The work, however, received a very cold reception from the public. The “Treatise” came out with the subtitle \"Part 1.\" The second part, however, was not published."
+			]
+		},
+		{
+			"id": "kollektsiya-redkikh-izdaniy-filosofskikh-knig",
+			"hash": 3,
+			"title": {
+				"type": "h3",
+				"text": "David Hume, \"Philosophical essays concerning human understanding\"<br> 1749"
+			},
+			"texts": [
+				"First edition of the work that came to be known as \"An Enquiry Concerning Human Understanding\". It was first published under a different title (\"Philosophical Essays Concerning Human Understanding\") because it consists of individual essays, and Hume was known precisely as an essayist. This work is considered one of the most important of Hume's philosophy. After the failure of A Treatise on Human Nature, of which Hume wrote that it was stillborn, Hume decided to present his ideas in a more concise form."
+			]
+		},
+		{
+			"id": "kollektsiya-redkikh-izdaniy-filosofskikh-knig",
+			"hash": 4,
+			"title": {
+				"type": "h3",
+				"text": "Ludwig Wittgenstein, \"Tractatus Logico-Philosophicus\"<br> 1922"
+			},
+			"texts": [
+				"“Tractatus” is Wittgenstein's only book published during his lifetime. It is considered one of the most significant philosophical works of the twentieth century, being a cornerstone of the analytic philosophy This notable example formerly belonged to Nobel Prize winner Sablan Alan Lloyd Hodgkin (1914-1998), a Nobel laureate, with details of his ownership and family inscriptions on the front cover."
+			]
+		},
+		{
+			"id": "kollektsiya-redkikh-izdaniy-filosofskikh-knig",
+			"hash": 5,
+			"title": {
+				"type": "h3",
+				"text": "Immanuel Kant, \"Critik der Reinen Vernunft\"<br> 1787"
+			},
+			"texts": [
+				"Kant is one of the greatest philosophers of all times, and “The Critique of Pure Reason” is a work that comes to many people's minds as the first example of a philosophical treatise. In his most important work, Kant develops his famous transcendental philosophy. \"The Critique of Pure Reason\" was written by Kant during the \"decade of silence,\" the period from 1770-1781, when the philosopher worked almost exclusively on his great book. The second, substantially revised edition of the Critique, with a very important preface, is considered the classic edition."
+			]
+		},
+		{
+			"id": "kollektsiya-redkikh-izdaniy-filosofskikh-knig",
+			"hash": 6,
+			"title": {
+				"type": "h3",
+				"text": "Francis Bacon, \"Sylva Sylvarum\"<br> 1652"
+			},
+			"texts": [
+				"After Bacon's death, his secretary, William Rawley, published the philosopher's handwritten notes, which Rawley believed were to form part three of Instauratio Magna. It was these scattered drafts that formed the basis of a book called The Forest of Forests. It was also in this volume that Bacon's New Atlantis first saw the light of day. The community of scholars called Solomon's House from this utopia became the prototype of the Royal Society of London.",
+				"The frontispiece bears a portrait of the author. The engraving on the title page of the book echoes the New Organon: the image is also framed by two columns. In the upper part of the engraving in the center we see the sun with the name of God in Hebrew inscribed on it. This is a common way of depicting God the Father in Protestant England. Next to the sun are two cherubim. The following is a quote from the book of Genesis: \"And God saw the light, that it was good\" (Genesis 1:4). A ray of sunlight falls on the globe, the intelligible world. The outlines of the continents are visible on the globe, with the planet rotated so that both the Old World and the New World are visible."
+			]
+		},
+		{
+			"id": "kollektsiya-redkikh-izdaniy-filosofskikh-knig",
+			"hash": 7,
+			"title": {
+				"type": "h3",
+				"text": "Rene Descartes, \"Discours de la méthode\"<br> 1638"
+			},
+			"texts": [
+				"Although Descartes' book has the title Discourse on Method, this work itself occupies a small part of it. The Discourse is followed by Descartes' three works on natural science: Dioptrics, Meteors, and Geometry. In these works, which contain the most important discoveries in their respective fields of natural science, Descartes intended to give an example of the application of his method.",
+				"The author of numerous engravings in the book is Frans van Schoten."
+			]
+		},
+		{
+			"id": "kollektsiya-redkikh-izdaniy-filosofskikh-knig",
+			"hash": 8,
+			"title": {
+				"type": "h3",
+				"text": "John Locke, \"Some Familiar Letters Between Mr. Locke, And Several Of His Friends\"<br> 1709"
+			},
+			"texts": [
+				"This book contains Locke's correspondence, including letters to William Molyneux (1656-1698) and Philip Liborch (1633-1712). Molyneux was an Irish physicist and philosopher, famous for the Molyneux Problem he formulated. Limborch was a Dutch theologian. Locke was in constant contact with Limborch during his voluntary exile to Holland in the 1680"
+			]
+		},
+		{
+			"id": "kollektsiya-redkikh-izdaniy-filosofskikh-knig",
+			"hash": 9,
+			"title": {
+				"type": "h3",
+				"text": "Jonathan Edwards, \"A Careful and Strict Enquiry into the Modern Prevailing Notions of That Freedom of Will\"<br> 1755"
+			},
+			"texts": [
+				"Edwards’ Enquiry is an important work on free will written in the context of rational theology of the XVIII century. The book belonged to William Johnson, one of the founding fathers of the United States. Johnson was the son of Samuel Johnson, who was the first chancellor of King's College (present-day Columbia University). С. Johnson is a friend and correspondent of Berkeley and a teacher of Edwards."
+			]
+		},
+		{
+			"id": "kollektsiya-redkikh-izdaniy-filosofskikh-knig",
+			"hash": 10,
+			"title": {
+				"type": "h3",
+				"text": "Ephraim Chambers, \"Cyclopaedia\"<br> 1728"
+			},
+			"texts": [
+				"Chambers’ Cyclopedia is an influential dictionary that was considered by the French Encyclopedists as a prototype for their project. Chambers integrated the philosophy of Locke and other Moderns in the entries of Cyclopedia.",
+				"The book starts with a magnificent engraving that allegorically depicts the arts and sciences. In the lower left corner of the engraving is engraved the engraver's signature \"J. Sturt sculp.\" John Sturt (1658-1730), who executed this folding illustration on the facing of the title page, which is unusual for a traditional frontispiece. In the 18th century, science and art were considered virtually inseparable, the figures depicted represent representatives of the exact sciences and humanities, the whole spectrum of art, which enter into dialogue. The engraving is full of details and symbols."
+			]
+		},
+		{
+			"id": "kollektsiya-redkikh-izdaniy-filosofskikh-knig",
+			"hash": 11,
+			"title": {
+				"type": "h3",
+				"text": "William James, \"The Principles of Psychology\"<br> 1891"
+			},
+			"texts": [
+				"In this work the term \"stream of consciousness,\" which has long been ingrained in our everyday speech and common in artistic practice, appears for the first time. Late in his career, James opposed the use of the term \"consciousness\" as metaphysical, thus expressing the early twentieth-century trend toward the elimination of consciousness, a trend that was well reflected in the works of early analytic philosophers."
+			]
+		},
+		{
+			"id": "kollektsiya-redkikh-izdaniy-filosofskikh-knig",
+			"hash": 12,
+			"title": {
+				"type": "h3",
+				"text": "Georg Hegel, \"Enzyklopädie der Philosophischen Wissenschaften\"<br> 1817"
+			},
+			"texts": [
+				"\"The Encyclopedia of the Philosophical Sciences\" is one of Hegel's most important works. This work was created as a guide for the university course of the same name. At first this book was as thin as the copy in the collection. But the subsequent editions of 1827 and 1830 were substantially supplemented by notes and appendices accompanying the terse paragraphs of the first edition, and the book grew to three volumes.",
+				"\"The Encyclopedia\" is a statement of Hegel's system of philosophy. Hegel had originally planned to present his system in much greater detail (parts of the first exposition are \"Phenomenology of the Spirit\" (1807) and the larger \"Science of Logic\" (1812-1816), but this project proved too extensive to be accomplished."
+			]
+		},
+		{
+			"id": "kollektsiya-redkikh-izdaniy-filosofskikh-knig",
+			"hash": 13,
+			"title": {
+				"type": "h3",
+				"text": "Edmund Husserl, \"Logische Untersuchungen\"<br> 1900-1901"
+			},
+			"texts": [
+				"Edmund Husserl was the founder of phenomenology, one of the most influential movements in continental philosophy, based on his two-volume book Logical Studies. This book argues that all thinking is carried out in acts of consciousness, which we can observe if we organize our minds in a special way. In such an investigation, Husserl hoped to find clearly and distinctly discernible truths with which we can ground all science."
+			]
+		}
+	]
+}

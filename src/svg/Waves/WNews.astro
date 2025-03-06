@@ -1,0 +1,49 @@
+---
+
+---
+
+<svg class="news-waves news-waves--desktop" width="1920" height="440" viewBox="0 0 1920 440" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M613 51L189 0L0 65.9728V440H1920V39.719L1787.5 0L1588.5 51L1395 55.0828L952 4.08277L613 51Z" fill="var(--pale-purple)"></path>
+</svg>
+<svg class="news-waves news-waves--mobile" width="390" height="342" viewBox="0 0 390 342" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M390 0L199 46.0746L0 3.73413V342H390V341V0Z" fill="var(--pale-purple)"></path>
+</svg>
+
+<style lang="scss">
+	@import '../../styles/media.scss';
+
+	.news-waves {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100%;
+		z-index: 5;
+
+		@include des {
+			bottom: d(-1);
+			height: auto;
+
+			&--mobile {
+				display: none;
+			}
+		}
+
+		@include tab {
+			bottom: t(-1);
+			height: auto;
+
+			&--mobile {
+				display: none;
+			}
+		}
+
+		@include mob {
+			bottom: m(-1);
+			height: m(342);
+
+			&--desktop {
+				display: block;
+			}
+		}
+	}
+</style>

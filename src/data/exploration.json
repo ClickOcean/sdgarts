@@ -1,0 +1,122 @@
+{
+	"title": {
+		"type": "h2",
+		"text": "Search for new forms &<br> sources of inspiration",
+		"anim": {
+			"active": true,
+			"time": 4000
+		}
+	},
+	"slider": [
+		{
+			"id": "performance-by-the-art-group-provmyza-oratorium-sarxsoma",
+			"title": {
+				"type": "h3",
+				"text": "Performance by the art group \"Provmyza\" Oratorium SARXSOMA"
+			},
+			"descr": {
+				"text": "SDG Arts & Science Foundation and Mikhail Prokhorov Charitable Foundation supported a new project of the art group..."
+			}
+		},
+		{
+			"id": "this-is-not-a-book-dmitry-volkov-s-collection",
+			"title": {
+				"type": "h3",
+				"text": "This Is Not a Book: Dmitry Volkov's collection"
+			},
+			"descr": {
+				"text": "SDG Arts & Science Foundation presented works of contemporary artists and rare editions of philosophical treatises..."
+			}
+		},
+		{
+			"id": "faced2faced-project-presentation-at-the-58th-venice-biennale",
+			"title": {
+				"type": "h3",
+				"text": "FACED2FACED project presentation at the 58th Venice Biennale"
+			},
+			"descr": {
+				"text": "Dmitry Volkov acted as a promoter of the FACED2FACED project and became a guide for followers of the new digital twins..."
+			}
+		},
+		{
+			"id": "the-book-on-trial-performance",
+			"title": {
+				"type": "h3",
+				"text": "The Book on Trial performance by Dmitry Volkov"
+			},
+			"descr": {
+				"text": "Pavel Pepperstein and Dmitry Volkov held a performance called People against the book under the title “Freedom of Will..."
+			}
+		},
+		{
+			"id": "dmitry-volkov-and-artists-performance",
+			"title": {
+				"type": "h3",
+				"text": "Dmitry Volkov and Artists performance"
+			},
+			"descr": {
+				"text": "Dmitry Volkov and Artists performance was a part of the Small Button, a project by Fedor Pavlov-Andreevich. It..."
+			}
+		},
+		{
+			"id": "puteshestvie-orakultanga-v-pustynyu",
+			"title": {
+				"type": "h3",
+				"text": "OracleTang's journey to the desert"
+			},
+			"descr": {
+				"text": "In 2015, along with the SDGroup team, Dmitry Volkov became a participant of the Burning Man Festival, an international..."
+			}
+		},
+		{
+			"id": "sdv-arts-science-foundation-vydel-grant-molodoy-khudozhnitse-appolinarii-broshe",
+			"title": {
+				"type": "h3",
+				"text": "Grant to the young artist Appolinaria Brochet"
+			},
+			"descr": {
+				"text": "Grant to the young artist Appolinaria Brochet In 2018, the Foundation supported the artist Appolinary Brosche and will..."
+			}
+		},
+		{
+			"id": "superconduction",
+			"title": {
+				"type": "h3",
+				"text": "SUPERCONDUCTION"
+			},
+			"descr": {
+				"text": "The SUPERCONDUCTION pop-up exhibition, an exhibition of modern technological art, was organized in the SDGroup office..."
+			}
+		},
+		{
+			"id": "shestvie-aliens-yes-na-burning-man-2017",
+			"title": {
+				"type": "h3",
+				"text": "Aliens? Yes! Procession at the Burning Man Festival 2017 by Dmitry Volkov"
+			},
+			"descr": {
+				"text": "Late August, 2017, Dmitry Volkov invited his companions from venture business and partners to take part in an art camp..."
+			}
+		},
+		{
+			"id": "otkroveniya-aydan-salakhovoy",
+			"title": {
+				"type": "h3",
+				"text": "\"Revelations\" by Aidan Salakhova"
+			},
+			"descr": {
+				"text": "Aidan's works are part of the Foundations' collection. To support the artist the foundation became a partner of her..."
+			}
+		},
+		{
+			"id": "feastival-transtsendentnykh-fortepiano",
+			"title": {
+				"type": "h3",
+				"text": "Transcendental Piano Festival"
+			},
+			"descr": {
+				"text": "The second street festival organized by SDG Arts & Science Foundation together with LABORATORIA Art & Science brought..."
+			}
+		}
+	]
+}

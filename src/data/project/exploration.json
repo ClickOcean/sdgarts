@@ -1,0 +1,705 @@
+{
+	"articles": [
+		{
+			"bodyColor": "white",
+			"banner": true,
+			"id": "performance-by-the-art-group-provmyza-oratorium-sarxsoma",
+			"title": {
+				"type": "h1",
+				"text": "Performance by the art group \"Provmyza\" Oratorium SARXSOMA",
+				"subtitle": "art"
+			},
+			"texts": [
+				"SDG Arts & Science Foundation and Mikhail Prokhorov Charitable Foundation supported a new project of the art group \"Provmyza\", participant of the 51st Venice Biennale, laureate of the Kuryokhin Prize and \"Innovation\".",
+				"The theme of Oratorium SARXSOMA is loss, different modes of feeling and experiencing sad life events. The premiere of the performance took place on the birthday of the National Center of Contemporary Art. The project was carried out in two formats: theatrical performance, carried out in the space of a specially built large-scale installation, and a video. At Oratorium SARXSOMA, the artists Galina Myznikova and Sergey Provorov combine various types and genres of art: theater, performance, installation, video art and circus.",
+				"The visual part of the project takes us to the art of the Middle Ages, Baroque and early modernism, the techniques of which are multiplied with the help of modern technologies. And the sound component of the performance and video \"Oratorio for Two Voices\" was written by composer Daria Zvezdina. Actors of the La Gol Voice Theater Alena Verin-Galitskaya and Daniil Shaposhnik were invited to perform the musical work."
+			],
+			"readmore": "https://arsenal-museum.art/exhibitions/oratorium-sarxsoma-2019/"
+		},
+		{
+			"bodyColor": "soft-red",
+			"banner": true,
+			"id": "this-is-not-a-book-dmitry-volkov-s-collection",
+			"png": true,
+			"title": {
+				"type": "h1",
+				"text": "This Is Not a Book: Dmitry Volkov's collection",
+				"subtitle": "art"
+			},
+			"texts": [
+				"SDG Arts & Science Foundation presented works of contemporary artists and rare editions of philosophical treatises of the 16th – 20th centuries, bringing them together in the mind of the collector.",
+				"For the first time, two collections were presented at the exhibition at the same time: rare editions of treatises by the great philosophers of the 16th – 20th centuries of the Center for Consciousness Studies and works of contemporary artists from the foundation collection of Dmitry Volkov. Among them there are performance artists, mixed media masters, conceptual painters, photographers and sculptors. The philosophical treatises of Bacon, Descartes, Kant, Hegel, Husserl, Wittgenstein and other philosophers were presented as artifacts. The contradictions between classical philosophy and contemporary art were removed through the dialogue between artists with thinkers and collectors with curators. Science seeks to know the world with reason, and art - with feelings.",
+				"Many art objects from Dmitry Volkov's collection are somehow connected with events from his life. Therefore, the idea of the architecture of the exhibition was to invite visitors directly into the mind of the collector. The viewer followed the prescribed script, and his attention was guided by the audio recording and the light focus, highlighting certain objects from the twilight."
+			],
+			"slider": [
+				{
+					"img": {
+						"src": "1",
+						"play": "yD3sKm9lpv8"
+					}
+				},
+				{
+					"img": {
+						"src": "2"
+					}
+				},
+				{
+					"img": {
+						"src": "3"
+					}
+				},
+				{
+					"img": {
+						"src": "4"
+					}
+				},
+				{
+					"img": {
+						"src": "5"
+					}
+				},
+				{
+					"img": {
+						"src": "6"
+					}
+				}
+			]
+		},
+		{
+			"banner": true,
+			"id": "faced2faced-project-presentation-at-the-58th-venice-biennale",
+			"title": {
+				"type": "h1",
+				"text": "FACED2FACED project presentation at the 58th Venice Biennale",
+				"subtitle": "art"
+			},
+			"texts": [
+				"Dmitry Volkov acted as a promoter of the FACED2FACED project and became a guide for followers of the new digital twins cult. FACED2FACED project mobile app scans the face of a person and converts it to 3D while trained algorithm provides it with intelligence analyzing information available in user’s social networks. AR-Technology helps to “implant” the digital twin in individual’s hand serving as its “appendage”.",
+				"A two-headed hybrid obtained after conversion has two types of consciousness, namely bio-consciousness and digital consciousness. One of the main goals the artists have is to introduce them to each other so that they could meet face to face. You can ask the «clone» any question and get answers generated basing on the information available on Facebook account of its ancestor."
+			],
+			"slider": [
+				{
+					"img": {
+						"src": "1"
+					}
+				},
+				{
+					"img": {
+						"src": "2"
+					}
+				},
+				{
+					"img": {
+						"src": "3"
+					}
+				}
+			]
+		},
+		{
+			"banner": true,
+			"id": "the-book-on-trial-performance",
+			"title": {
+				"type": "h1",
+				"text": "The Book on Trial performance by Dmitry Volkov",
+				"subtitle": "art"
+			},
+			"texts": [
+				"Pavel Pepperstein and Dmitry Volkov held a performance called People against the book under the title “Freedom of Will. An Illusion or a Possibility”. They turned to a medieval judicial tradition to determine the fate of a book accused in providing the philosophical underpinning to punish people, and thus is capable to break the existing balance in relations between state and society. History knows hundreds examples of medieval legal trials for animals and inanimate objects. The reason for such cases consisted of the conviction that the equal retaliation law was of universal nature.",
+				"During the trial Dmitry Volkov acted as a lawyer who advocated justice of claims and conclusions contained in the book before the trial jury and performance spectators. After the voting procedure, the judge Pavel Peppershtein rendered the verdict."
+			],
+			"slider": [
+				{
+					"img": {
+						"src": "1"
+					}
+				},
+				{
+					"img": {
+						"src": "2",
+						"play": "hCP22PIVMNc"
+					}
+				}
+			]
+		},
+		{
+			"banner": true,
+			"id": "dmitry-volkov-and-artists-performance",
+			"title": {
+				"type": "h1",
+				"text": "Dmitry Volkov and Artists performance",
+				"subtitle": "art"
+			},
+			"texts": [
+				"Dmitry Volkov and Artists performance was a part of the Small Button, a project by Fedor Pavlov-Andreevich. It represents a continuous five-hours long dialogue between Dmitry Volkov and artists whose pieces of work gathered in the SDG Arts & Science Foundation collection. This piece of work secret and peculiarity is in the game rules: it is not the participants themselves who control the dialogue but the referees, so that the conversation could not be logical, structured or fruitful, and instead of that it became a piece of living art."
+			],
+			"slider": [
+				{
+					"img": {
+						"src": "1"
+					}
+				},
+				{
+					"img": {
+						"src": "2",
+						"play": "BIu0bLw5Cck"
+					}
+				},
+				{
+					"img": {
+						"src": "3"
+					}
+				}
+			]
+		},
+		{
+			"banner": true,
+			"id": "puteshestvie-orakultanga-v-pustynyu",
+			"title": {
+				"type": "h1",
+				"text": "OracleTang's journey to the desert",
+				"subtitle": "art"
+			},
+			"texts": [
+				"In 2015, along with the SDGroup team, Dmitry Volkov became a participant of the Burning Man Festival, an international festival of contemporary art and music. Especially for it together with artist Oleg Kulik, the art object OraculeTang was created. On the one hand, there is Oracle, a technological robot and a modern society product, a universal prophet programmed to answer any human questions. On the other hand, there is a primitive monkey, our wild ancestor bearing secrets of nature and evolution. The image of a modern person who spends his/her days in strict limits was simultaneously reproduced (like OracleTange in a latticework, in the very word sense) and the place of nature in modern civilization was demonstrated. Even the things remained untouched were fenced and safely locked up. Then OracleTang took part in the Festival of Contemporary Art of the Brooklyn Academy of Music Next Wave Art 2015."
+			]
+		},
+		{
+			"banner": true,
+			"id": "sdv-arts-science-foundation-vydel-grant-molodoy-khudozhnitse-appolinarii-broshe",
+			"title": {
+				"type": "h1",
+				"text": "Grant to the young artist Appolinaria Brochet",
+				"subtitle": "art"
+			},
+			"texts": [
+				"Grant to the young artist Appolinaria Brochet In 2018, the Foundation supported the artist Appolinary Brosche and will award her a grant to study at the Otis College of Art in Los Angeles. Appolinary Brochet was born in 1995, studied at ENSBA in Paris. She participated in collective exhibitions in Paris (Galerie Antoinine Catzeflis, Galerie Alexandra de Viveiros) and Dusseldorf (Kunst im Tunnel).",
+				"The grant will partially cover the semiannual training of the young artist at Otis College of Art, a private art and design school in Los Angeles, California. The college was founded in 1918 and became the first independent school of art in Los Angeles.",
+				"During 2016 the Foundation supported young artists working in the field of technological art, and in 2017 organized an art residence in Riga for portfolio review and communicating with international experts in the field of science art as part of a parallel program at the RIXC ART SCIENCE FESTIVAL conference."
+			]
+		},
+		{
+			"banner": true,
+			"id": "superconduction",
+			"title": {
+				"type": "h1",
+				"text": "SUPERCONDUCTION",
+				"subtitle": "art"
+			},
+			"texts": [
+				"The SUPERCONDUCTION pop-up exhibition, an exhibition of modern technological art, was organized in the SDGroup office during its opening celebration party in Riga. The exhibition included the best works of leading technology artists from the UK, Germany, Latvia, Slovenia and the United States. Among the interactive, robotic, sound and video installations, the work of the silk media artist :: vtol :: from the collection of the Foundation was also presented. Superconduction - superconductivity - has become a metaphor of processes in modern economic and social systems, developing at a tremendous rate. New realities reflect the art of science art, in which artists as “superconductors” work in collaboration with scientists, participate in research projects, and even act as inspirers of scientific discoveries."
+			],
+			"slider": [
+				{
+					"img": {
+						"src": "1"
+					}
+				},
+				{
+					"img": {
+						"src": "2"
+					}
+				},
+				{
+					"img": {
+						"src": "3"
+					}
+				},
+				{
+					"img": {
+						"src": "4"
+					}
+				},
+				{
+					"img": {
+						"src": "5"
+					}
+				}
+			]
+		},
+		{
+			"banner": true,
+			"id": "shestvie-aliens-yes-na-burning-man-2017",
+			"title": {
+				"type": "h1",
+				"text": "Aliens? Yes! Procession at the Burning Man Festival 2017 by Dmitry Volkov",
+				"subtitle": "art"
+			},
+			"texts": [
+				"Late August, 2017, Dmitry Volkov invited his companions from venture business and partners to take part in an art camp at the Burning Man Festival, which takes place every year in the desert of Nevada. This year a true legend Andrey Bartenev was the invited artist of the camp. He came up with the idea of the camp and special performance, \"Aliens? Yes!\" Procession.",
+				"One of the Burning Man Festival’s main principles is a radical self-expression and uniqueness. Aliens made this idea extreme (being the same can be being different). Business Insider described the performance as one the most memorable ones (<a href='https://www.businessinsider.com/' target='_blank'>link</a>)."
+			],
+			"slider": [
+				{
+					"img": {
+						"src": "1"
+					}
+				},
+				{
+					"img": {
+						"src": "2"
+					}
+				},
+				{
+					"img": {
+						"src": "3"
+					}
+				},
+				{
+					"img": {
+						"src": "4"
+					}
+				}
+			]
+		},
+		{
+			"banner": true,
+			"id": "otkroveniya-aydan-salakhovoy",
+			"title": {
+				"type": "h1",
+				"text": "\"Revelations\" by Aidan Salakhova",
+				"subtitle": "art"
+			},
+			"texts": [
+				"Aidan's works are part of the Foundations' collection. To support the artist the foundation became a partner of her first solo exhibition in London. The main theme of her works was the position of women in various cultures and religions, especially in the East.",
+				"The exhibition was held in five rooms, where, in addition to a few laconic paintings, you could find sculptures made of white and black Belgian marble and black granite."
+			],
+			"slider": [
+				{
+					"img": {
+						"src": "1"
+					}
+				},
+				{
+					"img": {
+						"src": "2"
+					}
+				},
+				{
+					"img": {
+						"src": "3"
+					}
+				}
+			]
+		},
+		{
+			"banner": true,
+			"id": "feastival-transtsendentnykh-fortepiano",
+			"title": {
+				"type": "h1",
+				"text": "Transcendental Piano Festival",
+				"subtitle": "art"
+			},
+			"texts": [
+				"The second street festival organized by SDG Arts & Science Foundation together with LABORATORIA Art & Science brought together music, modern art and new technologies. The dialogue of such different spheres was built around key objects, namely classical pianos, which were changed in such a way that they couldn't be recognized. Dmitry Volkov, SDG Arts & Science Foundation founder, said they were immersed in the essence of the sound and the shape of the instrument and wanted to share our discoveries with the city inhabitants and make everyone think and rethink the nature of the familiar things.",
+				"Scientific and artistic practices were intertwined within the experiment-performance \"Piano with a prepared musician\", in which Dmitry Volkov took part. The electroencephalogram set on Dmitry's head fixed his brain activity, which was immediately visualized on the screen via a special app. It was also possible to “see the music by your own eyes” at artist's :: Vtol :: installation, where the audience could watch a unique video art at the same time."
+			],
+			"slider": [
+				{
+					"img": {
+						"src": "1"
+					}
+				},
+				{
+					"img": {
+						"src": "2"
+					}
+				},
+				{
+					"img": {
+						"src": "3"
+					}
+				},
+				{
+					"img": {
+						"src": "4"
+					}
+				},
+				{
+					"img": {
+						"src": "5"
+					}
+				},
+				{
+					"img": {
+						"src": "6"
+					}
+				}
+			]
+		},
+		{
+			"banner": true,
+			"id": "philosophical-lectures-at-mmoma",
+			"title": {
+				"type": "h1",
+				"text": "Philosophical lectures at MMOMA",
+				"subtitle": "philosophy"
+			},
+			"texts": [
+				"Philosophical lectures as part of the educational program for the exhibition “This Is Not a Book: Collection of Dmitry Volkov. A story about a man, his art and library”.",
+				"CCS experts gave several lectures on philosophy by David Hume and Edmund Husserl, Rene Descartes and Immanuel Kant.",
+				"The first lecture was devoted to the connection of consciousness with the outside world. Paying attention to our own consciousness, we find that only it itself is available to us and it is with its help that we learn about the external world. If consciousness itself is the subject of our interest, hadn’t we better dwell on it and not move on to the world in our research? David Hume and Edmund Husserl were in search of an answer to this question at different times.",
+				"The second lecture touched on one of the eternal philosophical questions - \"Who am I?\" \"I am a soul,\" thought the French philosopher Rene Descartes. \"I am a thinking thing, an immortal substance.\" The German philosopher Immanuel Kant was of the opposite opinion. He believed that there is no thing like I. I am just the center around which the experience is organized."
+			],
+			"slider": [
+				{
+					"img": {
+						"src": "1"
+					}
+				},
+				{
+					"img": {
+						"src": "2"
+					}
+				},
+				{
+					"img": {
+						"src": "3"
+					}
+				},
+				{
+					"img": {
+						"src": "4"
+					}
+				}
+			]
+		},
+		{
+			"banner": true,
+			"id": "letnyaya-filosofskaya-shkola",
+			"title": {
+				"type": "h1",
+				"text": "Summer Philosophy School",
+				"subtitle": "philosophy"
+			},
+			"texts": [
+				"The Summer School of Philosophy is an international program offering intensive lectures and seminars with the participation of world-renowned experts. The program is organized by the Center for Consciousness Studies (CCS), founded by Dr. Dmitry Volkov. CCS primarily focuses on the development of analytical philosophy and has been hosting the Summer Philosophical School biennially since 2014.",
+				"The Summer School of Philosophy provides an exceptional platform for engaging with leading global experts in the fields of consciousness, free will, and moral responsibility. The event takes on an international format, attracting graduate students and young scientists to deliberate on philosophical questions under the guidance of recognized experts in the field.",
+				"The first school was organized in 2014 and was led by Professor John Fisher, focusing on the theme of free will and moral responsibility. Subsequently, the second school in 2016, which took place in Riga, explored the relationship between free will and consciousness. Distinguished expert Derk Pereboom facilitated discussions, and philosophical debates took place right in the heart of the historic city.",
+				"In 2018, the Summer School found its home in Malta, where it was hosted at the personal invitation of the President of Malta at their summer residence. Participants engaged in discussions revolving around the issue of personal identity, guided by Professor Richard Swinburne from the University of Oxford.",
+				"In 2020, the school was held online for the first time. Under the guidance of Professor Daniel Stoljar from the Australian National University, participants delved into the connection between consciousness and introspection.",
+				"The latest Summer School was held in 2023 in Palermo and gathered world-known philosophers and thinkers to debate the possibility of uploading the human mind to a computer system."
+			],
+			"slider": [
+				{
+					"img": {
+						"src": "1"
+					}
+				},
+				{
+					"img": {
+						"src": "2"
+					}
+				}
+			]
+		},
+		{
+			"banner": true,
+			"id": "grenlandskaya-konferentsiya",
+			"title": {
+				"type": "h1",
+				"text": "The Greenland Conference supported by Dmitry Volkov",
+				"subtitle": "philosophy"
+			},
+			"texts": [
+				"In June 2014, Dmitry Volkov initiated a scientific conference, which took form of a regatta. For a week the participants - world-renowned expert philosophers - took part in a philosophical expedition to the shores of Greenland on board of s/v Rembrandt van Rijn. The route of the expedition ran around the Disco Island located to the west of Greenland. Every day in the spacious mess-rooms there were discussion sessions on the topic “Problems of consciousness and free will in analytic philosophy” in the spacious mess-rooms.   "
+			]
+		},
+		{
+			"banner": true,
+			"id": "lektsii-vedushchikh-mirovykh-filosofov",
+			"title": {
+				"type": "h1",
+				"text": "Lectures by the world's leading philosophers",
+				"subtitle": "philosophy"
+			},
+			"texts": [
+				"The Center for Consciousness Research (CCS) organizes regular lectures by leading experts in the field of analytical philosophy. One of the latest significant events was a lecture by David Chalmers, \"The Hard Problem of Consciousness: 300 Years On\", which was attended by about 600 people! David Chalmers is an Australian philosopher who played a great role in creating a new academic discipline - the science of consciousness. He became a co-founder of the Association for the Scientific Study of Consciousness and organized the first major scientific conferences in Tucson, devoted to studying this problem. Most significant books on consciousness of the beginning of the 21st century contain references to his scientific works.",
+				"Such admired experts as Daniel Dennett, David Chalmers, Patricia Churchland, Derk Perebum, Jesse Prince, Nicholas Humphrey, John Fischer, John Searle, Timothy Williamson have already made public lectures in the Center for Consciousness Research. Lectures are held in an open format. They are quite an event for everyone who is interested in studying philosophy, for students, graduate students, teachers."
+			],
+			"slider": [
+				{
+					"img": {
+						"src": "1",
+						"play": "mXHTLJBmVPI"
+					}
+				},
+				{
+					"img": {
+						"src": "2",
+						"play": "XztiAS3t64U"
+					}
+				}
+			]
+		},
+		{
+			"banner": true,
+			"id": "kollektsiya-redkikh-izdaniy-filosofskikh-knig",
+			"title": {
+				"type": "h1",
+				"text": "Collection of books on philosophy in rare editions",
+				"subtitle": "philosophy"
+			},
+			"texts": [
+				"A collection of rare editions of philosophical treatises, lifetime editions of works by the great philosophers of the 17th-20th centuries that belong to the tradition of modern philosophy of consciousness. There are Bacon and Descartes, Kant and Hegel, Husserl and Wittgenstein. Some treatises are richly illustrated with engravings and author's notes, which are ornaments to the collection and could be the subject of a special historical-philosophical study.",
+				"The main goal of the collection is to trace the progress of philosophy.  By collecting books that have influenced modern philosophy of consciousness, we can explore the path of philosophical thought from the Early Modern epoch to the present days, from the formation of fundamental approaches to their contemporary solutions. "
+			],
+			"slider": [
+				{
+					"img": {
+						"src": "1"
+					}
+				},
+				{
+					"img": {
+						"src": "2"
+					}
+				},
+				{
+					"img": {
+						"src": "3"
+					}
+				},
+				{
+					"img": {
+						"src": "4"
+					}
+				},
+				{
+					"img": {
+						"src": "5"
+					}
+				},
+				{
+					"img": {
+						"src": "6"
+					}
+				},
+				{
+					"img": {
+						"src": "7"
+					}
+				},
+				{
+					"img": {
+						"src": "8"
+					}
+				},
+				{
+					"img": {
+						"src": "9"
+					}
+				},
+				{
+					"img": {
+						"src": "10"
+					}
+				},
+				{
+					"img": {
+						"src": "11"
+					}
+				},
+				{
+					"img": {
+						"src": "12"
+					}
+				},
+				{
+					"img": {
+						"src": "13"
+					}
+				},
+				{
+					"img": {
+						"src": "14"
+					}
+				}
+			],
+			"noPagination": false,
+			"imgObjectFit": "contain",
+			"grid": 2.4
+		},
+		{
+			"banner": true,
+			"id": "fundamentalnoe-znanie-dialog-rossiyskikh-i-buddiyskikh-uchenykh",
+			"title": {
+				"type": "h1",
+				"text": "Dmitry Volkov meets Dalai Lama",
+				"subtitle": "philosophy"
+			},
+			"texts": [
+				"The first meeting of scientists and Dalai Lama on the topic of studying consciousness took place in August 2017 in New Delhi, the second conference \"Understanding the world\" took place in 2018 in Dharamshala. The main aim of this annual event is to build \"conceptual bridges\".",
+				"This open dialogue was co-organized by the Center for Consciousness Research and the Center for Tibetan Culture and Information. Among the participants in the dialogue was Dmitry Volkov, Ph.D. in philosophy and co-director of the Center for the Study of Consciousness."
+			],
+			"slider": [
+				{
+					"img": {
+						"src": "1"
+					}
+				},
+				{
+					"img": {
+						"src": "2"
+					}
+				},
+				{
+					"img": {
+						"src": "3"
+					}
+				},
+				{
+					"img": {
+						"src": "4"
+					}
+				},
+				{
+					"img": {
+						"src": "5"
+					}
+				},
+				{
+					"img": {
+						"src": "6"
+					}
+				},
+				{
+					"img": {
+						"src": "7"
+					}
+				}
+			]
+		}
+	],
+	"more": {
+		"page": "project",
+		"title": {
+			"type": "h2",
+			"text": "More"
+		},
+		"sliders": {
+			"art": [
+				{
+					"id": "performance-by-the-art-group-provmyza-oratorium-sarxsoma",
+					"title": {
+						"type": "h3",
+						"text": "Performance by the art group \"Provmyza\" Oratorium SARXSOMA"
+					}
+				},
+				{
+					"id": "this-is-not-a-book-dmitry-volkov-s-collection",
+					"title": {
+						"type": "h3",
+						"text": "This Is Not a Book: Dmitry Volkov's collection"
+					}
+				},
+				{
+					"id": "faced2faced-project-presentation-at-the-58th-venice-biennale",
+					"title": {
+						"type": "h3",
+						"text": "FACED2FACED project presentation at the 58th Venice Biennale"
+					}
+				},
+				{
+					"id": "the-book-on-trial-performance",
+					"title": {
+						"type": "h3",
+						"text": "The Book on Trial performance"
+					}
+				},
+				{
+					"id": "dmitry-volkov-and-artists-performance",
+					"title": {
+						"type": "h3",
+						"text": "Dmitry Volkov and Artists performance"
+					}
+				},
+				{
+					"id": "puteshestvie-orakultanga-v-pustynyu",
+					"title": {
+						"type": "h3",
+						"text": "OracleTang's journey to the desert"
+					}
+				},
+				{
+					"id": "sdv-arts-science-foundation-vydel-grant-molodoy-khudozhnitse-appolinarii-broshe",
+					"title": {
+						"type": "h3",
+						"text": "Grant to the young artist Appolinaria Brochet"
+					}
+				},
+				{
+					"id": "superconduction",
+					"title": {
+						"type": "h3",
+						"text": "SUPERCONDUCTION"
+					}
+				},
+				{
+					"id": "shestvie-aliens-yes-na-burning-man-2017",
+					"title": {
+						"type": "h3",
+						"text": "Aliens? Yes! Procession at the Burning Man Festival 2017"
+					}
+				},
+				{
+					"id": "otkroveniya-aydan-salakhovoy",
+					"title": {
+						"type": "h3",
+						"text": "\"Revelations\" by Aidan Salakhova"
+					}
+				},
+				{
+					"id": "feastival-transtsendentnykh-fortepiano",
+					"title": {
+						"type": "h3",
+						"text": "Transcendental Piano Festival"
+					}
+				}
+			],
+			"philosophy": [
+				{
+					"id": "philosophical-lectures-at-mmoma",
+					"title": {
+						"type": "h3",
+						"text": "Philosophical lectures at MMOMA"
+					}
+				},
+				{
+					"id": "letnyaya-filosofskaya-shkola",
+					"title": {
+						"type": "h3",
+						"text": "Summer Philosophy School"
+					}
+				},
+				{
+					"id": "grenlandskaya-konferentsiya",
+					"title": {
+						"type": "h3",
+						"text": "The Greenland Conference"
+					}
+				},
+				{
+					"id": "lektsii-vedushchikh-mirovykh-filosofov",
+					"title": {
+						"type": "h3",
+						"text": "Lectures by the world's leading philosophers"
+					}
+				},
+				{
+					"id": "kollektsiya-redkikh-izdaniy-filosofskikh-knig",
+					"title": {
+						"type": "h3",
+						"text": "Collection of books on philosophy in rare editions"
+					}
+				},
+				{
+					"id": "fundamentalnoe-znanie-dialog-rossiyskikh-i-buddiyskikh-uchenykh",
+					"title": {
+						"type": "h3",
+						"text": "Fundamental Knowledge: Dialogues between Russian and Buddhist Scholars."
+					}
+				}
+			]
+		}
+	}
+}

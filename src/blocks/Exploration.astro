@@ -1,0 +1,51 @@
+---
+import Container from '../components/Container.astro'
+import Title from '../components/Title.astro'
+import Slider from '../components/Slider.astro'
+import Anchor from '../components/Anchor.astro'
+import WExploration from '../svg/Waves/WExploration.astro'
+
+const { title, slider } = Astro.props.data
+---
+
+<section class="exploration" data-scroll-section>
+  <Anchor id={'projects'} />
+  <Container>
+    <div class="exploration__content">
+      <Title title={title} mod={'slider'} animScroll={1.5} />
+      <Slider
+        slider={slider}
+        grid={4}
+        page={'project'}
+        dataImg={{
+          path: 'exploration/main-slider'
+        }}
+      />
+    </div>
+  </Container>
+  <WExploration />
+</section>
+
+<style lang="scss">
+  .exploration {
+    position: relative;
+    width: 100%;
+    background-color: var(--aqua);
+
+    &__content {
+      width: 100%;
+
+      @include des {
+        padding: d(32) 0 d(150);
+      }
+
+      @include tab {
+        padding: t(32) 0 t(150);
+      }
+
+      @include mob {
+        padding: m(4) m(50) m(20);
+      }
+    }
+  }
+</style>

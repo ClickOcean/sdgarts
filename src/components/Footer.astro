@@ -1,0 +1,172 @@
+---
+import Container from './Container.astro'
+import Logo from './Logo.astro'
+import WFooter from '../svg/Waves/WFooter.astro'
+
+import { items } from '../data/footer.json'
+
+const { bgColor } = Astro.props
+---
+
+<footer class="footer" data-scroll-section>
+  <WFooter bgColor={bgColor} />
+  <Container>
+    <div class="footer__content">
+      <Logo typeLogo={'footer'} />
+      <div class="footer__items">
+        {
+          items.map(({ link, text, year }) =>
+            link ? (
+              <a class="footer__item footer__item--hover" href={link}>
+                {text}
+              </a>
+            ) : year ? (
+              <span class="footer__item">
+                <span>©&nbsp;</span>
+                <span data-year />
+                <span>&nbsp;{text}</span>
+              </span>
+            ) : (
+              <span class="footer__item">{text}</span>
+            )
+          )
+        }
+      </div>
+    </div>
+  </Container>
+  <div class="footer__lines">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="456"
+      height="370"
+      viewBox="0 0 456 370"
+      fill="none"
+    >
+      <path
+        d="M455 6L285.5 1M285.5 1L297 142.5M285.5 1L455 318M297 142.5H144.5M297 142.5L223 191.5M297 142.5L455 37M297 142.5L455 327.5M297 142.5L197.5 369.5M144.5 142.5L1 338.5M144.5 142.5L160 234M144.5 142.5L223 191.5M1 338.5L160 234M1 338.5L112 369.5M1 338.5L455 343M160 234L223 191.5M160 234L184 369.5M223 191.5L455 335.5M455 59L206.5 369.5"
+        stroke="rgb(128 155 156)"></path>
+    </svg>
+  </div>
+</footer>
+
+<style lang="scss">
+  .footer {
+    position: relative;
+    width: 100%;
+    background-color: var(--black);
+    color: var(--white);
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -1%;
+      width: 100%;
+      height: 2%;
+      background-color: inherit;
+      pointer-events: none;
+    }
+
+    &__content {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @include des {
+        padding: d(62) 0 d(25);
+      }
+
+      @include tab {
+        padding: t(62) 0 t(25);
+      }
+
+      @include mob {
+        padding: m(40) m(16) m(24);
+
+        :global(.logo--footer) {
+          display: none;
+        }
+      }
+    }
+
+    &__items {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      z-index: 2;
+    }
+
+    &__item {
+      width: 100%;
+      line-height: 1.4;
+
+      @include des {
+        font-size: d(16);
+      }
+
+      @include tab {
+        font-size: t(16);
+      }
+
+      @include mob {
+        font-size: m(16);
+      }
+
+      &--hover {
+        transition: color 0.1s ease 0s;
+
+        @media (hover: hover) {
+          transition-duration: 0.3s;
+
+          &:hover {
+            color: var(--teal);
+          }
+        }
+
+        &:active {
+          color: var(--aqua);
+        }
+      }
+    }
+
+    &__lines {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: 19;
+
+      & svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      @include des {
+        width: d(456);
+        height: d(370);
+      }
+
+      @include tab {
+        width: t(456);
+        height: t(370);
+      }
+
+      @include mob {
+      }
+    }
+  }
+</style>
+
+<script>
+  const getCurrentYear = () => {
+    const el = document.querySelector('[data-year]')
+    if (!el) return
+
+    el.textContent = `${new Date().getFullYear()}`
+  }
+
+  getCurrentYear()
+</script>

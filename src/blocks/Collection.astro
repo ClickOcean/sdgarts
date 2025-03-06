@@ -1,0 +1,52 @@
+---
+import Container from '../components/Container.astro'
+import Title from '../components/Title.astro'
+import Slider from '../components/Slider.astro'
+import Anchor from '../components/Anchor.astro'
+import WCollection from '../svg/Waves/WCollection.astro'
+
+const { title, slider } = Astro.props.data
+---
+
+<section class="collection" data-scroll-section>
+  <Anchor id={'art-collecrion'} />
+  <WCollection />
+  <Container>
+    <div class="collection__content">
+      <Title title={title} mod={'slider'} animScroll={1.5} />
+      <Slider
+        slider={slider}
+        grid={3}
+        transparent
+        collectionImg
+        dataImg={{
+          path: 'collection/main-slider'
+        }}
+        openPopap
+      />
+    </div>
+  </Container>
+</section>
+
+<style lang="scss">
+  .collection {
+    position: relative;
+    width: 100%;
+
+    &__content {
+      width: 100%;
+
+      @include des {
+        padding: d(26) 0 d(60);
+      }
+
+      @include tab {
+        padding: t(26) 0 t(60);
+      }
+
+      @include mob {
+        padding: m(50) m(50) m(20);
+      }
+    }
+  }
+</style>

@@ -1,0 +1,36 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Article from '../blocks/Article.astro';
+
+import { bodyColor, title, texts } from '../data/about.json';
+
+const dataImg = {
+	path: 'about',
+	src: true
+};
+
+const pageSettings = {
+	title: 'About',
+	descr: '',
+	bodyColor: bodyColor,
+	banner: {
+		active: true,
+		path: 'about',
+		src: 'banner',
+		format: 'jpg',
+		bgColor: 'white'
+	},
+	footerBgColor: 'white'
+};
+---
+
+<Layout pageSettings={pageSettings}>
+	<Article
+		data={{
+			title,
+			texts
+		}}
+		dataImg={dataImg}
+		bgColor={'white'}
+	/>
+</Layout>

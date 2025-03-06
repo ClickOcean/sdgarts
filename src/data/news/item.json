@@ -1,0 +1,301 @@
+{
+	"articles": [
+		{
+			"bodyColor": "white",
+			"banner": true,
+			"id": "metaphysics-of-uploading-ccs-summer-school-in-palermo",
+			"title": {
+				"type": "h1",
+				"text": "Metaphysics of Uploading. CCS Summer School in Palermo",
+				"subtitle": "news"
+			},
+			"texts": [
+				"From July 27 to August 2, the Center for Consciousness Studies (CCS) hosted the Summer Philosophical School “Metaphysics of Uploading” in Palermo. World-known philosophers and thinkers gathered in the State Archives of Palermo to debate the possibility of uploading the human mind to a computer system.",
+				"The School featured two prominent lecturers: Dr. Pietro Perconti, author of The Future of the Artificial Mind, Professor of Philosophy and Theory of Languages at the University of Messina. and Dr. Eric Olson, a professor of philosophy at the University of Sheffield, one of the most highly cited philosophers specializing in metaphysics and philosophy of mind.",
+				"The discussion revolved around the potential of artificial computational systems to possess characteristics humans consider essential features: consciousness, thinking, and personality.",
+				"In addition to the philosophical debates, the Summer School witnessed the presentation of the art project \"GAIA\", created by renowned artists Sharon Bloom and Yaroslav Kravtsov. GAIA combines modern AI technologies and digital art to explore the possibilities of consciousness transfer. School participants uploaded their digital avatars into the simulation and watched how they engaged in thought experiments discussed during the School's seminars.",
+				"World-known philosophers and thinkers gathered in Palermo to debate the possibility of uploading the human mind to a computer system."
+			],
+			"sliderBottom": true,
+			"slider": [
+				{
+					"img": {
+						"src": "1"
+					}
+				}
+			]
+		},
+		{
+			"bodyColor": "white",
+			"banner": true,
+			"id": "metaphysics-of-possible-worlds-results-of-consciousness-research-center-summer-school",
+			"title": {
+				"type": "h1",
+				"text": "Metaphysics of Possible Worlds. Results of Consciousness Research Center Summer School",
+				"subtitle": "news"
+			},
+			"texts": [
+				"Metaphysics of Possible Worlds. Results of Consciousness Research Center Summer School",
+				"From June 26 to July 4 hosted a summer school of the Consciousness Research Center devoted to one of the main themes for analytical philosophy: the metaphysics of possible worlds.",
+				"The educational program of the school was centered around the study and discussion of the philosophy of Sol Kripke, David Lewis, Alvin Plantinga, Robert Adams, Robert Stalnecker, and David Armstrong. The discussion of the views of each philosopher was preceded by a short introductory lecture by a member of the center staff. There were three sessions each day, two of which were in seminar format. Participants expressed their opinions and critiques of the readings and tried to clarify difficult points.",
+				"As part of the school's cultural program there was a musical performance \"Untitled,\" based on the idea of intertwining philosophical and musical modalities."
+			],
+			"sliderBottom": true,
+			"slider": [
+				{
+					"img": {
+						"src": "1"
+					}
+				}
+			]
+		},
+		{
+			"bodyColor": "white",
+			"banner": true,
+			"id": "mccs-held-a-summer-school-of-philosophy-online",
+			"title": {
+				"type": "h1",
+				"text": "CCS held a summer school of philosophy online",
+				"subtitle": "news"
+			},
+			"texts": [
+				"For the first time, the Center for Consciousness Studies held an international summer philosophical school in an online format. This year's theme is the problem of the relationship between consciousness and introspection. The discussion was moderated by Professor of the Australian National University Daniel Stoljar.",
+				"Introspection (or self-observation) is a unique ability that allows a person to know about the consciousness and existence of his own I. However, at present, scientists from various fields of study of consciousness - psychologists, neurophysiologists and philosophers - question not only the reliability of introspection, but also the very existence of this special ability. Although it is the very ability that bases the idea that we, as conscious beings, are not an illusion.",
+				"The school was attended by graduate students passed the competitive selection from New York and Stockholm universities. A collection of studies will be published based on the results of the summer school.",
+				"“The world today is significantly polarized. People have become more aggressive due to the epidemic and restrictions. But philosophy, from my point of view, should play the role of a counterweight. Critical thinking raises tolerance. And this is one of the goals of our center. We are trying to organize a dialogue between different institutions, organisations from different states, in different languages. This dialogue should allow integrating, not dividing the world”, - one of the founders of the CCS, Professor Dmitry Volkov, said."
+			],
+			"sliderBottom": true,
+			"slider": [
+				{
+					"img": {
+						"src": "1"
+					}
+				}
+			]
+		},
+		{
+			"bodyColor": "white",
+			"banner": true,
+			"id": "virtual-tour-of-the-exhibition-this-is-not-a-book",
+			"title": {
+				"type": "h1",
+				"text": "This is Not a Book",
+				"subtitle": "news"
+			},
+			"texts": [
+				"The first exhibition of the private collection of businessman and philosopher Dmitry Volkov became available for viewing online. “This Is Not a Book: Dmitry Volkov's collection. A story about a man, his art and library” is an experimental project. The idea of the exhibition was an invitation to the collector's mind, where philosophy and art are firmly connected.",
+				"The audience was guided by the dialogue between the exhibition curator Fyodor Pavlov-Andreevich and the collector about the connection between the selected works and events in Dmitry's life.",
+				"“The brain is made up of neurons that interact with each other through electrochemical reactions. There are also images in the brain that we use to think. And to understand each image we need text. The relationship between text, neurons, and images is one of the mysteries of modern philosophy of mind. This combination of essences is the main issue of the exhibition” - Dmitry Volkov describes the idea.",
+				"The heart of the exhibition is the collection of the first and lifetime editions of the greatest philosophers: Bacon and Descartes, Kant and Hegel, Husserl and Wittgenstein. This is just a small part of the impressive collection of Dmitry Volkov and the Center for Consciousness Studies. Exhibition"
+			],
+			"sliderBottom": true,
+			"slider": [
+				{
+					"img": {
+						"src": "1"
+					}
+				}
+			]
+		},
+		{
+			"bodyColor": "white",
+			"banner": true,
+			"id": "why-is-there-no-museum-of-philosophy",
+			"title": {
+				"type": "h1",
+				"text": "Why is there no museum of philosophy?",
+				"subtitle": "news"
+			},
+			"texts": [
+				"Collector and philosopher Dmitry Volkov, together with the artist and theorist of contemporary art Pavel Pepperstein, discussed why the Museum of Philosophy does not exist, the prospects of its creation, as well as exhibits that they would place in it.",
+				"\"One of the exhibits could be the Impossible Penrose Triangle,” suggested Dmitry. “This is a sculpture that looks like a triangle from only one point, and from others it is not connected lines. In other words, it is a structure that actually appears to be something else. This triangle would be an illustration of the phenomenon of consciousness.\""
+			],
+			"sliderBottom": true,
+			"slider": [
+				{
+					"img": {
+						"src": "1"
+					}
+				}
+			]
+		},
+		{
+			"bodyColor": "white",
+			"banner": true,
+			"id": "from-philosophy-to-art-collection-of-dmitry-volkov-and-mccs",
+			"title": {
+				"type": "h1",
+				"text": "From philosophy to art. Collection of Dmitry Volkov and CCS",
+				"subtitle": "news"
+			},
+			"texts": [
+				"Exhibition “This Is Not a Book: Collection of Dmitry Volkov. The story of a man, his art and library\" sent viewers on a quest on the collector's mind. Considering that Dmitry Volkov is not only a collector and philanthropist, but also a professor at the Faculty of Philosophy, as well as a venture investor with a focus on artificial intelligence technologies, the journey turned out to be interesting.",
+				"The viewer was guided through the exhibition by light (architect Katya Bochavar) and sound. The audio tour mixes the collector's story about what connects him with the selected works, with the voice of the curator, the role of which was performed by the performance artist and director Fyodor Pavlov-Andreevich.",
+				"The exhibition features works by contemporary artists (painting, photography, objects) and volumes of rare editions of philosophical treatises by Francis Bacon, René Descartes, Immanuel Kant, Georg Hegel. Art and philosophy are two key mediums of human wisdom, says Dmitry Volkov. And the title of the exhibition simultaneously refers both to the surrealist work of Rene Magritte \"The Treachery of Images\" (\"This is not a pipe\"), and to Kant's ideas about sensations (each one has his own) that create an object of cognition."
+			],
+			"sliderBottom": true,
+			"slider": [
+				{
+					"img": {
+						"src": "1"
+					}
+				}
+			]
+		},
+		{
+			"bodyColor": "white",
+			"banner": true,
+			"id": "gde-i-kak-vstretitsya-so-svoim-tsifrovym-dvoynikom",
+			"title": {
+				"type": "h1",
+				"text": "Where and how can you meet your digital twin",
+				"subtitle": "news"
+			},
+			"texts": [
+				"FACED2FACED project mobile app scans the face of a person and converts it to 3D while trained algorithm provides it with intelligence analyzing information available in user’s social networks.",
+				"AR-Technology helps to “implant” the digital twin in individual’s hand serving as its “appendage”. A two-headed hybrid obtained after conversion has two types of consciousness, namely bio-consciousness and digital consciousness. One of the main goals the artists have is to introduce them to each other so that they could meet face to face. You can ask the «clone» any question and get answers generated basing on the information available on Facebook account of its ancestor. Dmitry Volkov says that modern technologies combined with artistic experience provide us with new opportunities for creating and learning about ourselves. The project continues the aesthetic of unconventional embodiment demonstration of the circus shows from 18-19th centuries and reconsiders the bio-art practice, in particular, Stelarc Ear on Arm experience."
+			],
+			"readmore": "http://natalialfutova.com/en/faced2faced?lang=en",
+			"sliderBottom": true,
+			"slider": [
+				{
+					"img": {
+						"src": "1"
+					}
+				}
+			]
+		},
+		{
+			"bodyColor": "white",
+			"banner": true,
+			"id": "performance-called-people-against-the-book-under-the-title-freedom-of-will-an-illusion-or-a-possibil",
+			"title": {
+				"type": "h1",
+				"text": "Performance called People against the book under the title Freedom of will. An illusion or a possibility",
+				"subtitle": "news"
+			},
+			"texts": [
+				"Pavel Peppershtein and Dmitry Volkov turned to a medieval judicial tradition to determine the fate of a book accused in providing the philosophical underpinning to punish people, and thus is capable to break the existing balance in relations between state and society.",
+				"History knows hundreds examples of medieval legal trials for animals and inanimate objects. The reason for such cases сonsisted of the conviction that the equal retaliation law was of universal nature.",
+				"During the trial Dmitry Volkov acted as a lawyer who advocated justice of claims and conclusions contained in the book before the trial jury and performance spectators. After the voting procedure judge Pavel Peppershtein rendered the verdict."
+			],
+			"sliderBottom": true,
+			"slider": [
+				{
+					"img": {
+						"src": "1"
+					}
+				}
+			]
+		},
+		{
+			"bodyColor": "white",
+			"banner": true,
+			"id": "dmitry-volkov-exactly-the-same-like-we-are-why-are-people-afraid-of-humanoids",
+			"title": {
+				"type": "h1",
+				"text": "Dmitry Volkov: Exactly the same like we are. Why are people afraid of humanoids?",
+				"subtitle": "news"
+			},
+			"texts": [
+				"People have a liking for humanoids who look like them. Just like this little delivery box: smiling at me, blinking its little eyes-little hearts and showing me that pizza has already been delivered to somebody. It acts just like a person. But the most important word here is “like”.",
+				"One of Mori’s revelations was that people do like mechanisms alike them but up to a certain degree of similarity. Once the similarity is critical people are not into humanoids any more and, on the contrary, they feel fear and loathing."
+			],
+			"sliderBottom": true,
+			"slider": [
+				{
+					"img": {
+						"src": "1"
+					}
+				}
+			]
+		}
+	],
+	"more": {
+		"page": "news",
+		"title": {
+			"type": "h2",
+			"text": "Look more",
+			"anim": {
+				"active": true,
+				"time": 2500
+			}
+		},
+		"sliders": {
+			"news": [
+				{
+					"id": "metaphysics-of-uploading-ccs-summer-school-in-palermo",
+					"title": {
+						"type": "h3",
+						"text": "Metaphysics of Uploading. CCS Summer School in Palermo",
+						"hover": "news"
+					}
+				},
+				{
+					"id": "metaphysics-of-possible-worlds-results-of-consciousness-research-center-summer-school",
+					"title": {
+						"type": "h3",
+						"text": "Metaphysics of Possible Worlds. Results of Consciousness Research Center Summer School",
+						"hover": "news"
+					}
+				},
+				{
+					"id": "mccs-held-a-summer-school-of-philosophy-online",
+					"title": {
+						"type": "h3",
+						"text": "CCS held a summer school of philosophy online",
+						"hover": "news"
+					}
+				},
+				{
+					"id": "virtual-tour-of-the-exhibition-this-is-not-a-book",
+					"title": {
+						"type": "h3",
+						"text": "This is Not a Book",
+						"hover": "news"
+					}
+				},
+				{
+					"id": "why-is-there-no-museum-of-philosophy",
+					"title": {
+						"type": "h3",
+						"text": "Why is there no museum of philosophy?",
+						"hover": "news"
+					}
+				},
+				{
+					"id": "from-philosophy-to-art-collection-of-dmitry-volkov-and-mccs",
+					"title": {
+						"type": "h3",
+						"text": "From philosophy to art. Collection of Dmitry Volkov and CCS",
+						"hover": "news"
+					}
+				},
+				{
+					"id": "gde-i-kak-vstretitsya-so-svoim-tsifrovym-dvoynikom",
+					"title": {
+						"type": "h3",
+						"text": "Where and how can you meet your digital twin",
+						"hover": "news"
+					}
+				},
+				{
+					"id": "performance-called-people-against-the-book-under-the-title-freedom-of-will-an-illusion-or-a-possibil",
+					"title": {
+						"type": "h3",
+						"text": "Performance called People against the book under the title Freedom of will. An illusion or a possibility",
+						"hover": "news"
+					}
+				},
+				{
+					"id": "dmitry-volkov-exactly-the-same-like-we-are-why-are-people-afraid-of-humanoids",
+					"title": {
+						"type": "h3",
+						"text": "Dmitry Volkov: Exactly the same like we are. Why are people afraid of humanoids?",
+						"hover": "news"
+					}
+				}
+			]
+		}
+	}
+}

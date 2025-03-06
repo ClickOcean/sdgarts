@@ -1,0 +1,46 @@
+---
+
+---
+
+<svg class="article-waves article-waves--desktop" width="1920" height="83" viewBox="0 0 1920 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M1333.98 11.5666L1673.08 72.8695L1920 38.9618V83H0V0L331.42 49.3969L708.536 11.5666L903.044 49.3969L1333.98 11.5666Z" fill="var(--white)"
+	></path>
+</svg>
+<svg class="article-waves article-waves--mobile" width="390" height="44" viewBox="0 0 390 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M33.7588 23.9846L300.397 0.448608L390 16.7359V44.4486H0V17.3827L33.7588 23.9846Z" fill="var(--white)"></path>
+</svg>
+
+<style lang="scss">
+	.article-waves {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, -99%);
+		width: 100%;
+		z-index: 5;
+
+		@include des {
+			height: auto;
+
+			&--mobile {
+				display: none;
+			}
+		}
+
+		@include tab {
+			height: auto;
+
+			&--mobile {
+				display: none;
+			}
+		}
+
+		@include mob {
+			height: m(44);
+
+			&--desktop {
+				display: none;
+			}
+		}
+	}
+</style>

@@ -1,0 +1,56 @@
+---
+import Container from './Container.astro';
+import Title from './Title.astro';
+import Slider from './Slider.astro';
+import WMore from '../svg/Waves/WMore.astro';
+
+const { title, sliders, id, typeSlider, page } = Astro.props.more;
+
+const qwe = {
+	art: 'exploration',
+	philosophy: 'networking',
+	news: 'news'
+};
+---
+
+<div class="more">
+	<WMore />
+	<Container>
+		<div class="more__content">
+			<Title title={title} mod={'slider'} animScroll={1.5} />
+			<Slider
+				slider={sliders[typeSlider]}
+				grid={4}
+				dataImg={{
+					path: `${qwe[typeSlider]}/main-slider`
+				}}
+				delEl={id}
+				page={page}
+			/>
+		</div>
+	</Container>
+</div>
+
+<style lang="scss">
+	.more {
+		position: relative;
+		width: 100%;
+		background-color: var(--light-gray);
+
+		&__content {
+			width: 100%;
+
+			@include des {
+				padding: d(40) 0 d(100);
+			}
+
+			@include tab {
+				padding: t(40) 0 t(100);
+			}
+
+			@include mob {
+				padding: m(12) m(50) m(60);
+			}
+		}
+	}
+</style>

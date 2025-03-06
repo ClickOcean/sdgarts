@@ -1,0 +1,44 @@
+---
+import ArrowIcon from '../svg/ArrowIcon.astro'
+
+const { position } = Astro.props
+---
+
+<div class="arrow">
+  <ArrowIcon position={position} />
+</div>
+
+<style lang="scss">
+  .arrow {
+    position: relative;
+    transition: transform 0.1s ease 0s;
+
+    @include des {
+      width: d(34);
+      height: d(34);
+    }
+
+    @include tab {
+      width: t(34);
+      height: t(34);
+    }
+
+    @include mob {
+      width: m(22);
+      height: m(22);
+    }
+
+    @media (hover: hover) {
+      cursor: pointer;
+      transition-duration: 0.3s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    &:active {
+      transform: scale(0.91);
+    }
+  }
+</style>

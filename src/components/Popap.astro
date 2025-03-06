@@ -1,0 +1,151 @@
+---
+import Title from './Title.astro'
+import Slider from './Slider.astro'
+
+import Close from './Close.astro'
+
+const { title, slider, dataImg, initialSlide, noTitle, id, noLoop, arrow } =
+  Astro.props.data
+---
+
+<div class="popap" data-popap>
+  <div class="popap__content">
+    <div class="popap__head">
+      {title && <Title title={title} mod={'popap'} />}
+      <div class="popap__close" data-popap-close>
+        <Close />
+      </div>
+    </div>
+    {
+      slider && (
+        <Slider
+          slider={slider}
+          grid={1.55}
+          effect={'creative'}
+          mod={'popap'}
+          dataImg={dataImg}
+          mouseWheel={false}
+          initialSlide={initialSlide}
+          noTitle={noTitle}
+          id={id}
+          loop={noLoop}
+          arrow={arrow}
+        />
+      )
+    }
+  </div>
+</div>
+
+<style lang="scss">
+  .popap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    background-color: var(--white);
+    z-index: 999;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease 0s;
+
+    &.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    @include mob {
+      display: none;
+    }
+
+    &__content {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow-y: auto;
+      overflow-x: hidden;
+
+      // filter: blur(20px);
+      // transition: all 0.55s ease 0s;
+
+      // .active & {
+      // 	filter: none;
+      // }
+
+      @include des {
+        padding: d(128) 0;
+      }
+
+      @include tab {
+        padding: t(128) 0;
+      }
+
+      @include mob {
+      }
+    }
+
+    &__head {
+      position: relative;
+      width: 100%;
+
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      @include des {
+        padding: d(40) d(340) 0;
+        margin-bottom: d(37);
+        gap: d(20);
+      }
+
+      @include tab {
+        padding: t(40) t(340) 0;
+        margin-bottom: t(37);
+        gap: t(20);
+      }
+
+      @include mob {
+      }
+    }
+
+    &__close {
+      position: relative;
+      z-index: 9;
+
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      @include des {
+        width: d(27);
+        height: d(27);
+        top: d(64);
+        right: d(340);
+        // margin: d(28) 0 d(4);
+      }
+
+      @include tab {
+        width: t(27);
+        height: t(27);
+        top: t(64);
+        right: t(340);
+        // margin: t(28) 0 t(4);
+      }
+
+      @include mob {
+        width: m(10);
+        height: m(10);
+      }
+    }
+  }
+</style>
+
+<script>
+  import closePopap from '../scripts/closePopap'
+
+  closePopap({
+    name: 'popap'
+  })
+</script>

@@ -1,0 +1,17 @@
+/** @format */
+
+$viewportDesktop: 1920;
+$viewportMobile: 390;
+
+@function d($pxValue) {
+	// @return $pxValue * 1px;
+	@return calc($pxValue / $viewportDesktop * 100vw);
+}
+
+@function t($pxValue) {
+	@return calc($pxValue / $viewportDesktop * 100vw);
+}
+
+@function m($pxValue) {
+	@return calc($pxValue / $viewportMobile * 100vw);
+}

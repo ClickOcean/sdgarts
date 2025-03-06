@@ -1,0 +1,110 @@
+---
+
+---
+
+<div class="nav" data-nav>
+  <nav class="nav__content">
+    <a href="/about" class="nav__link">About us</a>
+    <a data-nav-link data-link href="projects" class="nav__link">Projects</a>
+    <a data-nav-link data-link href="philosophy" class="nav__link">Philosophy</a
+    >
+    <a data-nav-link data-link href="news" class="nav__link">News</a>
+    <a data-nav-link data-link href="art-collecrion" class="nav__link"
+      >ART Collecrion</a
+    >
+    <a data-nav-link data-link href="book-collecrion" class="nav__link"
+      >BOOK Collecrion</a
+    >
+  </nav>
+</div>
+
+<style lang="scss">
+  .nav {
+    background-color: var(--white);
+    transition: transform 0.6s cubic-bezier(0.55, 0, 0.1, 1) 0s;
+
+    @include mob {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100vw;
+      z-index: 1;
+      transform: scaleY(0) translateY(-10%);
+      transform-origin: top center;
+
+      &.open {
+        transform: none;
+      }
+    }
+
+    &__content {
+      display: flex;
+
+      @include des {
+        grid-gap: d(46);
+        align-items: center;
+      }
+
+      @include tab {
+        grid-gap: t(46);
+        align-items: center;
+      }
+
+      @include mob {
+        width: 100%;
+        height: 100%;
+        padding: m(120) m(20) m(20);
+        flex-direction: column;
+        grid-gap: m(8);
+      }
+    }
+
+    &__link {
+      text-transform: uppercase;
+      line-height: 1.4;
+      transition: color 0.1s ease 0s;
+
+      &.active {
+        color: var(--turquoise);
+        pointer-events: none;
+      }
+
+      @include des {
+        font-weight: 200;
+        font-size: d(17);
+      }
+
+      @include tab {
+        font-weight: 200;
+        font-size: t(17);
+      }
+
+      @include mob {
+        font-weight: 500;
+        font-size: m(20);
+
+        opacity: 0;
+        transition: opacity 0.2s ease 0s;
+
+        .open & {
+          opacity: 1;
+          transition: opacity 0.5s ease 0.4s;
+        }
+      }
+
+      @media (hover: hover) {
+        transition-duration: 0.3s;
+
+        &:hover {
+          color: var(--turquoise);
+        }
+      }
+
+      &:active {
+        color: var(--turquoise);
+      }
+    }
+  }
+</style>

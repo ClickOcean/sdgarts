@@ -1,0 +1,30 @@
+---
+const { mod, bannerClass } = Astro.props
+---
+
+<main class={`page${mod ? ` page--${mod}` : ''}${bannerClass}`}>
+  <slot />
+</main>
+
+<style lang="scss">
+  .page {
+    position: relative;
+    z-index: 9;
+    width: 100%;
+    background-color: var(--light-gray);
+    overflow: hidden;
+    min-height: 100vh;
+
+    @include des {
+      padding-top: d(74);
+    }
+
+    @include tab {
+      padding-top: t(74);
+    }
+
+    @include mob {
+      padding-top: m(64);
+    }
+  }
+</style>

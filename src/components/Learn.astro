@@ -1,0 +1,113 @@
+---
+const { learn } = Astro.props
+const { text, link, mod } = learn
+---
+
+<a href={link} class={`learn${mod ? ` learn--${mod}` : ''}`}>{text}</a>
+
+<style lang="scss">
+  .learn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    color: var(--turquoise);
+    text-transform: uppercase;
+    font-weight: 800;
+    transition:
+      color 0.1s ease 0s,
+      transform 0.1s ease 0s;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      background-color: var(--turquoise);
+      transition: background-color 0.1s ease 0s;
+
+      @include des {
+        height: d(1);
+        bottom: d(10);
+      }
+
+      @include tab {
+        height: t(1);
+        bottom: t(10);
+      }
+
+      @include mob {
+        height: m(1);
+        bottom: m(13);
+      }
+    }
+
+    &--news {
+      color: var(--black);
+
+      &::after {
+        background-color: var(--black);
+      }
+    }
+
+    @include des {
+      font-size: d(15);
+      height: d(38);
+    }
+
+    @include tab {
+      font-size: t(15);
+      height: t(38);
+    }
+
+    @include mob {
+      font-size: m(10);
+      height: m(38);
+    }
+
+    @media (hover: hover) {
+      cursor: pointer;
+      transition-duration: 0.2s;
+
+      &::after {
+        transition-duration: inherit;
+      }
+
+      &:hover {
+        color: var(--teal);
+
+        &::after {
+          background-color: var(--teal);
+        }
+      }
+    }
+
+    &:active {
+      transform: scale(0.91);
+      color: var(--teal);
+    }
+
+    &--news {
+      @media (hover: hover) {
+        cursor: pointer;
+        transition-duration: 0.2s;
+
+        &::after {
+          transition-duration: inherit;
+        }
+
+        &:hover {
+          color: var(--white);
+
+          &::after {
+            background-color: var(--white);
+          }
+        }
+      }
+
+      &:active {
+        transform: scale(0.91);
+        color: var(--white);
+      }
+    }
+  }
+</style>

@@ -1,0 +1,46 @@
+---
+import Descr from './Descr.astro';
+
+const { texts, mod, noReadMore } = Astro.props;
+---
+
+<div class={`texts${!noReadMore ? ' texts--read-more' : ''}`}>
+	{texts.map((text) => <Descr descr={{ text: text }} mod={mod} />)}
+	{!noReadMore && <Descr descr={{ text: 'Read More' }} mod={'read-more'} />}
+</div>
+
+<style lang="scss">
+	.texts {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		font-family: var(--font-montserrat);
+		font-weight: 300;
+
+		@include des {
+			grid-gap: d(30);
+			padding-bottom: d(50);
+		}
+
+		@include tab {
+			grid-gap: t(30);
+			padding-bottom: t(50);
+		}
+
+		@include mob {
+			grid-gap: m(17);
+			padding-bottom: m(20);
+			align-items: flex-start;
+
+			&--read-more {
+				&:not(.show) {
+					:global(.descr) {
+						&:not(:first-of-type, :last-of-type) {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+</style>

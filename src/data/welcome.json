@@ -1,0 +1,18 @@
+{
+	"title": {
+		"type": "h1",
+		"text": "SDG arts<br class='mobile'> &&nbsp;science<br> foundation",
+		"anim": {
+			"active": true,
+			"time": 2500
+		}
+	},
+	"descr": {
+		"text": "We focus on contemporary art and analytic<br class='mobile'> philosophy. Our main<br class='desktop'> values are innovation,<br class='mobile'> creativity and critical thinking.",
+		"light": true
+	},
+	"learn": {
+		"text": "Learn more",
+		"link": "/about"
+	}
+}

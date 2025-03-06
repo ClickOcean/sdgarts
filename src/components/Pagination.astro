@@ -1,0 +1,73 @@
+---
+
+---
+
+<div
+  class="pagination"
+  data-pagination
+  data-pagination-class-name-el="pagination__el"
+>
+</div>
+
+<style lang="scss">
+  .pagination {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include des {
+      grid-gap: d(9);
+    }
+
+    @include tab {
+      grid-gap: t(9);
+    }
+
+    @include mob {
+      grid-gap: m(9);
+    }
+
+    :global(.pagination__el) {
+      border-style: solid;
+      border-color: var(--black);
+      background-color: var(--transparent);
+      transition:
+        background-color 0.1s ease 0s,
+        transform 0.1s ease 0s;
+
+      &.active {
+        background-color: var(--black);
+      }
+
+      @include des {
+        width: d(13);
+        height: d(13);
+        border-width: d(1);
+      }
+
+      @include tab {
+        width: t(13);
+        height: t(13);
+        border-width: t(1.2);
+      }
+
+      @include mob {
+        width: m(13);
+        height: m(13);
+        border-width: m(1);
+      }
+
+      @media (hover: hover) {
+        cursor: pointer;
+        transition-duration: 0.3s;
+
+        &:hover {
+          background-color: var(--black);
+        }
+      }
+
+      &:active {
+        transform: scale(0.91);
+      }
+    }
+  }
+</style>

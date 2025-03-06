@@ -1,0 +1,51 @@
+---
+const { bgColor } = Astro.props;
+---
+
+<svg class="waves-footer waves-footer--desktop" width="1920" height="34" viewBox="0 0 1920 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path
+		d="M174.18 0.474609L0 33.5863V0H1920V19.9425L1800.75 0.474609L1598.26 28.7372L1401.36 30.9997L950.578 2.73715L605.625 28.7372L174.18 0.474609Z"
+		fill={`var(${bgColor ? `--${bgColor}` : '--light-gray'})`}></path>
+</svg>
+<svg class="waves-footer waves-footer--mobile" width="390" height="16" viewBox="0 0 390 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M259.233 1.17512L87.0412 16L0 7.06296V0H390V9.88193L259.233 1.17512Z" fill={`var(${bgColor ? `--${bgColor}` : '--light-gray'})`}></path>
+</svg>
+
+<style lang="scss">
+	@import '../../styles/media.scss';
+
+	.waves-footer {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100%;
+		z-index: 5;
+
+		@include des {
+			top: d(-1);
+			height: auto;
+
+			&--mobile {
+				display: none;
+			}
+		}
+
+		@include tab {
+			top: t(-1);
+			height: auto;
+
+			&--mobile {
+				display: none;
+			}
+		}
+
+		@include mob {
+			top: m(-1);
+			height: m(16);
+
+			&--desktop {
+				display: none;
+			}
+		}
+	}
+</style>

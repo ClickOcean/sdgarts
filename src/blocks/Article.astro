@@ -1,0 +1,167 @@
+---
+import Container from '../components/Container.astro';
+import Title from '../components/Title.astro';
+import Texts from '../components/Texts.astro';
+import Slider from '../components/Slider.astro';
+import BooksSlider from '../components/BooksSlider.astro';
+import More from '../components/More.astro';
+import ReadMore from '../components/ReadMore.astro';
+import Back from '../components/Back.astro';
+import WArticle from '../svg/Waves/WArticle.astro';
+
+const { data, more, dataImg, dataBooks, noTitle, bgColor } = Astro.props;
+const { id, title, texts, readmore, slider, sliderBottom } = data;
+---
+
+<section class="article" style={bgColor ? `background-color: var(--${bgColor});` : ''} data-scroll-section>
+	<WArticle />
+	<div class="article__svg">
+		<svg xmlns="http://www.w3.org/2000/svg" width="220" height="517" viewBox="0 0 220 517" fill="none">
+			<path
+				d="M33 1L1 58M33 1L147.5 139.5M33 1L218.5 394.5M33 1L1 199.5M147.5 139.5L218.5 394.5M147.5 139.5L1 178M147.5 139.5L1 304.5M147.5 139.5L1 436M218.5 394.5L1 516M218.5 394.5L1 378.5M218.5 394.5L1 332.5M218.5 394.5L1 248"
+				stroke="#D7D3F2"></path>
+		</svg>
+	</div>
+	<div class="article__wrap">
+		<Back />
+		<Container bgColor={'white'}>
+			<div class={`article__content${sliderBottom ? ' article__content--reverse' : ''}`}>
+				{!noTitle && title && <Title title={title} mod={'article'} animScroll={0.5} positionScroll />}
+				{
+					slider && (
+						<Slider
+							slider={slider}
+							grid={3}
+							effect={'creative'}
+							mod={'article'}
+							dataImg={dataImg}
+							openPopap
+							loop={true}
+							initialSlide={0}
+							id={dataBooks ? 'books' : null}
+						/>
+					)
+				}
+				{
+					dataBooks ? (
+						<BooksSlider slider={dataBooks} />
+					) : (
+						<>
+							{texts && <Texts texts={texts} mod={'article'} />}
+							{readmore && <ReadMore link={readmore} />}
+						</>
+					)
+				}
+			</div>
+		</Container>
+	</div>
+	{
+		more && (
+			<More
+				more={{
+					...more,
+					id,
+					typeSlider: title.subtitle
+				}}
+			/>
+		)
+	}
+</section>
+
+<style lang="scss">
+	.article {
+		position: relative;
+		width: 100%;
+		background-color: var(--light-gray);
+
+		@include des {
+			min-height: calc(100vh - d(610));
+			padding-bottom: d(30);
+		}
+
+		@include tab {
+			min-height: calc(100vh - t(610));
+			padding-bottom: t(30);
+		}
+
+		@include mob {
+			min-height: calc(100vh - m(440));
+			padding-bottom: m(18);
+		}
+
+		&__svg {
+			position: absolute;
+			left: 0;
+			z-index: 999;
+
+			@include des {
+				width: d(220);
+				height: d(517);
+				bottom: d(470);
+			}
+
+			@include tab {
+				width: t(220);
+				height: t(517);
+				bottom: t(470);
+			}
+
+			@include mob {
+			}
+
+			& svg {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		&__wrap {
+			position: relative;
+			width: 100%;
+			background-color: var(--white);
+		}
+
+		&__content {
+			position: relative;
+			width: 100%;
+
+			@include des {
+				padding: d(51) 0 d(90);
+			}
+
+			@include tab {
+				padding: t(51) 0 t(90);
+			}
+
+			@include mob {
+				padding: m(40) m(50) m(58);
+			}
+
+			&--reverse {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+
+				:global(.slider--article) {
+					margin-bottom: 0;
+					order: 1;
+
+					@include des {
+						margin-top: d(0);
+					}
+
+					@include tab {
+						margin-top: t(0);
+					}
+
+					@include mob {
+						margin-top: m(68);
+					}
+				}
+			}
+		}
+	}
+</style>

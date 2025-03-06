@@ -1,0 +1,33 @@
+---
+
+---
+
+<svg class="exploration-waves" width="1920" height="75" viewBox="0 0 1920 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M1920 65.8107L1828 32.6745L1694.99 75H1920V65.8107Z" fill="var(--light-gray)"></path>
+	<path d="M667.087 2.79767L268.5 60.2788L0 0V75H909.342L667.087 2.79767Z" fill="var(--light-gray)"></path>
+	<path d="M667.087 2.79767L909.342 75H1694.99L1828 32.6745L667.087 2.79767Z" fill="var(--aqua)"></path>
+</svg>
+
+<style lang="scss">
+	@import '../../styles/media.scss';
+
+	.exploration-waves {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 0;
+		width: 100%;
+		height: auto;
+		z-index: 5;
+
+		@include des {
+		}
+
+		@include tab {
+		}
+
+		@include mob {
+			display: none;
+		}
+	}
+</style>

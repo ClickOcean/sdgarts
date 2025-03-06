@@ -1,0 +1,346 @@
+---
+import Container from '../components/Container.astro'
+import Title from '../components/Title.astro'
+import Descr from '../components/Descr.astro'
+import Learn from '../components/Learn.astro'
+import WWelcome from '../svg/Waves/WWelcome.astro'
+
+const { title, descr, learn } = Astro.props.data
+---
+
+<section class="welcome" data-scroll-section>
+  <Container>
+    <div class="welcome__content">
+      <Title title={title} mod={'main'} animScroll={1} positionScroll />
+      <Descr descr={descr} animScroll={0.5} positionScroll />
+      <Learn learn={learn} />
+      <div
+        class="welcome__img"
+        data-pulse-anim="5000"
+        data-scroll
+        data-scroll-speed="3"
+        data-scroll-position="top"
+      >
+        <img
+          data-img-lazy
+          src="/images/lazy.png"
+          data-src="/images/welcome/1.png"
+          alt=""
+        />
+        <img
+          data-img-lazy
+          src="/images/lazy.png"
+          data-src="/images/welcome/2.png"
+          alt=""
+        />
+        <img
+          data-img-lazy
+          src="/images/lazy.png"
+          data-src="/images/welcome/3.png"
+          alt=""
+        />
+      </div>
+      <div
+        class="welcome__svg welcome__svg--big"
+        data-scroll
+        data-scroll-speed="1"
+        data-scroll-position="top"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="680"
+          height="1036"
+          viewBox="0 0 680 1036"
+          fill="none"
+        >
+          <path
+            d="M679 267.5L581 759M679 267.5L133 1.5M679 267.5L239 422.5M679 267.5L148 673.5M679 267.5L1 354.5M679 267.5L376 1035M581 759L376 1035M581 759L148 673.5M581 759L239 422.5M581 759L133 1.5M376 1035L148 673.5M376 1035L239 422.5M148 673.5L239 422.5M239 422.5L1 354.5M239 422.5L133 1.5M1 354.5L133 1.5"
+            stroke="#D4DBA7"></path>
+        </svg>
+      </div>
+      <div
+        class="welcome__svg welcome__svg--triangle"
+        data-scroll
+        data-scroll-speed="-3"
+        data-scroll-position="top"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="110"
+          height="120"
+          viewBox="0 0 110 120"
+          fill="none"
+        >
+          <path d="M1 53L91.5 1L108.5 119L1 53Z" stroke="#ACD1D3"></path>
+        </svg>
+      </div>
+    </div>
+  </Container>
+  <div
+    class="welcome__svg welcome__svg--small"
+    data-scroll
+    data-scroll-speed="2"
+    data-scroll-position="top"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="448"
+      height="295"
+      viewBox="0 0 448 295"
+      fill="none"
+    >
+      <path
+        d="M183 104L157 1M183 104L293.5 70M183 104L108 294M183 104L321.5 260M183 104L447 178M183 104L1 55M157 1L1 55M157 1L108 294M1 55L108 294M1 55L321.5 260M108 294L321.5 260M108 294L447 178M108 294L293.5 70M321.5 260L447 178M321.5 260L293.5 70M447 178L293.5 70"
+        stroke="#ACD1D3"></path>
+    </svg>
+  </div>
+  <WWelcome />
+</section>
+
+<style lang="scss">
+  .welcome {
+    position: relative;
+    width: 100%;
+
+    &__content {
+      position: relative;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      @include des {
+        padding: d(236) 0 d(190);
+        z-index: 1;
+      }
+
+      @include tab {
+        padding: t(236) 0 t(190);
+        z-index: 1;
+      }
+
+      @include mob {
+        padding: m(90) m(16) m(74);
+      }
+    }
+
+    &__img {
+      position: absolute;
+
+      @include des {
+        top: d(30);
+        right: d(246);
+        width: d(404);
+        height: d(722);
+      }
+
+      @include tab {
+        top: t(30);
+        right: t(246);
+        width: t(404);
+        height: t(722);
+      }
+
+      @include mob {
+        top: m(30);
+        right: m(23);
+        width: m(184);
+        height: m(322);
+      }
+
+      &.anim img {
+        &:nth-of-type(2) {
+          animation: pulse2 0.15s ease-in 0s alternate;
+        }
+
+        &:nth-of-type(3) {
+          animation: pulse 0.15s ease-in 0s alternate;
+        }
+      }
+
+      & img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        &:nth-of-type(1) {
+          z-index: 3;
+        }
+
+        &:nth-of-type(2) {
+          z-index: 2;
+
+          @include des {
+            transform: translateY(d(6));
+          }
+
+          @include tab {
+            transform: translateY(t(6));
+          }
+
+          @include mob {
+            transform: translateY(m(3));
+          }
+        }
+
+        &:nth-of-type(3) {
+          z-index: 1;
+
+          @include des {
+            transform: translate(d(-8), d(10));
+          }
+
+          @include tab {
+            transform: translate(t(-8), t(10));
+          }
+
+          @include mob {
+            transform: translate(m(-4), m(5));
+          }
+        }
+      }
+    }
+
+    &__svg {
+      position: absolute;
+      z-index: -1;
+
+      & svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        @include mob {
+          & path {
+            stroke: #acd1d3;
+          }
+        }
+      }
+
+      &--big {
+        top: 0;
+
+        @include des {
+          right: d(98);
+          width: d(680);
+          height: d(1036);
+        }
+
+        @include tab {
+          right: t(98);
+          width: t(680);
+          height: t(1036);
+        }
+
+        @include mob {
+          width: m(312);
+          height: m(204);
+          top: m(100);
+          right: m(-70);
+          transform: scale(1.6) rotate(-10deg);
+        }
+      }
+
+      &--small {
+        @include des {
+          left: d(40);
+          bottom: d(-80);
+          width: d(448);
+          height: d(295);
+        }
+
+        @include tab {
+          left: t(40);
+          bottom: t(-80);
+          width: t(448);
+          height: t(295);
+        }
+
+        @include mob {
+          display: none;
+        }
+      }
+
+      &--triangle {
+        @include des {
+          top: d(510);
+          left: d(490);
+          width: d(110);
+          height: d(120);
+        }
+
+        @include tab {
+          top: t(510);
+          left: t(490);
+          width: t(110);
+          height: t(120);
+        }
+
+        @include mob {
+          display: none;
+        }
+      }
+    }
+
+    :global(.descr) {
+      @include des {
+        margin-bottom: d(15);
+      }
+
+      @include tab {
+        margin-bottom: t(15);
+      }
+
+      @include mob {
+        margin-bottom: m(6);
+      }
+    }
+  }
+
+  @keyframes pulse {
+    0% {
+    }
+
+    25% {
+      transform: translate(-2%, 2%);
+    }
+
+    50% {
+      transform: translate(2%, 2%);
+    }
+
+    75% {
+      transform: translate(5%, -1%);
+    }
+
+    100% {
+      transform: translate(-1%, 5%);
+    }
+  }
+
+  @keyframes pulse2 {
+    0% {
+    }
+
+    25% {
+      transform: translateY(-5%);
+    }
+
+    50% {
+      transform: translateX(4%);
+    }
+
+    75% {
+      transform: translateX(4%);
+    }
+
+    100% {
+      transform: translateY(3%);
+    }
+  }
+</style>

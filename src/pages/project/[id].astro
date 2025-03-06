@@ -1,0 +1,57 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Article from '../../blocks/Article.astro';
+
+import { articles, more } from '../../data/project/exploration.json';
+import { slider } from '../../data/bibliophile.json';
+
+export const getStaticPaths = async () =>
+	articles.map((article) => ({
+		params: { id: article.id },
+		props: { article }
+	}));
+
+const { article } = Astro.props;
+
+const dataBooks = article.id === 'kollektsiya-redkikh-izdaniy-filosofskikh-knig' ? slider : null;
+
+const dataImg = {
+	path: 'exploration',
+	id: article.id,
+	src: true
+};
+
+const pageSettings = {
+	title: article.title.text,
+	descr: '',
+	bodyColor: article.bodyColor ? article.bodyColor : 'white',
+	banner: {
+		active: article.banner ? true : false,
+		path: 'exploration',
+		src: article.id,
+		format: article.png ? 'png' : 'jpg',
+		bgColor: 'white'
+	},
+	popap: {
+		active: article.slider ? true : false,
+		initialSlide: 0,
+		noLoop: true,
+		title: {
+			type: 'h2',
+			text: article.title.text,
+			subtitle: 'art'
+		},
+		slider: article.slider,
+		dataImg: {
+			...dataImg,
+			objectFit: article.imgObjectFit,
+			grid: article.grid
+		},
+		arrow: 'center-big'
+	}
+};
+---
+
+<Layout pageSettings={pageSettings}>
+	<Article data={article} more={more} dataImg={dataImg} dataBooks={dataBooks} />
+</Layout>

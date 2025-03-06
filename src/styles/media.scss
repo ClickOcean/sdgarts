@@ -1,0 +1,25 @@
+/** @format */
+
+$mediaDesktop: 1920px;
+$mediaMobile: 480px;
+
+$mediaTabletMin: $mediaMobile + 1px;
+$mediaTabletMax: $mediaDesktop - 1px;
+
+@mixin des {
+	@media only screen and (min-width: $mediaDesktop) {
+		@content;
+	}
+}
+
+@mixin tab {
+	@media only screen and (min-width: $mediaTabletMin) and (max-width: $mediaTabletMax) {
+		@content;
+	}
+}
+
+@mixin mob {
+	@media only screen and (max-width: $mediaMobile) {
+		@content;
+	}
+}

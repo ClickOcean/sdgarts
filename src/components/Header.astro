@@ -1,0 +1,64 @@
+---
+import Container from './Container.astro'
+import Logo from './Logo.astro'
+import Nav from './Nav.astro'
+import OpenNav from './OpenNav.astro'
+---
+
+<header class="header" data-header>
+  <Container>
+    <div class="header__content">
+      <Logo typeLogo={'header'} />
+      <Nav />
+      <OpenNav />
+    </div>
+  </Container>
+</header>
+
+<style lang="scss">
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 9999;
+    background-color: var(--white);
+
+    &__content {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @include des {
+        height: d(76);
+      }
+
+      @include tab {
+        height: t(76);
+      }
+
+      @include mob {
+        height: m(68);
+        padding: m(5) m(16);
+      }
+    }
+
+    :global(.logo--header) {
+      position: relative;
+      z-index: 2;
+    }
+  }
+</style>
+
+<script>
+  const header = document.querySelector('[data-header]')
+  const openNav = header.querySelector('[data-open-nav]')
+  const nav = header.querySelector('[data-nav]')
+
+  openNav &&
+    openNav.addEventListener('click', () => {
+      openNav.classList.toggle('open')
+      nav && nav.classList.toggle('open')
+    })
+</script>

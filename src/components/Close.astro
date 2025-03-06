@@ -1,0 +1,42 @@
+---
+import CloseIcon from '../svg/CloseIcon.astro'
+---
+
+<div class="close">
+  <CloseIcon />
+</div>
+
+<style lang="scss">
+  .close {
+    position: relative;
+    transition: transform 0.1s ease 0s;
+
+    @include des {
+      width: d(27);
+      height: d(27);
+    }
+
+    @include tab {
+      width: t(27);
+      height: t(27);
+    }
+
+    @include mob {
+      width: m(15);
+      height: m(15);
+    }
+
+    @media (hover: hover) {
+      cursor: pointer;
+      transition-duration: 0.3s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    &:active {
+      transform: scale(0.91);
+    }
+  }
+</style>

@@ -1,0 +1,717 @@
+---
+import Title from './Title.astro'
+import Descr from './Descr.astro'
+import Arrow from './Arrow.astro'
+import Pagination from './Pagination.astro'
+
+const {
+  slider,
+  grid,
+  transparent,
+  squareImg,
+  collectionImg,
+  effect,
+  page,
+  mod,
+  dataImg,
+  delEl,
+  openPopap,
+  mouseWheel,
+  initialSlide,
+  noTitle,
+  id,
+  loop,
+  arrow
+} = Astro.props
+
+const styleImgSquare = () => {
+  if (squareImg) return 'slider__slide-img--square'
+  else if (collectionImg) return 'slider__slide-img--collection'
+  else return 'slider__slide-img--default'
+}
+---
+
+<div
+  class={`slider slider--${grid >= 4 ? 'small' : 'big'}${mod ? ` slider--${mod}` : ''}`}
+  data-scroll
+  data-scroll-speed="1"
+>
+  <div
+    class="slider__swiper swiper"
+    data-slider={id ? id : ''}
+    data-slider-grid={!dataImg?.grid ? grid : dataImg.grid}
+    data-slider-effect={effect}
+    data-slider-mousewheel={mouseWheel && 'active'}
+    data-slider-initial={initialSlide ? initialSlide : 0}
+    data-slider-loop={loop}
+  >
+    <div class="swiper-wrapper">
+      {
+        slider.map(({ id, title, descr, img, hash }, index) => {
+          if (delEl && delEl === id) {
+            return null
+          }
+
+          return (
+            <div
+              class="slider__slide swiper-slide"
+              data-slide={index}
+              data-open-popap={openPopap ? 'active' : 'deactive'}
+              data-play={img?.play ? img.play : null}
+            >
+              {page ? (
+                <a
+                  class="slider__slide-link"
+                  href={`/${page}/${id}${hash ? `#${hash}` : ''}`}
+                />
+              ) : (
+                <div class="slider__slide-click" data-slide-click />
+              )}
+              {!effect ? (
+                <div class={`slider__slide-img ${styleImgSquare()}`}>
+                  {dataImg && (
+                    <img
+                      data-img-lazy
+                      src="/images/lazy.png"
+                      style={
+                        dataImg.objectFit
+                          ? `object-fit:${dataImg.objectFit};`
+                          : ''
+                      }
+                      data-src={`/images/${dataImg.path}/${index + 1}.jpg`}
+                      alt=""
+                    />
+                  )}
+                </div>
+              ) : (
+                <div
+                  class={`slider__slide-img slider__slide-img--creative`}
+                  data-swiper-parallax-scale="0.6"
+                >
+                  {dataImg && (
+                    <img
+                      data-img-lazy
+                      src="/images/lazy.png"
+                      style={
+                        dataImg.objectFit
+                          ? `object-fit:${dataImg.objectFit};`
+                          : ''
+                      }
+                      data-src={`/images/${dataImg.path}/${dataImg.id ? `${dataImg.id}/` : ''}${dataImg.src ? img.src : index + 1}.jpg`}
+                      alt=""
+                      data-img
+                    />
+                  )}
+                  {img?.play && (
+                    <>
+                      <div class="slider__slide-play" data-player>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="84"
+                          height="97"
+                          viewBox="0 0 84 97"
+                          fill="none"
+                        >
+                          <path
+                            d="M83.5369 48.7824L0.125 96.9403L0.125004 0.624512L83.5369 48.7824Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </div>
+                      <iframe
+                        width="0"
+                        height="0"
+                        src={`https://www.youtube.com/embed/${img.play}?rel=0&enablejsapi=1`}
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                        data-iframe
+                        class="hide"
+                      />
+                    </>
+                  )}
+                </div>
+              )}
+              <div
+                class={`slider__slide-content ${transparent ? 'slider__slide-content--transparent' : 'slider__slide-content--white'}`}
+                data-slide-content
+              >
+                {title && !noTitle && <Title title={title} />}
+                {descr && <Descr descr={descr} mod="small" />}
+              </div>
+            </div>
+          )
+        })
+      }
+    </div>
+    <div
+      class={`slider__arrow slider__arrow--prev${arrow ? ` position-${arrow}` : ''}`}
+      data-arrow-prev
+    >
+      <Arrow position="left" />
+    </div>
+    <div
+      class={`slider__arrow slider__arrow--next${arrow ? ` position-${arrow}` : ''}`}
+      data-arrow-next
+    >
+      <Arrow />
+    </div>
+    {
+      slider.length >= 3 && (
+        <div class="slider__pagination">
+          <Pagination />
+        </div>
+      )
+    }
+  </div>
+</div>
+
+<style lang="scss">
+  .slider {
+    position: relative;
+    width: 100%;
+
+    @include mob {
+      width: 100vw;
+      margin: 0 m(-50);
+    }
+
+    &--article {
+      @include des {
+        margin-bottom: d(110);
+      }
+
+      @include tab {
+        margin-bottom: t(110);
+      }
+
+      @include mob {
+        margin-bottom: m(68);
+      }
+    }
+
+    &__swiper {
+      position: static;
+
+      @include mob {
+        padding: 0 m(50);
+      }
+    }
+
+    &__slide {
+      position: relative;
+      z-index: 1;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+
+      :global(.title) {
+        transition: color 0.3s ease 0s;
+      }
+
+      @media (hover: hover) {
+        cursor: pointer;
+
+        &:hover {
+          :global(.title) {
+            color: var(--turquoise);
+            animation: pulseTitles 0.1s ease 0s;
+          }
+
+          :global(.title--news) {
+            color: var(--light-gray);
+            animation: pulseTitles 0.1s ease 0s;
+          }
+        }
+      }
+
+      &-link,
+      &-click {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--transparent);
+      }
+
+      &-link {
+        z-index: 99;
+      }
+
+      &-click {
+        z-index: 90;
+      }
+
+      &-img {
+        position: relative;
+        width: 100%;
+        background-color: var(--transparent);
+        z-index: 1;
+        overflow: hidden;
+
+        & img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          z-index: 1;
+        }
+
+        & iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 4;
+        }
+
+        &--default {
+          @include des {
+            height: d(240);
+          }
+
+          @include tab {
+            height: t(240);
+          }
+
+          @include mob {
+            .slider--small & {
+              height: m(200);
+            }
+
+            .slider--big & {
+              height: m(160);
+            }
+          }
+        }
+
+        &--square {
+          aspect-ratio: 1/0.76;
+        }
+
+        &--collection {
+          aspect-ratio: 1/1;
+        }
+
+        &--creative {
+          @include des {
+            height: d(340);
+          }
+
+          @include tab {
+            height: t(340);
+          }
+
+          @include mob {
+            height: m(190);
+          }
+
+          .slider--popap & {
+            @include des {
+              height: d(340 * 2);
+            }
+
+            @include tab {
+              height: t(340 * 2);
+            }
+
+            @include mob {
+              height: m(190);
+            }
+          }
+        }
+      }
+
+      &-play {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+
+        @include des {
+          width: d(84);
+          height: d(97);
+        }
+
+        @include tab {
+          width: t(84);
+          height: t(97);
+        }
+
+        @include mob {
+          width: m(41);
+          height: m(47);
+        }
+
+        & svg {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      &-content {
+        width: 100%;
+        flex: 1 1 auto;
+
+        display: flex;
+        flex-direction: column;
+
+        &:empty {
+          display: none;
+        }
+
+        &--white {
+          background-color: var(--white);
+
+          @include des {
+            padding: d(14) d(18);
+            grid-gap: d(14);
+          }
+
+          @include tab {
+            padding: t(14) t(18);
+            grid-gap: t(14);
+          }
+
+          @include mob {
+            padding: m(11) m(15);
+            grid-gap: m(13);
+          }
+        }
+
+        &--transparent {
+          background-color: var(--transparent);
+
+          @include des {
+            padding-top: d(39);
+            grid-gap: d(30);
+          }
+
+          @include tab {
+            padding-top: t(39);
+            grid-gap: t(30);
+          }
+
+          @include mob {
+            padding-top: m(17);
+            grid-gap: m(17);
+          }
+        }
+      }
+    }
+
+    &__arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 999;
+      transition: opacity 0.3s ease 0s;
+
+      &.swiper-button-disabled {
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      &--prev {
+        @include des {
+          left: d(-60);
+        }
+
+        @include tab {
+          left: t(-60);
+        }
+
+        @include mob {
+          left: m(6);
+        }
+
+        &.position-center {
+          left: 50%;
+          transform: translate(-1500%, -50%);
+        }
+
+        &.position-center-big {
+          left: 50%;
+          transform: translate(-2200%, -50%);
+        }
+      }
+
+      &--next {
+        @include des {
+          right: d(-60);
+        }
+
+        @include tab {
+          right: t(-60);
+        }
+
+        @include mob {
+          right: m(6);
+        }
+
+        &.position-center {
+          right: 50%;
+          transform: translate(1500%, -50%);
+        }
+
+        &.position-center-big {
+          right: 50%;
+          transform: translate(2200%, -50%);
+        }
+      }
+
+      &--hide {
+        @include des {
+          display: none;
+        }
+
+        @include tab {
+          display: none;
+        }
+      }
+    }
+
+    &__pagination {
+      position: relative;
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      z-index: 9;
+      margin-left: auto;
+      margin-right: auto;
+
+      @include des {
+        margin-top: d(45);
+      }
+
+      @include tab {
+        margin-top: t(45);
+      }
+
+      @include mob {
+        margin-top: m(24);
+      }
+    }
+  }
+</style>
+
+<script>
+  import Swiper from 'swiper'
+  import {
+    Navigation,
+    Pagination,
+    Parallax,
+    Mousewheel,
+    EffectFade,
+    Controller,
+    HashNavigation,
+    Keyboard
+  } from 'swiper/modules'
+  import 'swiper/css'
+  import { toggleIframe, activeIframe, createIframe } from '../scripts/iframe'
+
+  const sliders = {
+    default: document.querySelectorAll<HTMLElement>('[data-slider]'),
+    title: document.querySelectorAll<HTMLElement>('[data-title-slider]'),
+    books: document.querySelectorAll<HTMLElement>('[data-books-slider]')
+  }
+
+  const watchVideo = document.querySelector<HTMLElement>('[data-watch-video]')
+  const popap = document.querySelector<HTMLElement>('[data-popap]')
+
+  const slidersDefault = []
+  const slidersTitle = []
+  const slidersBooks = []
+  const idControllerSliders = ['art', 'books']
+
+  sliders.default.forEach((slider) => {
+    const arrowP = slider.querySelector<HTMLElement>('[data-arrow-prev]')
+    const arrowN = slider.querySelector<HTMLElement>('[data-arrow-next]')
+    const pagination = slider.querySelector<HTMLElement>('[data-pagination]')
+    const slides = slider.querySelectorAll<HTMLElement>('[data-slide]')
+
+    const effect = slider.dataset.sliderEffect || 'default'
+    const mouseWheelActive = slider.dataset.sliderMousewheel === 'active'
+    const quantityColumns = Number(slider.dataset.sliderGrid) || 1
+    const initialSlide = Number(slider.dataset.sliderInitial)
+    const noLoop = slider.dataset.sliderLoop
+
+    const loop = noLoop !== undefined ? false : true
+    const popapSlider = slider.closest('.slider--popap')
+    const articleReverse = slider.closest('.article__content--reverse')
+
+    const settings = {
+      quantityColumns,
+      des: quantityColumns >= 4 ? 20 : 40,
+      tab: quantityColumns >= 4 ? '1.4%' : '2.8%',
+      mob: '18%'
+    }
+
+    slider
+      .querySelectorAll<HTMLElement>('[data-slide-content]')
+      .forEach((content) => {
+        if (content.textContent && content.textContent.trim().length < 5) {
+          content.remove()
+        }
+      })
+
+    const baseOptions = {
+      modules: [Navigation, Pagination, Mousewheel, Controller, Keyboard],
+      navigation: arrowN && arrowP ? { nextEl: arrowN, prevEl: arrowP } : false,
+      pagination: pagination
+        ? {
+            el: pagination,
+            clickable: true,
+            bulletClass: pagination.dataset.paginationClassNameEl,
+            bulletActiveClass: 'active'
+          }
+        : false,
+      loop,
+      speed: 700,
+      initialSlide,
+      on: {
+        transitionEnd: ({ el }) => toggleIframe({ el })
+      },
+      keyboard: {
+        enabled: true,
+        onlyInViewport: false
+      }
+    }
+
+    const breakpoints = {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: settings.mob
+      },
+      481: {
+        slidesPerView: slides.length < 3 ? 2 : settings.quantityColumns,
+        spaceBetween: settings.tab
+      },
+      1920: {
+        slidesPerView: slides.length < 3 ? 2 : settings.quantityColumns,
+        spaceBetween: settings.des
+      }
+    }
+
+    const options = {
+      ...baseOptions,
+      breakpoints,
+      ...(effect === 'creative' &&
+        (slides.length >= 3 || popapSlider || articleReverse) && {
+          modules: [...baseOptions.modules, Parallax],
+          parallax: true,
+          centeredSlides: true,
+          mousewheel: mouseWheelActive,
+          breakpoints: {
+            0: {
+              slidesPerView: 1,
+              spaceBetween: settings.mob
+            },
+            481: {
+              slidesPerView: settings.quantityColumns,
+              spaceBetween: 0
+            },
+            1920: {
+              slidesPerView: settings.quantityColumns,
+              spaceBetween: 0
+            }
+          }
+        })
+    }
+
+    const sliderDefault = new Swiper(slider, options)
+
+    for (const el of idControllerSliders) {
+      el === sliderDefault.el.dataset.slider &&
+        slidersDefault.push(sliderDefault)
+    }
+
+    slides.forEach((slide) => {
+      const clickEl = slide.querySelector<HTMLElement>('[data-slide-click]')
+      const play = slide.dataset.play
+
+      if (!clickEl) return
+
+      clickEl.addEventListener('click', () => {
+        const windowW = window.innerWidth
+
+        if (slide.dataset.openPopap !== 'active') {
+          if (!play) return
+          clickEl.remove()
+
+          slide.querySelector('[data-img]')?.remove()
+          slide.querySelector('[data-player]')?.remove()
+
+          activeIframe({
+            el: slide
+          })
+
+          return
+        }
+
+        if (windowW > 480) {
+          const slideIndex = parseInt(slide.dataset.slide, 10)
+          const popapSliderElements = popap.querySelectorAll('.swiper') // Укажите правильный селектор
+
+          popapSliderElements.forEach((el) => {
+            el.swiper.activeIndex = slideIndex
+            el.swiper.update()
+          })
+
+          popap?.classList.add('active')
+        } else if (play) {
+          createIframe({
+            parent: watchVideo,
+            id: play
+          })
+        }
+      })
+    })
+  })
+
+  sliders.title.forEach((slider) => {
+    const sliderTitle = new Swiper(slider, {
+      modules: [EffectFade, Controller],
+      effect: 'fade',
+      slidesPerView: 1
+    })
+
+    for (const el of idControllerSliders) {
+      el === sliderTitle.el.dataset.titleSlider &&
+        slidersTitle.push(sliderTitle)
+    }
+  })
+
+  sliders.books.forEach((slider) => {
+    const sliderBooks = new Swiper(slider, {
+      modules: [EffectFade, Controller, HashNavigation],
+      effect: 'fade',
+      slidesPerView: 1,
+      hashNavigation: {
+        watchState: true
+      }
+    })
+
+    for (const el of idControllerSliders) {
+      el === sliderBooks.el.dataset.booksSlider &&
+        slidersBooks.push(sliderBooks)
+    }
+  })
+
+  slidersDefault.forEach((sliderDefault, index) => {
+    if (slidersTitle.length) {
+      sliderDefault.controller.control = slidersTitle[index]
+      slidersTitle[index].controller.control = sliderDefault
+    }
+
+    if (slidersBooks.length) {
+      sliderDefault.controller.control = slidersBooks[index]
+      slidersBooks[index].controller.control = sliderDefault
+    }
+  })
+</script>
