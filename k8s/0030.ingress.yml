@@ -5,7 +5,7 @@ metadata:
   namespace: web
   annotations:
     nginx.ingress.kubernetes.io/configuration-snippet: |
-      rewrite ^/(.*)/$ /$1 redirect;
+      rewrite ^/(.*)/$ /$1 permanent;
     nginx.ingress.kubernetes.io/from-to-www-redirect: 'true'
     nginx.ingress.kubernetes.io/custom-http-errors: '404=/404'
 spec:
