@@ -363,19 +363,10 @@ const { pageSettings } = Astro.props
 
   pulseAnim()
 
-	const navigation = (scrollEl: HTMLElement, href: string, main: boolean = true) => {
-		if (!main) {
-			window.location.href = `/?link=${href}`;
-			return;
-		}
-
-		const targetElement = document.getElementById(href);
-
-		if (targetElement) {
-			targetElement.scrollIntoView({ behavior: "smooth" });
-		}
-	};
-
+  const navigation = (scrollEl, href, main = true) => {
+    !main && (window.location.href = `/?link=${href}`)
+    scrollEl.scrollTo(`#${href}`)
+  }
 
   window.addEventListener('load', () => {
     if (!preloader || !nav || !links.length) return
@@ -387,28 +378,43 @@ const { pageSettings } = Astro.props
     setTimeout(() => preloader.classList.add('deactive'), 500)
 
     links.forEach((link) => {
-			link.addEventListener("click", (evt) => {
-				if (!link.hasAttribute("data-nav-link")) {
-					return;
-				}
+      link.addEventListener('click', (evt) => {
+        evt.preventDefault()
 
-				evt.preventDefault();
+        if (link.hasAttribute('data-back')) {
+          preloader.classList.remove('deactive')
+          setTimeout(() => (window.location.href = '/'), 300)
 
-				const href = link.getAttribute("href");
-				const isNavOpen = nav.classList.contains("open");
-				const isMainPage = window.location.pathname === "/";
+          return
+        }
 
-				if (isNavOpen) {
-					nav.classList.remove("open");
-				}
+        if (!link.hasAttribute('data-nav-link')) {
+          preloader.classList.remove('deactive')
+          setTimeout(() => (window.location.href = link.href), 300)
+        } else {
+          const href = link.getAttribute('href')
+          const isNavOpen = nav.classList.contains('open')
+          const isMainPage = window.location.pathname === '/'
 
-				if (!isMainPage) {
-					preloader.classList.remove("deactive");
-					setTimeout(() => (window.location.href = href), 300);
-				} else {
-					navigation(scrollEl, href);
-				}
-			});
-		});
+          if (isNavOpen) {
+            nav.classList.remove('open')
+          }
+
+          if (!isMainPage) {
+            if (isNavOpen) {
+              setTimeout(() => {
+                preloader.classList.remove('deactive')
+                setTimeout(() => navigation(scrollEl, href, false), 300)
+              }, 400)
+            } else {
+              preloader.classList.remove('deactive')
+              setTimeout(() => navigation(scrollEl, href, false), 300)
+            }
+          } else {
+            navigation(scrollEl, href)
+          }
+        }
+      })
+    })
   })
 </script>
