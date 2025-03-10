@@ -387,43 +387,28 @@ const { pageSettings } = Astro.props
     setTimeout(() => preloader.classList.add('deactive'), 500)
 
     links.forEach((link) => {
-      link.addEventListener('click', (evt) => {
-        evt.preventDefault()
+			link.addEventListener("click", (evt) => {
+				if (!link.hasAttribute("data-nav-link")) {
+					return;
+				}
 
-        if (link.hasAttribute('data-back')) {
-          preloader.classList.remove('deactive')
-          setTimeout(() => (window.location.href = '/'), 300)
+				evt.preventDefault();
 
-          return
-        }
+				const href = link.getAttribute("href");
+				const isNavOpen = nav.classList.contains("open");
+				const isMainPage = window.location.pathname === "/";
 
-        if (!link.hasAttribute('data-nav-link')) {
-          preloader.classList.remove('deactive')
-          setTimeout(() => (window.location.href = link.href), 300)
-        } else {
-          const href = link.getAttribute('href')
-          const isNavOpen = nav.classList.contains('open')
-          const isMainPage = window.location.pathname === '/'
+				if (isNavOpen) {
+					nav.classList.remove("open");
+				}
 
-          if (isNavOpen) {
-            nav.classList.remove('open')
-          }
-
-          if (!isMainPage) {
-            if (isNavOpen) {
-              setTimeout(() => {
-                preloader.classList.remove('deactive')
-                setTimeout(() => navigation(scrollEl, href, false), 300)
-              }, 400)
-            } else {
-              preloader.classList.remove('deactive')
-              setTimeout(() => navigation(scrollEl, href, false), 300)
-            }
-          } else {
-            navigation(scrollEl, href)
-          }
-        }
-      })
-    })
+				if (!isMainPage) {
+					preloader.classList.remove("deactive");
+					setTimeout(() => (window.location.href = href), 300);
+				} else {
+					navigation(scrollEl, href);
+				}
+			});
+		});
   })
 </script>

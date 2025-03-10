@@ -1,4 +1,4 @@
-import LocomotiveScroll from "@deli/locomotive-scroll/dist/locomotive-scroll.esm.js";
+import LocomotiveScroll from 'locomotive-scroll';
 
 const settings = {
 	location: { ...window.location },
