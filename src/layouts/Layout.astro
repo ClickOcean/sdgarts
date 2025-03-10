@@ -391,9 +391,12 @@ const { pageSettings } = Astro.props
         }
 
         if (!link.hasAttribute('data-nav-link')) {
-          preloader.classList.remove('deactive')
-          setTimeout(() => (window.location.href = link.href), 300)
-        } else {
+					preloader.classList.remove('deactive')
+					setTimeout(() => {
+						window.location.href = link.getAttribute('href') || "/";
+					}, 300);
+				}
+				else {
           const href = link.getAttribute('href')
           const isNavOpen = nav.classList.contains('open')
           const isMainPage = window.location.pathname === '/'
