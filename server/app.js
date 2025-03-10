@@ -10,7 +10,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const corsOptions = {
-  origin: (origin, callback) => callback(null, true),
+  origin: (callback) => callback(null, true),
   maxAge: 3600,
   methods: ["GET", "HEAD", "OPTIONS", "POST", "PUT", "PATCH", "DELETE"],
 };

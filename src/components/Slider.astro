@@ -4,25 +4,63 @@ import Descr from './Descr.astro'
 import Arrow from './Arrow.astro'
 import Pagination from './Pagination.astro'
 
+import type Swiper from 'swiper';
+
+interface SliderItem {
+  id: string;
+  title?: string;
+  descr?: string;
+  img?: { src?: string; play?: string };
+  hash?: string;
+}
+
+interface DataImg {
+  path?: string;
+  grid?: number;
+  objectFit?: string;
+  id?: string;
+  src?: boolean;
+}
+
+interface AstroProps {
+  slider?: SliderItem[];
+  grid?: number;
+  transparent?: boolean;
+  squareImg?: boolean;
+  collectionImg?: boolean;
+  effect?: string;
+  page?: string;
+  mod?: string;
+  dataImg?: DataImg;
+  delEl?: string;
+  openPopap?: boolean;
+  mouseWheel?: boolean;
+  initialSlide?: number;
+  noTitle?: boolean;
+  id?: string;
+  loop?: boolean;
+  arrow?: string;
+}
+
 const {
-  slider,
-  grid,
-  transparent,
-  squareImg,
-  collectionImg,
-  effect,
-  page,
-  mod,
-  dataImg,
-  delEl,
-  openPopap,
-  mouseWheel,
-  initialSlide,
-  noTitle,
-  id,
-  loop,
-  arrow
-} = Astro.props
+  slider = [],
+  grid = 1,
+  transparent = false,
+  squareImg = false,
+  collectionImg = false,
+  effect = '',
+  page = '',
+  mod = '',
+  dataImg = {},
+  delEl = '',
+  openPopap = false,
+  mouseWheel = false,
+  initialSlide = 0,
+  noTitle = false,
+  id = '',
+  loop = false,
+  arrow = ''
+}: AstroProps = Astro.props;
 
 const styleImgSquare = () => {
   if (squareImg) return 'slider__slide-img--square'
@@ -97,7 +135,7 @@ const styleImgSquare = () => {
                           ? `object-fit:${dataImg.objectFit};`
                           : ''
                       }
-                      data-src={`/images/${dataImg.path}/${dataImg.id ? `${dataImg.id}/` : ''}${dataImg.src ? img.src : index + 1}.jpg`}
+                      data-src={`/images/${dataImg.path}/${dataImg.id ? `${dataImg.id}/` : ''}${dataImg.src ? img?.src : index + 1}.jpg`}
                       alt=""
                       data-img
                     />
@@ -524,9 +562,10 @@ const styleImgSquare = () => {
   const watchVideo = document.querySelector<HTMLElement>('[data-watch-video]')
   const popap = document.querySelector<HTMLElement>('[data-popap]')
 
-  const slidersDefault = []
-  const slidersTitle = []
-  const slidersBooks = []
+  const slidersDefault: Swiper[] = [];
+  const slidersTitle: Swiper[] = [];
+  const slidersBooks: Swiper[] = [];
+
   const idControllerSliders = ['art', 'books']
 
   sliders.default.forEach((slider) => {
@@ -575,7 +614,7 @@ const styleImgSquare = () => {
       speed: 700,
       initialSlide,
       on: {
-        transitionEnd: ({ el }) => toggleIframe({ el })
+        transitionEnd: ({ el }: { el: HTMLElement }) => toggleIframe({ el })
       },
       keyboard: {
         enabled: true,
@@ -655,10 +694,10 @@ const styleImgSquare = () => {
         }
 
         if (windowW > 480) {
-          const slideIndex = parseInt(slide.dataset.slide, 10)
-          const popapSliderElements = popap.querySelectorAll('.swiper') // Укажите правильный селектор
+          const slideIndex = parseInt(slide.dataset.slide ?? "0", 10);
+          const popapSliderElements = popap?.querySelectorAll('.swiper') // Укажите правильный селектор
 
-          popapSliderElements.forEach((el) => {
+          popapSliderElements?.forEach((el) => {
 						const swiperInstance = (el as HTMLElement & { swiper: any }).swiper;
 						swiperInstance.activeIndex = slideIndex;
 						swiperInstance.update();

@@ -27,7 +27,7 @@ const lazyLoading = async () => {
 			threshold: 0.1
 		};
 
-		const lazyImageObserver = new IntersectionObserver((entries, observer) => {
+		const lazyImageObserver = new IntersectionObserver((entries) => {
 			entries.forEach((entry) => {
 				if (entry.isIntersecting) {
 					const lazyImage = entry.target as HTMLImageElement;

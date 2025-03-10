@@ -2,7 +2,14 @@
 import Title from './Title.astro';
 import Texts from './Texts.astro';
 
-const { slider } = Astro.props;
+interface SliderItem {
+  hash: string;
+  title?: string;
+  year?: string;
+  texts?: string[];
+}
+
+const { slider = [] }: { slider?: SliderItem[] } = Astro.props;
 ---
 
 <div class="books-slider swiper" data-books-slider="books">

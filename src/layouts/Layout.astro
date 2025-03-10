@@ -363,10 +363,12 @@ const { pageSettings } = Astro.props
 
   pulseAnim()
 
-  const navigation = (scrollEl, href, main = true) => {
-    !main && (window.location.href = `/?link=${href}`)
-    scrollEl.scrollTo(`#${href}`)
+  const navigation = (scrollEl: HTMLElement, href: string, main: boolean = true) => {
+  if (!main) {
+    window.location.href = `/?link=${href}`;
   }
+  scrollEl.scrollTo({ top: document.getElementById(href)?.offsetTop || 0, behavior: "smooth" });
+};
 
   window.addEventListener('load', () => {
     if (!preloader || !nav || !links.length) return
@@ -404,14 +406,14 @@ const { pageSettings } = Astro.props
             if (isNavOpen) {
               setTimeout(() => {
                 preloader.classList.remove('deactive')
-                setTimeout(() => navigation(scrollEl, href, false), 300)
+                setTimeout(() => navigation(scrollEl, href ?? "", false), 300)
               }, 400)
             } else {
               preloader.classList.remove('deactive')
-              setTimeout(() => navigation(scrollEl, href, false), 300)
+              setTimeout(() => navigation(scrollEl, href ?? "", false), 300)
             }
           } else {
-            navigation(scrollEl, href)
+            navigation(scrollEl, href ?? "")
           }
         }
       })

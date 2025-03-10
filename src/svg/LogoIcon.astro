@@ -1,5 +1,5 @@
 ---
-const { typeLogo } = Astro.props;
+const { typeLogo } = Astro.props as { typeLogo: keyof typeof colors };
 
 const colors = {
 	header: {

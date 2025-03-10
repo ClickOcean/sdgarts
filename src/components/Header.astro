@@ -53,8 +53,8 @@ import OpenNav from './OpenNav.astro'
 
 <script>
   const header = document.querySelector('[data-header]')
-  const openNav = header.querySelector('[data-open-nav]')
-  const nav = header.querySelector('[data-nav]')
+  const openNav = header?.querySelector('[data-open-nav]')
+  const nav = header?.querySelector('[data-nav]')
 
   openNav &&
     openNav.addEventListener('click', () => {

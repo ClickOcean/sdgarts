@@ -8,10 +8,10 @@ interface PopapData {
 const closePopap = (data: PopapData = { name: '', clear: false }): void => {
 	const { name, clear } = data;
 
-	const popap: HTMLElement = document.querySelector(`[data-${name}]`);
+	const popap = document.querySelector(`[data-${name}]`) as HTMLElement | null;
 	if (!popap) return;
 
-	const close = popap.querySelector(`[data-${name}-close]`);
+	const close = popap.querySelector(`[data-${name}-close]`) as HTMLElement | null;
 
 	const closePopup = () => {
 		if (!popap.classList.contains('active')) return;
@@ -26,7 +26,7 @@ const closePopap = (data: PopapData = { name: '', clear: false }): void => {
 
 	const handleKeydown = (event: KeyboardEvent) => event.key === 'Escape' && closePopup();
 
-	close && close.addEventListener('click', closePopup);
+	close?.addEventListener('click', closePopup);
 	document.addEventListener('keydown', handleKeydown);
 };
 

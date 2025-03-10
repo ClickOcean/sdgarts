@@ -1,3 +1,4 @@
+// @ts-ignore
 import LocomotiveScroll from 'locomotive-scroll';
 
 const settings = {
@@ -5,15 +6,16 @@ const settings = {
 	linkParam: 'link'
 };
 
-const readMore = (scroll) => {
-	const btns = document.querySelectorAll('.descr--read-more');
+const readMore = (scroll: LocomotiveScroll) => {
+	const btns = document.querySelectorAll<HTMLButtonElement>('.descr--read-more');
 	if (!btns.length) return;
 
 	btns.forEach((btn) => {
-		const originalText = btn.textContent;
+		const originalText = btn.textContent || '';
 
 		btn.addEventListener('click', () => {
-			const parent = btn.parentElement;
+			const parent = btn.parentElement as HTMLElement | null;
+			if (!parent) return;
 
 			parent.classList.toggle('show');
 			parent.classList.contains('show') ? (btn.textContent = 'Hide') : (btn.textContent = originalText);
@@ -23,7 +25,8 @@ const readMore = (scroll) => {
 	});
 };
 
-const getURLParameters = (url) => Object.fromEntries(new URL(url).searchParams.entries());
+const getURLParameters = (url: string): Record<string, string> =>
+	Object.fromEntries(new URL(url).searchParams.entries());
 
 const clearSearchParams = () => {
 	const newURL = `${settings.location.origin}${settings.location.pathname}`;
@@ -31,7 +34,7 @@ const clearSearchParams = () => {
 };
 
 const scroll = () => {
-	const page = document.querySelector('.page');
+	const page = document.querySelector<HTMLElement>('.page');
 	if (!page) return null;
 
 	const parameters = getURLParameters(settings.location.href);

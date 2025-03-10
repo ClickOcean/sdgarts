@@ -4,7 +4,13 @@ import Title from '../components/Title.astro';
 import Descr from '../components/Descr.astro';
 import WArticle from '../svg/Waves/WArticle.astro';
 
-const { news } = Astro.props;
+interface NewsItem {
+  id: string;
+  title: { text: string };
+  texts: string[];
+}
+
+const { news = [] }: { news?: NewsItem[] } = Astro.props;
 ---
 
 <section class="news-page" style={'background-color: var(--white)'} data-scroll-section>

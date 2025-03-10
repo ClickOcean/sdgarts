@@ -4,12 +4,20 @@ import Title from './Title.astro';
 import Slider from './Slider.astro';
 import WMore from '../svg/Waves/WMore.astro';
 
-const { title, sliders, id, typeSlider, page } = Astro.props.more;
+type SliderType = 'art' | 'philosophy' | 'news';
 
-const qwe = {
-	art: 'exploration',
-	philosophy: 'networking',
-	news: 'news'
+const { title, sliders, id, typeSlider, page } = Astro.props.more as {
+  title: string;
+  sliders: Record<string, any>;
+  id: string;
+  typeSlider: SliderType;
+  page?: string;
+};
+
+const qwe: Record<SliderType, string> = {
+  art: 'exploration',
+  philosophy: 'networking',
+  news: 'news'
 };
 ---
 
