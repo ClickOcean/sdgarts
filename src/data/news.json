@@ -5,6 +5,39 @@
 	},
 	"slider": [
 		{
+			"id": "andy-clark-receives-dennett-prize-in-2025",
+			"title": {
+				"type": "h3",
+				"text": "Andy Clark Receives Dennett Prize in 2025",
+				"hover": "news"
+			},
+			"descr": {
+				"text": "The International Center for Consciousness Studies hosted the inaugural Dennett Prize during its 2025 conference in Heraklion, Crete."
+			}
+		},
+		{
+			"id": "ai-and-sentience-conference-held-by-the-iccs-in-heraklion",
+			"title": {
+				"type": "h3",
+				"text": "\"AI and Sentience\" Conference held by the ICCS in Heraklion",
+				"hover": "news"
+			},
+			"descr": {
+				"text": "The Second ICCS Conference was held from July 3 to 5, 2025, in Heraklion, Crete, bringing together leading researchers in philosophy, neuroscience, and AI."
+			}
+		},
+    {
+      "id": "iccs-inaugural-conference-uncovering-the-magic-of-consciousness",
+      "title": {
+        "type": "h3",
+        "text": "ICCS Inaugural Conference \"Uncovering the Magic of Consciousness\"",
+        "hover": "news"
+      },
+      "descr": {
+        "text": "The inaugural conference of the ICCS took place from June 27–29, 2024, at the Santa Maria della Scala Museum in Siena."
+      }
+    },
+		{
 			"id": "metaphysics-of-uploading-ccs-summer-school-in-palermo",
 			"title": {
 				"type": "h3",

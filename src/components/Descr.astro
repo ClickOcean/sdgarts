@@ -16,6 +16,17 @@ const { text, light } = descr
     width: 100%;
     line-height: 1.4;
 
+    :global(a) {
+      text-decoration: underline;
+      transition: color 0.3s ease;
+
+      @media (hover: hover) {
+        &:hover {
+          color: var(--turquoise);
+        }
+      }
+    }
+
     &--light {
       font-weight: 300;
     }
