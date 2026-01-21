@@ -1,7 +1,7 @@
 {
   "name": "sdgarts",
   "type": "module",
-  "version": "0.0.8",
+  "version": "0.0.11",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
