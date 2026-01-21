@@ -3,13 +3,14 @@ import Container from '../components/Container.astro'
 import Title from '../components/Title.astro'
 import Slider from '../components/Slider.astro'
 import Anchor from '../components/Anchor.astro'
-import WExploration from '../svg/Waves/WExploration.astro'
+import WNetworking from '../svg/Waves/WNetworking.astro'
 
 const { title, slider } = Astro.props.data
 ---
 
 <section class="exploration" data-scroll-section>
   <Anchor id={'projects'} />
+  <WNetworking />
   <Container>
     <div class="exploration__content">
       <Title title={title} mod={'slider'} animScroll={1.5} />
@@ -21,30 +22,77 @@ const { title, slider } = Astro.props.data
           path: 'exploration/main-slider'
         }}
       />
+      <div
+        class="exploration__img"
+        data-scroll
+        data-scroll-speed="-0.1"
+        data-scroll-position="top"
+      >
+        <img
+          data-img-lazy
+          src="/images/lazy.png"
+          data-src="/images/networking/wolf.png"
+          alt=""
+        />
+      </div>
     </div>
   </Container>
-  <WExploration />
 </section>
 
 <style lang="scss">
   .exploration {
     position: relative;
     width: 100%;
-    background-color: var(--aqua);
 
     &__content {
+      position: relative;
       width: 100%;
 
       @include des {
-        padding: d(32) 0 d(150);
+        padding: d(32) 0 d(60);
       }
 
       @include tab {
-        padding: t(32) 0 t(150);
+        padding: t(32) 0 t(60);
       }
 
       @include mob {
-        padding: m(4) m(50) m(20);
+        padding: m(175) m(50) m(40);
+      }
+    }
+
+    &__img {
+      position: absolute;
+      z-index: 9;
+
+      @include des {
+        top: d(-101);
+        right: d(-70);
+        width: d(597);
+        height: d(297);
+      }
+
+      @include tab {
+        top: t(-101);
+        right: t(-70);
+        width: t(597);
+        height: t(297);
+      }
+
+      @include mob {
+        top: m(5);
+        left: m(-3);
+        width: m(297);
+        height: m(147);
+      }
+
+      & img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
     }
   }
