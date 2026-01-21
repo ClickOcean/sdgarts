@@ -3,6 +3,186 @@
 		{
 			"bodyColor": "white",
 			"banner": true,
+			"id": "andy-clark-receives-dennett-prize-in-2025",
+			"title": {
+				"type": "h1",
+				"text": "Andy Clark Receives Dennett Prize in 2025",
+				"subtitle": "news"
+			},
+			"texts": [
+				"The International Center for Consciousness Studies hosted the inaugural Dennett Prize during its 2025 conference in Heraklion, Crete. The prize was awarded to British philosopher Andy Clark, Professor of Cognitive Philosophy at the University of Sussex.",
+				"The award ceremony was held in a historic Heraklion cinema, where attendees gathered for a moving tribute to Daniel Dennett's legacy. As the 2025 laureate, Andy Clark was awarded a $10,000 prize and a statuette of The Crusader—a replica of Dennett's hand-carved soapstone original. As part of the ceremony, Clark gave Daniel Dennett Lecture.",
+				"\"Dan's ways of thinking have, even back then, sort of beneficially parasitized my own brain—my own ways of thinking. And I think I can honestly say that I've got a kind of internal Dan now, that is a sort of critic, such that stuff doesn't get out unless it's been passed by the internal Dan. And I think that Dan would have appreciated that—you know, there's a sort of way of living on in ways of doing philosophy, and ways of thinking about things. So I think that somehow, that sort of speaks to Dan's core commandments,\" Clark commented.",
+				"During the opening ceremony, Dmitry Volkov, co-founder of the ICCS, remarked: \"Dan didn't just shape our understanding of consciousness—he transformed how we frame the very questions we ask about the mind. His legacy lives not only in his writings, but in the frameworks that now guide cognitive science and philosophy. The Dennett Prize is a celebration of that enduring influence.\"",
+				"The Dennett Prize recognizes significant advances in the philosophy of mind, cognitive science, evolutionary biology, and artificial intelligence—fields profoundly shaped by the revolutionary ideas of Daniel Dennett. The Committee of the Prize includes Susan Dennett, Keith Frankish, Giorgio Vallortigara, Nicholas Humphrey, and Dmitry Volkov. This year, the Committee received 14 applications, all carefully considered, and unanimously declared Andy Clark as the winner."
+			],
+			"sliderBottom": true,
+      "slider": [
+        {
+          "img": {
+            "src": "1"
+          }
+        },
+        {
+          "img": {
+            "src": "2"
+          }
+        },
+        {
+          "img": {
+            "src": "3"
+          }
+        }
+      ]
+		},
+		{
+			"bodyColor": "white",
+			"banner": true,
+			"id": "ai-and-sentience-conference-held-by-the-iccs-in-heraklion",
+			"title": {
+				"type": "h1",
+				"text": "\"AI and Sentience\" Conference held by the ICCS in Heraklion",
+				"subtitle": "news"
+			},
+			"texts": [
+				"The Second ICCS Conference, \"AI and Sentience,\" was held from July 3 to 5, 2025, in Heraklion, Crete, bringing together leading researchers in philosophy, neuroscience, and artificial intelligence to address a central and timely question: Is AI sentience possible? The conference took place at the Megaron Hotel, with additional sessions hosted at the Municipal Gallery of Heraklion and the historic Vitsentzos Kornaros Cinema and Theatre.",
+				"The program included plenary lectures, symposia, poster sessions, and open discussions. Each symposium consisted of four short presentations followed by a moderated discussion, designed to foster substantive debate among speakers and attendees.",
+				"The event started with opening remarks by the ICCS cofounders Dmitry Volkov and Pietro Perconti. The opening session featured Keith Frankish, Nicholas Humphrey, and Michael Pauen, who examined contrasting perspectives on artificial consciousness and the attribution of higher cognitive capacities to AI systems.",
+				"The second session, \"The Psychology of AI,\" included talks by Alessandro Acciai, Alessio Plebe, and Katarina Marcincinova, focusing on illusionism, self-representation, and self-consciousness in artificial agents.",
+				"The afternoon session addressed the social context of sentient AI, with presentations by Pietro Perconti, Clara Colombatto, and Antonio Chella. A poster session followed, highlighting new research on AI sentience, epistemic underdetermination, inner speech, and the attribution of intentional agency to artificial systems.",
+				"The first day concluded with remote keynote lectures by Michael Levin (\"Unconventional Selves: Diverse Intelligence in Novel Spaces, Scales, and Embodiments\") and Susan Schneider (\"Addressing Questions of LLM Sentience\"), both of which raised fundamental issues concerning selfhood, autonomy, and agency in artificial systems.",
+				"Day 2 opened with a plenary session featuring Susan Blackmore (\"What Is It Like to Be Artificially Intelligent?\"), David Chalmers (\"On the Computational Correlates of Consciousness\"), and Robert Clowes (\"Confabulating Centres of Narrative Gravity with Large Language Models\").",
+				"Subsequent sessions included contributions by Riccardo Manzotti and Maria Raffa, focusing on value, active inference, and artificial freedom. In the afternoon, a special art event at the Municipal Gallery of Heraklion explored intersections between art, consciousness, and AI.",
+				"Later sessions featured Roman Yampolskiy, who examined the limits of explainability and control in advanced AI systems, and Daniel Hulme, who addressed intelligence and consciousness from a practical perspective. The day concluded with a panel discussion, \"Sentience Beyond Human Biology,\" featuring Joscha Bach, Matthew Macdougall, Murray Shanahan, and Dmitry Volkov.",
+				"Day 3 was dedicated to the inaugural Dennett Prize ceremony, held at the Vitsentzos Kornaros Cinema. The award honored Andy Clark, Professor of Cognitive Philosophy at the University of Sussex, as the first recipient of the Prize for his outstanding contributions to philosophy of mind and cognitive science. Clark was awarded a $10,000 prize and a statuette of The Crusader, a replica of Dennett's hand-carved soapstone original."
+			],
+			"sliderBottom": true,
+      "slider": [
+        {
+          "img": {
+            "src": "1"
+          }
+        },
+        {
+          "img": {
+            "src": "2"
+          }
+        },
+        {
+          "img": {
+            "src": "3"
+          }
+        },
+        {
+          "img": {
+            "src": "4"
+          }
+        },
+        {
+          "img": {
+            "src": "5"
+          }
+        },
+        {
+          "img": {
+            "src": "6"
+          }
+        },
+        {
+          "img": {
+            "src": "7"
+          }
+        },
+        {
+          "img": {
+            "src": "8"
+          }
+        }
+      ]
+		},
+    {
+      "bodyColor": "white",
+      "banner": true,
+      "id": "iccs-inaugural-conference-uncovering-the-magic-of-consciousness",
+      "title": {
+        "type": "h1",
+        "text": "ICCS Inaugural Conference \"Uncovering the Magic of Consciousness\"",
+        "subtitle": "news"
+      },
+      "texts": [
+        "The inaugural conference of the recently established International Center for Consciousness Studies (ICCS), titled \"Uncovering the Magic of Consciousness: Philosophy, Neuroscience, AI,\" took place from June 27–29, 2024, at the Santa Maria della Scala Museum in Siena.",
+        "The event was organized by Riccardo Manzotti, Pietro Perconti, Dmitry Volkov, and Alessio Plebe in collaboration with the University of Siena, the University for Foreigners of Siena, IULM, the University of Messina, and under the patronage of the Municipality of Siena, represented by Councillor Vanna Giunti.",
+        "The event registered 150 participants and has become a moment of high significance for the City of Siena, showcasing its potential and capability to host major international conferences. The conference welcomed internationally acclaimed philosophers, neuroscientists, AI researchers, and students. Held in one of the city's most prestigious locations, rich in history and cultural value, and just a stone's throw from Piazza del Campo, ready to host the Palio, the event was a great success.",
+        "Dmitry Volkov, one of the founders of the ICCS, explained the mission of the center: \"To support interdisciplinary discussion, help philosophers engage with science and encourage scientists, cognitive psychologists, neuroscientists, computer scientists to address hard philosophical issues. We have an ambition to solve the mind-body problem, but even if we wouldn't be able to do it right away, we want to contribute to the solution of practical challenges like building anthropomorphic ethical robots.\"",
+        "\"There is great potential for further growth of the center,\" declared Francois Kammerer, a philosopher of mind and cognitive sciences, CNRS (Strasbourg), at the end of the event. \"This was a beautiful conference in a fantastic location, with a dense line-up of international speakers from various disciplines relevant to consciousness. We heard many interesting talks and had relevant discussions in a collegial and stimulating atmosphere.\""
+      ],
+      "sliderBottom": true,
+      "slider": [
+        {
+          "img": {
+            "src": "1"
+          }
+        },
+        {
+          "img": {
+            "src": "2"
+          }
+        },
+        {
+          "img": {
+            "src": "3"
+          }
+        },
+        {
+          "img": {
+            "src": "4"
+          }
+        },
+        {
+          "img": {
+            "src": "5"
+          }
+        },
+        {
+          "img": {
+            "src": "6"
+          }
+        },
+        {
+          "img": {
+            "src": "7"
+          }
+        },
+        {
+          "img": {
+            "src": "8"
+          }
+        },
+        {
+          "img": {
+            "src": "9"
+          }
+        },
+        {
+          "img": {
+            "src": "10"
+          }
+        },
+        {
+          "img": {
+            "src": "11"
+          }
+        },
+        {
+          "img": {
+            "src": "12"
+          }
+        }
+      ]
+    },
+		{
+			"bodyColor": "white",
+			"banner": true,
 			"id": "metaphysics-of-uploading-ccs-summer-school-in-palermo",
 			"title": {
 				"type": "h1",
@@ -223,6 +403,30 @@
 		},
 		"sliders": {
 			"news": [
+				{
+					"id": "andy-clark-receives-dennett-prize-in-2025",
+					"title": {
+						"type": "h3",
+						"text": "Andy Clark Receives Dennett Prize in 2025",
+						"hover": "news"
+					}
+				},
+				{
+					"id": "ai-and-sentience-conference-held-by-the-iccs-in-heraklion",
+					"title": {
+						"type": "h3",
+						"text": "\"AI and Sentience\" Conference held by the ICCS in Heraklion",
+						"hover": "news"
+					}
+				},
+        {
+          "id": "iccs-inaugural-conference-uncovering-the-magic-of-consciousness",
+          "title": {
+            "type": "h3",
+            "text": "ICCS Inaugural Conference \"Uncovering the Magic of Consciousness\"",
+            "hover": "news"
+          }
+        },
 				{
 					"id": "metaphysics-of-uploading-ccs-summer-school-in-palermo",
 					"title": {
