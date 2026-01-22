@@ -363,11 +363,13 @@ const { pageSettings } = Astro.props
 
   pulseAnim()
 
-  const navigation = (scrollEl: HTMLElement, href: string, main: boolean = true) => {
+  const navigation = (scrollEl: ReturnType<typeof scroll>, href: string, main: boolean = true) => {
   if (!main) {
     window.location.href = `/?link=${href}`;
+    return
   }
-  scrollEl.scrollTo({ top: document.getElementById(href)?.offsetTop || 0, behavior: "smooth" });
+
+  scrollEl?.scrollTo(`#${href}`);
 };
 
   window.addEventListener('load', () => {

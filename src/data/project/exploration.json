@@ -1,5 +1,102 @@
 {
 	"articles": [
+    {
+      "bodyColor": "white",
+      "banner": true,
+      "id": "international-center-for-consciousness-studies-iccs",
+      "title": {
+        "type": "h1",
+        "text": "International Center for Consciousness Studies (ICCS)",
+        "subtitle": "philosophy"
+      },
+      "texts": [
+        "<a href=\"https://hardproblem.it/\" target=\"_blank\">The International Center for Consciousness Studies (ICCS)</a> is an international hub of philosophers dedicated to exploring the nature of consciousness and the mind through rigorous philosophical and interdisciplinary research.",
+        "Founded in 2024 by Dmitry Volkov, Pietro Perconti, and Alessio Plebe, in collaboration with the University of Messina, ICCS is a non-profit cultural association devoted to advancing philosophical research on consciousness through an integrated and interdisciplinary approach.",
+        "The Center is committed to maintaining the highest standards of academic excellence and ethical responsibility. It supports the philosophical investigation of the mind and consciousness while actively encouraging dialogue across disciplines in order to address some of the most challenging problems in contemporary philosophy. ICCS's mission is to promote a deeper understanding of consciousness and the mind by fostering global scholarly exchange and collaboration. To this end, the Center has established a dynamic international network of leading philosophers working collectively to advance research in consciousness studies.",
+        "The ICCS Academic Council brings together internationally renowned scholars in philosophy, psychology, neuroscience, and related fields, including:<br><br><b>Keith Frankish</b> — Honorary Professor of Philosophy, University of Sheffield; Visiting Research Fellow, The Open University; Adjunct Professor, Brain and Mind Programme, University of Crete<br><b>Emanuele Castano</b> — Professor of Psychology, University of Florence<br><b>Mario De Caro</b> — Professor of Moral Philosophy, Roma Tre University; Visiting Professor, Tufts University<br><b>Nick Humphrey</b> — Emeritus Professor of Psychology, London School of Economics; Senior Member, Darwin College, Cambridge<br><b>Michael Pauen</b> — Professor of Philosophy, Humboldt University of Berlin",
+        "The ICCS Advisory Board is composed of internationally distinguished scholars whose research spans philosophy of mind, cognitive science, neuroscience, artificial intelligence, robotics, and ethics, including:<br><br><b>Alberto Voltolini</b> — Full Professor of Philosophy of Mind, University of Turin<br><b>Alex Byrne</b> — Professor of Philosophy, MIT<br><b>Antonio Chella</b> — Professor of Robotics and Director of the RoboticsLab, University of Palermo<br><b>Daniel Stoljar</b> — Professor of Philosophy, Australian National University<br><b>Giorgio Vallortigara</b> — Professor of Cognitive Neuroscience and Director of the Centre for Mind/Brain Sciences, University of Trento<br><b>Tim Bayne</b> — Professor of Philosophy, Monash University<br><b>Uriah Kriegel</b> — Professor of Philosophy, Rice University<br><b>Eric Olson</b> — Professor of Philosophy, University of Sheffield<br><b>Riccardo Manzotti</b> — Professor of Theoretical Philosophy, IULM University<br><b>Claudia Passos-Ferreira</b> — Assistant Professor of Bioethics, New York University",
+        "The International Center for Consciousness Studies organizes an annual international conference addressing key problems in the philosophy of mind and related disciplines, including philosophy, neuroscience, and artificial intelligence. The inaugural conference was held in Siena, Italy in 2024, followed by the 2025 conference in Heraklion, Crete.",
+        "One of the Center's flagship initiatives is the Dennett Prize, an annual award presented to an outstanding scholar whose work has made a significant contribution to advancing our understanding of the brain and consciousness."
+      ]
+    },
+    {
+      "bodyColor": "white",
+      "banner": true,
+      "id": "the-iccs-annual-conferences",
+      "title": {
+        "type": "h1",
+        "text": "The ICCS Annual Conferences",
+        "subtitle": "philosophy"
+      },
+      "texts": [
+        "The International Center for Consciousness Studies (ICCS) holds an annual international conference devoted to a wide range of issues in the philosophy of mind and related fields, including philosophy, neuroscience, and artificial intelligence.",
+        "The primary aim of the ICCS Conference is to advance consciousness studies and to propose new directions for interdisciplinary research in this area. By welcoming both internationally recognized scholars and early-career researchers, the conference fosters interdisciplinary dialogue in a collegial and intellectually stimulating atmosphere. It seeks to support philosophers in engaging with empirical sciences, while encouraging scientists, cognitive psychologists, neuroscientists, and computer scientists to address foundational philosophical questions.",
+        "The First ICCS Conference, \"Uncovering the Magic of Consciousness: Philosophy, Neuroscience, AI,\" took place in Siena, Italy in 2024. The conference was hosted at the Santa Maria della Scala Museum, in the Sala Italo Calvino, and was organized by the International Center for Consciousness Studies in collaboration with the University of Messina and IULM University. The event was held under the patronage of the Municipality of Siena, the University of Siena, and the University for Foreigners of Siena.",
+        "The principal objective of the First ICCS Conference was to explore whether consciousness can be fully explained within a scientific framework, or whether its elusive nature requires an account that goes beyond cognitive science. Designed as a three-day symposium, the conference featured a variety of formats, including invited talks, open discussions, paper and manuscript reviews, and poster presentations, allowing participants to present their work in the form best suited to their expertise.",
+        "The Second ICCS Conference, \"AI and Sentience,\" was held in 2025, in Heraklion, Crete. The conference brought together leading researchers in philosophy, neuroscience, and artificial intelligence to address a central and timely question: Is AI sentience possible?",
+        "The event took place at the Megaron Hotel, with additional sessions hosted at the Municipal Gallery of Heraklion and the historic Vitsentzos Kornaros Cinema and Theatre, offering a unique setting for interdisciplinary exchange and discussion.",
+        "Information and announcements regarding upcoming ICCS conferences, events, and related initiatives are regularly published on the official International Center for Consciousness Studies <a href=\"https://hardproblem.it/\" target=\"_blank\">website</a>, where scholars and interested audiences can follow the Center's latest activities and developments."
+      ],
+      "slider": [
+        {
+          "img": {
+            "src": "1"
+          }
+        },
+        {
+          "img": {
+            "src": "2"
+          }
+        },
+        {
+          "img": {
+            "src": "3"
+          }
+        },
+        {
+          "img": {
+            "src": "4"
+          }
+        },
+        {
+          "img": {
+            "src": "5"
+          }
+        },
+        {
+          "img": {
+            "src": "6"
+          }
+        },
+        {
+          "img": {
+            "src": "7"
+          }
+        },
+        {
+          "img": {
+            "src": "8"
+          }
+        }
+      ]
+    },
+    {
+      "bodyColor": "white",
+      "banner": true,
+      "id": "dennett-prize",
+      "title": {
+        "type": "h1",
+        "text": "Dennett Prize",
+        "subtitle": "philosophy"
+      },
+      "texts": [
+        "<a href=\"https://hardproblem.it/\" target=\"_blank\">The International Center for Consciousness Studies (ICCS)</a> established the Dennett Prize, an annual award presented to an outstanding scholar whose research has made a significant contribution to advancing our understanding of the brain and consciousness. The Prize reflects the Center's commitment to excellence in philosophical and interdisciplinary research on the mind.",
+        "The Prize is named in honor of the renowned philosopher Daniel Dennett (1942–2024). Dennett's work spanned philosophy of mind, cognitive science, evolutionary biology, and artificial intelligence. Throughout his career, he challenged received views and introduced transformative perspectives across disciplines. His writing set a lasting benchmark for intellectual clarity, conceptual rigor, and scientific integrity.",
+        "The Dennett Prize consists of a monetary award, and the recipient is invited to deliver a Dennett Lecture at the ICCS Annual Conference. The laureate is selected by a vote of the Dennett Prize Committee, which includes Susan Dennett, Keith Frankish, Giorgio Vallortigara, and Dmitry Volkov.",
+        "The inaugural recipient of the Dennett Prize was Andy Clark, Professor of Cognitive Philosophy at the University of Sussex, whose work on embodied and extended cognition, artificial intelligence, robotics, and computational neuroscience has profoundly shaped contemporary philosophy of mind.",
+        "The 2026 Dennett Prize has been awarded to Nicholas Humphrey, in recognition of his influential contributions to the scientific and philosophical understanding of consciousness, perception, and the evolution of subjective experience."
+      ]
+    },
 		{
 			"bodyColor": "white",
 			"banner": true,
@@ -568,103 +665,6 @@
 					}
 				}
 			]
-		},
-		{
-			"bodyColor": "white",
-			"banner": true,
-			"id": "international-center-for-consciousness-studies-iccs",
-			"title": {
-				"type": "h1",
-				"text": "International Center for Consciousness Studies (ICCS)",
-				"subtitle": "philosophy"
-			},
-			"texts": [
-				"The International Center for Consciousness Studies (ICCS) is an international hub of philosophers dedicated to exploring the nature of consciousness and the mind through rigorous philosophical and interdisciplinary research.",
-				"Founded in 2024 by Dmitry Volkov, Pietro Perconti, and Alessio Plebe, in collaboration with the University of Messina, ICCS is a non-profit cultural association devoted to advancing philosophical research on consciousness through an integrated and interdisciplinary approach.",
-				"The Center is committed to maintaining the highest standards of academic excellence and ethical responsibility. It supports the philosophical investigation of the mind and consciousness while actively encouraging dialogue across disciplines in order to address some of the most challenging problems in contemporary philosophy. ICCS's mission is to promote a deeper understanding of consciousness and the mind by fostering global scholarly exchange and collaboration. To this end, the Center has established a dynamic international network of leading philosophers working collectively to advance research in consciousness studies.",
-				"The ICCS Academic Council brings together internationally renowned scholars in philosophy, psychology, neuroscience, and related fields, including:<br><br><b>Keith Frankish</b> — Honorary Professor of Philosophy, University of Sheffield; Visiting Research Fellow, The Open University; Adjunct Professor, Brain and Mind Programme, University of Crete<br><b>Emanuele Castano</b> — Professor of Psychology, University of Florence<br><b>Mario De Caro</b> — Professor of Moral Philosophy, Roma Tre University; Visiting Professor, Tufts University<br><b>Nick Humphrey</b> — Emeritus Professor of Psychology, London School of Economics; Senior Member, Darwin College, Cambridge<br><b>Michael Pauen</b> — Professor of Philosophy, Humboldt University of Berlin",
-				"The ICCS Advisory Board is composed of internationally distinguished scholars whose research spans philosophy of mind, cognitive science, neuroscience, artificial intelligence, robotics, and ethics, including:<br><br><b>Alberto Voltolini</b> — Full Professor of Philosophy of Mind, University of Turin<br><b>Alex Byrne</b> — Professor of Philosophy, MIT<br><b>Antonio Chella</b> — Professor of Robotics and Director of the RoboticsLab, University of Palermo<br><b>Daniel Stoljar</b> — Professor of Philosophy, Australian National University<br><b>Giorgio Vallortigara</b> — Professor of Cognitive Neuroscience and Director of the Centre for Mind/Brain Sciences, University of Trento<br><b>Tim Bayne</b> — Professor of Philosophy, Monash University<br><b>Uriah Kriegel</b> — Professor of Philosophy, Rice University<br><b>Eric Olson</b> — Professor of Philosophy, University of Sheffield<br><b>Riccardo Manzotti</b> — Professor of Theoretical Philosophy, IULM University<br><b>Claudia Passos-Ferreira</b> — Assistant Professor of Bioethics, New York University",
-				"The International Center for Consciousness Studies organizes an annual international conference addressing key problems in the philosophy of mind and related disciplines, including philosophy, neuroscience, and artificial intelligence. The inaugural conference was held in Siena, Italy in 2024, followed by the 2025 conference in Heraklion, Crete.",
-				"One of the Center's flagship initiatives is the Dennett Prize, an annual award presented to an outstanding scholar whose work has made a significant contribution to advancing our understanding of the brain and consciousness."
-			]
-		},
-		{
-			"bodyColor": "white",
-			"banner": true,
-			"id": "the-iccs-annual-conferences",
-			"title": {
-				"type": "h1",
-				"text": "The ICCS Annual Conferences",
-				"subtitle": "philosophy"
-			},
-			"texts": [
-				"The International Center for Consciousness Studies (ICCS) holds an annual international conference devoted to a wide range of issues in the philosophy of mind and related fields, including philosophy, neuroscience, and artificial intelligence.",
-				"The primary aim of the ICCS Conference is to advance consciousness studies and to propose new directions for interdisciplinary research in this area. By welcoming both internationally recognized scholars and early-career researchers, the conference fosters interdisciplinary dialogue in a collegial and intellectually stimulating atmosphere. It seeks to support philosophers in engaging with empirical sciences, while encouraging scientists, cognitive psychologists, neuroscientists, and computer scientists to address foundational philosophical questions.",
-				"The First ICCS Conference, \"Uncovering the Magic of Consciousness: Philosophy, Neuroscience, AI,\" took place in Siena, Italy in 2024. The conference was hosted at the Santa Maria della Scala Museum, in the Sala Italo Calvino, and was organized by the International Center for Consciousness Studies in collaboration with the University of Messina and IULM University. The event was held under the patronage of the Municipality of Siena, the University of Siena, and the University for Foreigners of Siena.",
-				"The principal objective of the First ICCS Conference was to explore whether consciousness can be fully explained within a scientific framework, or whether its elusive nature requires an account that goes beyond cognitive science. Designed as a three-day symposium, the conference featured a variety of formats, including invited talks, open discussions, paper and manuscript reviews, and poster presentations, allowing participants to present their work in the form best suited to their expertise.",
-				"The Second ICCS Conference, \"AI and Sentience,\" was held in 2025, in Heraklion, Crete. The conference brought together leading researchers in philosophy, neuroscience, and artificial intelligence to address a central and timely question: Is AI sentience possible?",
-				"The event took place at the Megaron Hotel, with additional sessions hosted at the Municipal Gallery of Heraklion and the historic Vitsentzos Kornaros Cinema and Theatre, offering a unique setting for interdisciplinary exchange and discussion.",
-				"Information and announcements regarding upcoming ICCS conferences, events, and related initiatives are regularly published on the official International Center for Consciousness Studies <a href=\"https://hardproblem.it/\" target=\"_blank\">website</a>, where scholars and interested audiences can follow the Center's latest activities and developments."
-			],
-      "slider": [
-        {
-          "img": {
-            "src": "1"
-          }
-        },
-        {
-          "img": {
-            "src": "2"
-          }
-        },
-        {
-          "img": {
-            "src": "3"
-          }
-        },
-        {
-          "img": {
-            "src": "4"
-          }
-        },
-        {
-          "img": {
-            "src": "5"
-          }
-        },
-        {
-          "img": {
-            "src": "6"
-          }
-        },
-        {
-          "img": {
-            "src": "7"
-          }
-        },
-        {
-          "img": {
-            "src": "8"
-          }
-        }
-      ]
-		},
-		{
-			"bodyColor": "white",
-			"banner": true,
-			"id": "dennett-prize",
-			"title": {
-				"type": "h1",
-				"text": "Dennett Prize",
-				"subtitle": "philosophy"
-			},
-			"texts": [
-				"The International Center for Consciousness Studies (ICCS) established the Dennett Prize, an annual award presented to an outstanding scholar whose research has made a significant contribution to advancing our understanding of the brain and consciousness. The Prize reflects the Center's commitment to excellence in philosophical and interdisciplinary research on the mind.",
-				"The Prize is named in honor of the renowned philosopher Daniel Dennett (1942–2024). Dennett's work spanned philosophy of mind, cognitive science, evolutionary biology, and artificial intelligence. Throughout his career, he challenged received views and introduced transformative perspectives across disciplines. His writing set a lasting benchmark for intellectual clarity, conceptual rigor, and scientific integrity.",
-				"The Dennett Prize consists of a monetary award, and the recipient is invited to deliver a Dennett Lecture at the ICCS Annual Conference. The laureate is selected by a vote of the Dennett Prize Committee, which includes Susan Dennett, Keith Frankish, Giorgio Vallortigara, and Dmitry Volkov.",
-				"The inaugural recipient of the Dennett Prize was Andy Clark, Professor of Cognitive Philosophy at the University of Sussex, whose work on embodied and extended cognition, artificial intelligence, robotics, and computational neuroscience has profoundly shaped contemporary philosophy of mind.",
-				"The 2026 Dennett Prize has been awarded to Nicholas Humphrey, in recognition of his influential contributions to the scientific and philosophical understanding of consciousness, perception, and the evolution of subjective experience."
-			]
 		}
 	],
 	"more": {
@@ -754,6 +754,27 @@
 				}
 			],
 			"philosophy": [
+        {
+          "id": "international-center-for-consciousness-studies-iccs",
+          "title": {
+            "type": "h3",
+            "text": "International Center for Consciousness Studies (ICCS)"
+          }
+        },
+        {
+          "id": "the-iccs-annual-conferences",
+          "title": {
+            "type": "h3",
+            "text": "The ICCS Annual Conferences"
+          }
+        },
+        {
+          "id": "dennett-prize",
+          "title": {
+            "type": "h3",
+            "text": "Dennett Prize"
+          }
+        },
 				{
 					"id": "philosophical-lectures-at-mmoma",
 					"title": {
@@ -794,27 +815,6 @@
 					"title": {
 						"type": "h3",
 						"text": "Fundamental Knowledge: Dialogues between Russian and Buddhist Scholars."
-					}
-				},
-				{
-					"id": "international-center-for-consciousness-studies-iccs",
-					"title": {
-						"type": "h3",
-						"text": "International Center for Consciousness Studies (ICCS)"
-					}
-				},
-				{
-					"id": "the-iccs-annual-conferences",
-					"title": {
-						"type": "h3",
-						"text": "The ICCS Annual Conferences"
-					}
-				},
-				{
-					"id": "dennett-prize",
-					"title": {
-						"type": "h3",
-						"text": "Dennett Prize"
 					}
 				}
 			]
