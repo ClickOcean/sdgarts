@@ -8,6 +8,36 @@
 		}
 	},
 	"slider": [
+    {
+      "id": "international-center-for-consciousness-studies-iccs",
+      "title": {
+        "type": "h3",
+        "text": "International Center for Consciousness Studies (ICCS)"
+      },
+      "descr": {
+        "text": "The International Center for Consciousness Studies (ICCS) is an international hub of philosophers dedicated to exploring..."
+      }
+    },
+    {
+      "id": "the-iccs-annual-conferences",
+      "title": {
+        "type": "h3",
+        "text": "The ICCS Annual Conferences"
+      },
+      "descr": {
+        "text": "The International Center for Consciousness Studies (ICCS) holds an annual international conference devoted to a wide range of issues in the philosophy of mind..."
+      }
+    },
+    {
+      "id": "dennett-prize",
+      "title": {
+        "type": "h3",
+        "text": "Dennett Prize"
+      },
+      "descr": {
+        "text": "The International Center for Consciousness Studies (ICCS) established the Dennett Prize, an annual award presented to an outstanding scholar..."
+      }
+    },
 		{
 			"id": "philosophical-lectures-at-mmoma",
 			"title": {
@@ -66,36 +96,6 @@
 			},
 			"descr": {
 				"text": "The first meeting of scientists and Dalai Lama on the topic of studying consciousness took place in August 2017 in New..."
-			}
-		},
-		{
-			"id": "international-center-for-consciousness-studies-iccs",
-			"title": {
-				"type": "h3",
-				"text": "International Center for Consciousness Studies (ICCS)"
-			},
-			"descr": {
-				"text": "The International Center for Consciousness Studies (ICCS) is an international hub of philosophers dedicated to exploring..."
-			}
-		},
-		{
-			"id": "the-iccs-annual-conferences",
-			"title": {
-				"type": "h3",
-				"text": "The ICCS Annual Conferences"
-			},
-			"descr": {
-				"text": "The International Center for Consciousness Studies (ICCS) holds an annual international conference devoted to a wide range of issues in the philosophy of mind..."
-			}
-		},
-		{
-			"id": "dennett-prize",
-			"title": {
-				"type": "h3",
-				"text": "Dennett Prize"
-			},
-			"descr": {
-				"text": "The International Center for Consciousness Studies (ICCS) established the Dennett Prize, an annual award presented to an outstanding scholar..."
 			}
 		}
 	]
