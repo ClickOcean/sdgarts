@@ -3,20 +3,89 @@
 		{
 			"bodyColor": "white",
 			"banner": true,
-			"id": "andy-clark-receives-dennett-prize-in-2025",
+			"id": "wired-does-artificial-intelligence-have-consciousness",
 			"title": {
 				"type": "h1",
-				"text": "Andy Clark Receives Dennett Prize in 2025",
+				"text": "Wired: Does artificial intelligence have consciousness?",
 				"subtitle": "news"
 			},
 			"texts": [
-				"The International Center for Consciousness Studies hosted the inaugural Dennett Prize during its 2025 conference in Heraklion, Crete. The prize was awarded to British philosopher Andy Clark, Professor of Cognitive Philosophy at the University of Sussex.",
-				"The award ceremony was held in a historic Heraklion cinema, where attendees gathered for a moving tribute to Daniel Dennett's legacy. As the 2025 laureate, Andy Clark was awarded a $10,000 prize and a statuette of The Crusader—a replica of Dennett's hand-carved soapstone original. As part of the ceremony, Clark gave Daniel Dennett Lecture.",
-				"\"Dan's ways of thinking have, even back then, sort of beneficially parasitized my own brain—my own ways of thinking. And I think I can honestly say that I've got a kind of internal Dan now, that is a sort of critic, such that stuff doesn't get out unless it's been passed by the internal Dan. And I think that Dan would have appreciated that—you know, there's a sort of way of living on in ways of doing philosophy, and ways of thinking about things. So I think that somehow, that sort of speaks to Dan's core commandments,\" Clark commented.",
-				"During the opening ceremony, Dmitry Volkov, co-founder of the ICCS, remarked: \"Dan didn't just shape our understanding of consciousness—he transformed how we frame the very questions we ask about the mind. His legacy lives not only in his writings, but in the frameworks that now guide cognitive science and philosophy. The Dennett Prize is a celebration of that enduring influence.\"",
-				"The Dennett Prize recognizes significant advances in the philosophy of mind, cognitive science, evolutionary biology, and artificial intelligence—fields profoundly shaped by the revolutionary ideas of Daniel Dennett. The Committee of the Prize includes Susan Dennett, Keith Frankish, Giorgio Vallortigara, Nicholas Humphrey, and Dmitry Volkov. This year, the Committee received 14 applications, all carefully considered, and unanimously declared Andy Clark as the winner."
+				"If AI consciousness doesn't already exist, then at least could it exist in principle?",
+				"Wired magazine spoke with David Chalmers, Keith Frankish, Pietro Perconti, Roman Yampolskiy, and other participants of the Second ICCS Conference \"AI and Sentience,\" which took place July 3–5, 2025.",
+				"Read the <a href=\"https://www.wired.it/article/intelligenza-artificiale-coscienza-pensiero-filosofi/\" target=\"_blank\">full article</a> about the heated debate among philosophers and scientists in Heraklion, Crete."
 			],
 			"sliderBottom": true,
+			"slider": [
+				{
+					"img": {
+						"src": "1"
+					}
+				}
+			]
+		},
+		{
+			"bodyColor": "white",
+			"banner": true,
+			"id": "forbes-what-todays-leading-philosophers-say-about-conscious-ai",
+			"title": {
+				"type": "h1",
+				"text": "Forbes: What Today's Leading Philosophers Say About Conscious AI?",
+				"subtitle": "news"
+			},
+			"texts": [
+				"Forbes has <a href=\"https://www.forbes.com/sites/teddymcdarrah/2025/07/27/what-todays-leading-philosophers-have-to-say-about-conscious-ai/\" target=\"_blank\">published</a> a second article by Theodore McDarrah, which provides a brief summary of the main topics discussed at the Second ICCS Conference \"AI and Sentience.\"",
+				"David Chalmers, Andy Clark, Clara Colombatto, Keith Frankish, Daniel Hulme, Nick Humphrey, Katarina Marcincinova, Dmitry Volkov, and Roman Yampolskiy discuss the prospects for AI development, the threats and challenges that lie along this path, and the human problems that Sentient AI will be able to solve.",
+				"Special attention is paid to the ethical problems of AI and the controversy between the metaphysical positions of illusionism and realism regarding phenomenal consciousness. Read the full article on the Forbes website!"
+			],
+			"sliderBottom": true,
+			"slider": [
+				{
+					"img": {
+						"src": "1"
+					}
+				}
+			]
+		},
+		{
+			"bodyColor": "white",
+			"banner": true,
+			"id": "forbes-the-lasting-impact-of-daniel-dennett-in-philosophy-and-leadership",
+			"title": {
+				"type": "h1",
+				"text": "Forbes: The Lasting Impact of Daniel Dennett in Philosophy and Leadership",
+				"subtitle": "news"
+			},
+			"texts": [
+				"Following the Second ICCS Conference \"AI and Sentience,\" Forbes published an article by Theodore McDarrah, who attended the event.",
+				"The article describes Daniel Dennett's unique ability to make complex philosophical ideas accessible to a wider audience, influencing fields well beyond academia. It discusses the establishment of the Dennett Prize and its inaugural laureate, Andy Clark, who challenges conventional ideas and introduce new perspectives inspired in many ways by Dennett's work.",
+				"It also considers how Dennett's philosophical strategies can be effectively applied to business. Read the <a href=\"https://www.forbes.com/sites/teddymcdarrah/2025/07/25/the-lasting-impact-of-daniel-dennett-in-philosophy-and-leadership/\" target=\"_blank\">full article</a> on the Forbes website!"
+			],
+      "sliderBottom": true,
+      "slider": [
+        {
+          "img": {
+            "src": "1"
+          }
+        }
+      ]
+		},
+    {
+      "bodyColor": "white",
+      "banner": true,
+      "id": "andy-clark-receives-dennett-prize-in-2025",
+      "title": {
+        "type": "h1",
+        "text": "Andy Clark Receives Dennett Prize in 2025",
+        "subtitle": "news"
+      },
+      "texts": [
+        "The International Center for Consciousness Studies hosted the inaugural Dennett Prize during its 2025 conference in Heraklion, Crete. The prize was awarded to British philosopher Andy Clark, Professor of Cognitive Philosophy at the University of Sussex.",
+        "The award ceremony was held in a historic Heraklion cinema, where attendees gathered for a moving tribute to Daniel Dennett's legacy. As the 2025 laureate, Andy Clark was awarded a $10,000 prize and a statuette of The Crusader—a replica of Dennett's hand-carved soapstone original. As part of the ceremony, Clark gave Daniel Dennett Lecture.",
+        "\"Dan's ways of thinking have, even back then, sort of beneficially parasitized my own brain—my own ways of thinking. And I think I can honestly say that I've got a kind of internal Dan now, that is a sort of critic, such that stuff doesn't get out unless it's been passed by the internal Dan. And I think that Dan would have appreciated that—you know, there's a sort of way of living on in ways of doing philosophy, and ways of thinking about things. So I think that somehow, that sort of speaks to Dan's core commandments,\" Clark commented.",
+        "During the opening ceremony, Dmitry Volkov, co-founder of the ICCS, remarked: \"Dan didn't just shape our understanding of consciousness—he transformed how we frame the very questions we ask about the mind. His legacy lives not only in his writings, but in the frameworks that now guide cognitive science and philosophy. The Dennett Prize is a celebration of that enduring influence.\"",
+        "The Dennett Prize recognizes significant advances in the philosophy of mind, cognitive science, evolutionary biology, and artificial intelligence—fields profoundly shaped by the revolutionary ideas of Daniel Dennett. The Committee of the Prize includes Susan Dennett, Keith Frankish, Giorgio Vallortigara, Nicholas Humphrey, and Dmitry Volkov. This year, the Committee received 14 applications, all carefully considered, and unanimously declared Andy Clark as the winner."
+      ],
+      "sliderBottom": true,
       "slider": [
         {
           "img": {
@@ -34,29 +103,29 @@
           }
         }
       ]
-		},
-		{
-			"bodyColor": "white",
-			"banner": true,
-			"id": "ai-and-sentience-conference-held-by-the-iccs-in-heraklion",
-			"title": {
-				"type": "h1",
-				"text": "\"AI and Sentience\" Conference held by the ICCS in Heraklion",
-				"subtitle": "news"
-			},
-			"texts": [
-				"The Second ICCS Conference, \"AI and Sentience,\" was held from July 3 to 5, 2025, in Heraklion, Crete, bringing together leading researchers in philosophy, neuroscience, and artificial intelligence to address a central and timely question: Is AI sentience possible? The conference took place at the Megaron Hotel, with additional sessions hosted at the Municipal Gallery of Heraklion and the historic Vitsentzos Kornaros Cinema and Theatre.",
-				"The program included plenary lectures, symposia, poster sessions, and open discussions. Each symposium consisted of four short presentations followed by a moderated discussion, designed to foster substantive debate among speakers and attendees.",
-				"The event started with opening remarks by the ICCS cofounders Dmitry Volkov and Pietro Perconti. The opening session featured Keith Frankish, Nicholas Humphrey, and Michael Pauen, who examined contrasting perspectives on artificial consciousness and the attribution of higher cognitive capacities to AI systems.",
-				"The second session, \"The Psychology of AI,\" included talks by Alessandro Acciai, Alessio Plebe, and Katarina Marcincinova, focusing on illusionism, self-representation, and self-consciousness in artificial agents.",
-				"The afternoon session addressed the social context of sentient AI, with presentations by Pietro Perconti, Clara Colombatto, and Antonio Chella. A poster session followed, highlighting new research on AI sentience, epistemic underdetermination, inner speech, and the attribution of intentional agency to artificial systems.",
-				"The first day concluded with remote keynote lectures by Michael Levin (\"Unconventional Selves: Diverse Intelligence in Novel Spaces, Scales, and Embodiments\") and Susan Schneider (\"Addressing Questions of LLM Sentience\"), both of which raised fundamental issues concerning selfhood, autonomy, and agency in artificial systems.",
-				"Day 2 opened with a plenary session featuring Susan Blackmore (\"What Is It Like to Be Artificially Intelligent?\"), David Chalmers (\"On the Computational Correlates of Consciousness\"), and Robert Clowes (\"Confabulating Centres of Narrative Gravity with Large Language Models\").",
-				"Subsequent sessions included contributions by Riccardo Manzotti and Maria Raffa, focusing on value, active inference, and artificial freedom. In the afternoon, a special art event at the Municipal Gallery of Heraklion explored intersections between art, consciousness, and AI.",
-				"Later sessions featured Roman Yampolskiy, who examined the limits of explainability and control in advanced AI systems, and Daniel Hulme, who addressed intelligence and consciousness from a practical perspective. The day concluded with a panel discussion, \"Sentience Beyond Human Biology,\" featuring Joscha Bach, Matthew Macdougall, Murray Shanahan, and Dmitry Volkov.",
-				"Day 3 was dedicated to the inaugural Dennett Prize ceremony, held at the Vitsentzos Kornaros Cinema. The award honored Andy Clark, Professor of Cognitive Philosophy at the University of Sussex, as the first recipient of the Prize for his outstanding contributions to philosophy of mind and cognitive science. Clark was awarded a $10,000 prize and a statuette of The Crusader, a replica of Dennett's hand-carved soapstone original."
-			],
-			"sliderBottom": true,
+    },
+    {
+      "bodyColor": "white",
+      "banner": true,
+      "id": "ai-and-sentience-conference-held-by-the-iccs-in-heraklion",
+      "title": {
+        "type": "h1",
+        "text": "\"AI and Sentience\" Conference held by the ICCS in Heraklion",
+        "subtitle": "news"
+      },
+      "texts": [
+        "The Second ICCS Conference, \"AI and Sentience,\" was held from July 3 to 5, 2025, in Heraklion, Crete, bringing together leading researchers in philosophy, neuroscience, and artificial intelligence to address a central and timely question: Is AI sentience possible? The conference took place at the Megaron Hotel, with additional sessions hosted at the Municipal Gallery of Heraklion and the historic Vitsentzos Kornaros Cinema and Theatre.",
+        "The program included plenary lectures, symposia, poster sessions, and open discussions. Each symposium consisted of four short presentations followed by a moderated discussion, designed to foster substantive debate among speakers and attendees.",
+        "The event started with opening remarks by the ICCS cofounders Dmitry Volkov and Pietro Perconti. The opening session featured Keith Frankish, Nicholas Humphrey, and Michael Pauen, who examined contrasting perspectives on artificial consciousness and the attribution of higher cognitive capacities to AI systems.",
+        "The second session, \"The Psychology of AI,\" included talks by Alessandro Acciai, Alessio Plebe, and Katarina Marcincinova, focusing on illusionism, self-representation, and self-consciousness in artificial agents.",
+        "The afternoon session addressed the social context of sentient AI, with presentations by Pietro Perconti, Clara Colombatto, and Antonio Chella. A poster session followed, highlighting new research on AI sentience, epistemic underdetermination, inner speech, and the attribution of intentional agency to artificial systems.",
+        "The first day concluded with remote keynote lectures by Michael Levin (\"Unconventional Selves: Diverse Intelligence in Novel Spaces, Scales, and Embodiments\") and Susan Schneider (\"Addressing Questions of LLM Sentience\"), both of which raised fundamental issues concerning selfhood, autonomy, and agency in artificial systems.",
+        "Day 2 opened with a plenary session featuring Susan Blackmore (\"What Is It Like to Be Artificially Intelligent?\"), David Chalmers (\"On the Computational Correlates of Consciousness\"), and Robert Clowes (\"Confabulating Centres of Narrative Gravity with Large Language Models\").",
+        "Subsequent sessions included contributions by Riccardo Manzotti and Maria Raffa, focusing on value, active inference, and artificial freedom. In the afternoon, a special art event at the Municipal Gallery of Heraklion explored intersections between art, consciousness, and AI.",
+        "Later sessions featured Roman Yampolskiy, who examined the limits of explainability and control in advanced AI systems, and Daniel Hulme, who addressed intelligence and consciousness from a practical perspective. The day concluded with a panel discussion, \"Sentience Beyond Human Biology,\" featuring Joscha Bach, Matthew Macdougall, Murray Shanahan, and Dmitry Volkov.",
+        "Day 3 was dedicated to the inaugural Dennett Prize ceremony, held at the Vitsentzos Kornaros Cinema. The award honored Andy Clark, Professor of Cognitive Philosophy at the University of Sussex, as the first recipient of the Prize for his outstanding contributions to philosophy of mind and cognitive science. Clark was awarded a $10,000 prize and a statuette of The Crusader, a replica of Dennett's hand-carved soapstone original."
+      ],
+      "sliderBottom": true,
       "slider": [
         {
           "img": {
@@ -99,7 +168,7 @@
           }
         }
       ]
-		},
+    },
     {
       "bodyColor": "white",
       "banner": true,
@@ -404,21 +473,45 @@
 		"sliders": {
 			"news": [
 				{
-					"id": "andy-clark-receives-dennett-prize-in-2025",
+					"id": "wired-does-artificial-intelligence-have-consciousness",
 					"title": {
 						"type": "h3",
-						"text": "Andy Clark Receives Dennett Prize in 2025",
+						"text": "Wired: Does artificial intelligence have consciousness?",
 						"hover": "news"
 					}
 				},
 				{
-					"id": "ai-and-sentience-conference-held-by-the-iccs-in-heraklion",
+					"id": "forbes-what-todays-leading-philosophers-say-about-conscious-ai",
 					"title": {
 						"type": "h3",
-						"text": "\"AI and Sentience\" Conference held by the ICCS in Heraklion",
+						"text": "Forbes: What Today's Leading Philosophers Say About Conscious AI?",
 						"hover": "news"
 					}
 				},
+				{
+					"id": "forbes-the-lasting-impact-of-daniel-dennett-in-philosophy-and-leadership",
+					"title": {
+						"type": "h3",
+						"text": "Forbes: The Lasting Impact of Daniel Dennett in Philosophy and Leadership",
+						"hover": "news"
+					}
+				},
+        {
+          "id": "andy-clark-receives-dennett-prize-in-2025",
+          "title": {
+            "type": "h3",
+            "text": "Andy Clark Receives Dennett Prize in 2025",
+            "hover": "news"
+          }
+        },
+        {
+          "id": "ai-and-sentience-conference-held-by-the-iccs-in-heraklion",
+          "title": {
+            "type": "h3",
+            "text": "\"AI and Sentience\" Conference held by the ICCS in Heraklion",
+            "hover": "news"
+          }
+        },
         {
           "id": "iccs-inaugural-conference-uncovering-the-magic-of-consciousness",
           "title": {

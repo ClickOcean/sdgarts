@@ -5,27 +5,60 @@
 	},
 	"slider": [
 		{
-			"id": "andy-clark-receives-dennett-prize-in-2025",
+			"id": "wired-does-artificial-intelligence-have-consciousness",
 			"title": {
 				"type": "h3",
-				"text": "Andy Clark Receives Dennett Prize in 2025",
+				"text": "Wired: Does artificial intelligence have consciousness?",
 				"hover": "news"
 			},
 			"descr": {
-				"text": "The International Center for Consciousness Studies hosted the inaugural Dennett Prize during its 2025 conference in Heraklion, Crete."
+				"text": "If AI consciousness doesn't already exist, then at least could it exist in principle?"
 			}
 		},
 		{
-			"id": "ai-and-sentience-conference-held-by-the-iccs-in-heraklion",
+			"id": "forbes-what-todays-leading-philosophers-say-about-conscious-ai",
 			"title": {
 				"type": "h3",
-				"text": "\"AI and Sentience\" Conference held by the ICCS in Heraklion",
+				"text": "Forbes: What Today's Leading Philosophers Say About Conscious AI?",
 				"hover": "news"
 			},
 			"descr": {
-				"text": "The Second ICCS Conference was held from July 3 to 5, 2025, in Heraklion, Crete, bringing together leading researchers in philosophy, neuroscience, and AI."
+				"text": "Forbes has published a second article by Theodore McDarrah, which provides a brief summary of the main topics discussed at the Second ICCS Conference \"AI and Sentience.\""
 			}
 		},
+		{
+			"id": "forbes-the-lasting-impact-of-daniel-dennett-in-philosophy-and-leadership",
+			"title": {
+				"type": "h3",
+				"text": "Forbes: The Lasting Impact of Daniel Dennett in Philosophy and Leadership",
+				"hover": "news"
+			},
+			"descr": {
+				"text": "Following the Second ICCS Conference \"AI and Sentience,\" Forbes published an article by Theodore McDarrah, who attended the event."
+			}
+		},
+    {
+      "id": "andy-clark-receives-dennett-prize-in-2025",
+      "title": {
+        "type": "h3",
+        "text": "Andy Clark Receives Dennett Prize in 2025",
+        "hover": "news"
+      },
+      "descr": {
+        "text": "The International Center for Consciousness Studies hosted the inaugural Dennett Prize during its 2025 conference in Heraklion, Crete."
+      }
+    },
+    {
+      "id": "ai-and-sentience-conference-held-by-the-iccs-in-heraklion",
+      "title": {
+        "type": "h3",
+        "text": "\"AI and Sentience\" Conference held by the ICCS in Heraklion",
+        "hover": "news"
+      },
+      "descr": {
+        "text": "The Second ICCS Conference was held from July 3 to 5, 2025, in Heraklion, Crete, bringing together leading researchers in philosophy, neuroscience, and AI."
+      }
+    },
     {
       "id": "iccs-inaugural-conference-uncovering-the-magic-of-consciousness",
       "title": {
